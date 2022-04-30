@@ -1,10 +1,18 @@
 .App {
   text-align: center;
-  color: black;
+  color: #F5F5F5;
+  background-color: #042E42;
 
 }
 
-/* background: #0F2027; 
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+a {
+  text-decoration: none;
+  list-style: none;
+  color: whitesmoke;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

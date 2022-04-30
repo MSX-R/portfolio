@@ -1,9 +1,9 @@
 import React from 'react';
-import'../screensCSS/Contact.css'
+import'./Contact.css'
 
 const Contact = () => {
   return ( 
-  <div>
+  <div className="page-contact">
 Bienvenue sur Contact
   </div>
   )

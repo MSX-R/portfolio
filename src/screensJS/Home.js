@@ -1,12 +1,41 @@
 import React from 'react';
-import'../screensCSS/Home.css'
+import'./Home.css'
+import Header from '../componentsJS/Header'
+import photosport from '../assets/photo-home.png'
+import SwiperReact from '../componentsJS/SwiperReact/SwiperReact';
+
 
 const Home = () => {
   return ( 
-  <div className="page-Home">
-Bienvenue sur Home  
+    <div className="container">
+      <Header />
+      
+      <div className="v-slider-bloc">
+        <h1>Page 1</h1>
+      </div>
+      <div className="v-slider-bloc">
+        <h1>Page 2</h1>
+      </div>
+      <div className="v-slider-bloc">
+        <SwiperReact/>
+      </div>
+      <div className="v-slider-bloc">
+
+      </div>
+
 </div>
   )
 };
 
 export default Home;
+
+{/* <div className="bloc-main-home">
+      
+      
+      <div className="bloc-text1-home">
+        <p>Bonjour <br></br>Je m'appelle</p>
+        <div className="titres-home"><p className="nom-home">MARSALEIX</p> 
+        <p className="prenom-home">ROMAIN</p></div>
+      </div><img src={photosport} alt="imageSmile" className="photosport" />
+      </div>
+    Bienvenue sur Home   */}

@@ -1,0 +1,29 @@
+/* ANIMATION TEXTE DEFILANT */
+
+/* le block conteneur */
+.marquee-rtl {
+    max-width: 100%;                      /* largeur de la fenêtre */
+    width: 100vw;
+    font-size: 4.5rem;
+    margin: 20px 0 0 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .marquee-rtl > :first-child {
+    display: inline-block;                /* modèle de boîte en ligne */
+    padding-right: 2em;                   /* un peu d'espace pour la transition */
+    padding-left: 100%;                   /* placement à droite du conteneur */
+    white-space: nowrap;                  /* pas de passage à la ligne */
+    animation: defilement-rtl 20s infinite linear;
+  }
+
+  @keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+  }
+
+  /* FIN ANIMATION TEXTE DEFILANT */

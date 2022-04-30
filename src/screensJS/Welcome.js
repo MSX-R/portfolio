@@ -1,12 +1,16 @@
 import React from 'react';
-import'../screensCSS/Welcome.css'
+import'./Welcome.css'
+import logobleu from '../assets/logoblanc.png'
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return ( 
-  <div>
-Bienvenue sur Welcome
-
-PAGE de chargement 
+  <div className="page-welcome">
+    <Link to="/Home">
+    <div className="bloc-logo">
+     <img src={logobleu} alt="logo" className="logo-welcome"/>
+    </div>
+    </Link>
   </div>
   )
 };
