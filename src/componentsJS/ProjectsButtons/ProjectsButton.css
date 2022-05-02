@@ -1,0 +1,29 @@
+.btn-project-changer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid red;
+  /* A controler en mobile */
+  margin-top: 20px;
+  width: 70vw;
+}
+
+.btn-project-changer button {
+  margin: 5px;
+  border-radius: 9999px;
+  padding: 5px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 740px) {
+  .bloc-texte-projet {
+    padding: 20px;
+    border: 2px solid whitesmoke;
+  }
+
+  .btn-project-changer button {
+    border-radius: 9999px;
+    width: fit-content;
+    border: 1px solid red;
+  }
+}

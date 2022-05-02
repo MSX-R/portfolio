@@ -8,13 +8,14 @@
     font-size: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-bottom: 5px solid #333;
+    align-items:flex-start; /*center pour centrer le contenu, flex start + padding 150px si top*/
+    padding: 100px 0 0 0;
+    border-bottom: 5px solid #fff;
     height: 100vh;
     scroll-snap-align: center;
   }
   
-  .v-slider-bloc:nth-child(1) {
+  /* .v-slider-bloc:nth-child(1) {
     background-color: var(--firstcolor);
     color: whitesmoke;
   }
@@ -29,7 +30,7 @@
   .v-slider-bloc:nth-child(4) {
     background-color: var(--fivecolor);
     color: whitesmoke;
-  }
+  } */
 
 /* .page-home{
     min-height: 100vh;

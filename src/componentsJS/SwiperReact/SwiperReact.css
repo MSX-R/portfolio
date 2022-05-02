@@ -1,8 +1,51 @@
-.swiper {
-  width: 700px;
-  height: fit-content;
+.contenu-swiper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
 
+
+
+.bloc-texte-projet{ /*Titre, Descri, Text descri, Outils, outils Img*/
+  /* padding-top: 150px; */
+  width: 600px;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.bloc-texte-projet h3 {
+  padding: 10px 0 10px 0;
+}
+
+.outils-projets {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.outils-icons{
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+
+
+
+
+
+.swiper {
+  width: 600px;
+  height: fit-content; 
+  margin-top: 40px;
+}
+
+.Slide {
+  display: flex;
+  flex-direction: column;
+  width: 100;
+}
 .swiper-slide {
   font-size: 18px;
   background: transparent;
@@ -13,6 +56,7 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+ 
 
   -webkit-box-pack: flex-start;
   -ms-flex-pack: flex-start;
@@ -35,10 +79,7 @@
 }
 
 
-.Slide {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .legend-project {
   display: flex;
@@ -72,3 +113,42 @@
   font-weight: bold;
   border-radius: 25px;
 } */
+
+.btn-project-changer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+border: 2px solid red;
+  /* A controler en mobile */
+  margin-top: 20px;
+  width: 70vw;
+}
+
+.btn-project-changer button { 
+  margin: 5px;
+  border-radius: 9999px;
+  padding: 5px;
+  width: fit-content;}
+
+@media screen and (max-width: 740px) {
+  .swiper, .bloc-texte-projet, .btn-project-changer{ 
+width: 95vw; 
+margin-top: 3vh;
+  }
+
+  .bloc-texte-projet{
+    padding: 20px;
+    border: 2px solid whitesmoke;
+  }
+
+.btn-project-changer button {
+  border-radius: 9999px;
+  width: fit-content;
+  border: 1px solid red;
+}
+
+
+  /* .bloc-texte-projet h3 {
+    padding: 15px 0;
+  } */
+}

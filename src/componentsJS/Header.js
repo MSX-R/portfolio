@@ -10,7 +10,7 @@ import { FaTeamspeak } from "react-icons/fa";
 function Header() {
   return (
     <div className="header">
-      <div className="partie-gauche">
+      <div className="partie-gauche mobile-logo">
         {" "}
         {/* A garder format mobile */}
         <Link to="/">
@@ -21,7 +21,7 @@ function Header() {
         <p className="developpeurWeb">Développeur web/mobile</p>
       </div>
 
-      <div className="partie-droite">
+      <div className="partie-droite mobile-menulist">
         <Link to="/Home" className="links-navbar">
           <FaUserCircle />
         </Link>

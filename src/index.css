@@ -1,3 +1,21 @@
+:root {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: clamp(18px, 3vw, 24px);
+}
+
+h3 {
+  font-size: clamp(14px, 2.5vw, 16px);
+  text-decoration: underline whitesmoke;
+
+}
+
+p {
+  font-size: clamp(12px, 2vw, 14px);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

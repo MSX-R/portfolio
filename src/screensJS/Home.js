@@ -1,35 +1,34 @@
-import React from 'react';
-import'./Home.css'
-import Header from '../componentsJS/Header'
-import photosport from '../assets/photo-home.png'
-import SwiperReact from '../componentsJS/SwiperReact/SwiperReact';
+import React from "react";
+import "./Home.css";
+import Header from "../componentsJS/Header";
+import photosport from "../assets/photo-home.png";
+import SwiperReact from "../componentsJS/SwiperReact/SwiperReact"; //Scroll slide pour photo projet
 
+import ScrollHE from "../componentsJS/ScrollHorizontalEnzo/ScrollHE"; //Ajout scroll Horizontale pour changer de projet
 
 const Home = () => {
-  return ( 
+  return (
     <div className="container">
       <Header />
-      
-      <div className="v-slider-bloc">
-        <h1>Page 1</h1>
-      </div>
-      <div className="v-slider-bloc">
-        <h1>Page 2</h1>
-      </div>
-      <div className="v-slider-bloc">
-        <SwiperReact/>
-      </div>
-      <div className="v-slider-bloc">
 
+      <div className="v-slider-bloc">
+        <h1>Accueil</h1>
       </div>
-
-</div>
-  )
+      <div className="v-slider-bloc">
+        <h1>Projects</h1>
+      </div>
+      <div className="v-slider-bloc">
+        <ScrollHE />
+      </div>
+      <div className="v-slider-bloc"> <ScrollHE /></div>
+    </div>
+  );
 };
 
 export default Home;
 
-{/* <div className="bloc-main-home">
+{
+  /* <div className="bloc-main-home">
       
       
       <div className="bloc-text1-home">
@@ -38,4 +37,5 @@ export default Home;
         <p className="prenom-home">ROMAIN</p></div>
       </div><img src={photosport} alt="imageSmile" className="photosport" />
       </div>
-    Bienvenue sur Home   */}
+    Bienvenue sur Home   */
+}
