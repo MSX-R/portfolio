@@ -1,11 +1,16 @@
+/* Import modules */
 import React from "react";
-import logoBlancHeader from "../assets/logoblanc.png";
-import "./Header.css";
 import { Link } from "react-router-dom";
 
+/*Import css */
+import "./Header.css";
+/*Import des icones */
 import { FaUserCircle } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaTeamspeak } from "react-icons/fa";
+import logoBlancHeader from "../assets/logoblanc.png";
+
+import { NavHashLink } from "react-router-hash-link"; // POUR PLACER DES ANCRES VIA ID dans le SITE
 
 function Header() {
   return (
@@ -22,18 +27,46 @@ function Header() {
       </div>
 
       <div className="partie-droite mobile-menulist">
-        <Link to="/Home" className="links-navbar">
+        {/* <Link to="/Home" className="links-navbar">
           <FaUserCircle />
-        </Link>
-        <Link to="/Projets" className="links-navbar ">
+        </Link> */}
+
+        <NavHashLink
+          to="#home-part"
+          activeClassName="selected"
+          activeStyle={{ color: "red" }}
+          //etc...
+          className="links-navbar"
+          title="Accéder à l'Accueil">
+          <FaUserCircle />
+        </NavHashLink>
+
+        <NavHashLink
+          to="#project-part"
+          activeClassName="selected"
+          activeStyle={{ color: "red" }}
+          //etc...
+          className="links-navbar "
+          title="Accéder aux Projets">
           <FaLaptopCode />
-        </Link>
-        <Link to="/Contact" className="links-navbar ">
+        </NavHashLink>
+
+        <NavHashLink
+          to="#form-part"
+          activeClassName="selected"
+          activeStyle={{ color: "red" }}
+          //etc...
+          className="links-navbar "
+          title="Accéder au Formulaire de contact">
           <FaTeamspeak />
-        </Link>
-        <Link to="/Home">
+        </NavHashLink>
+
+
+
+
+        <a href="tel:0789619164" title="Cliquer pour passer un appel">
           <button className="recruteMe">ME RECRUTER</button>
-        </Link>
+        </a>
       </div>
     </div>
   );

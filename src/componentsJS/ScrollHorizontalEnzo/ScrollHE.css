@@ -73,19 +73,13 @@ section {
   justify-content: center;
   align-items: flex-start;
   scroll-snap-align: start;
+  /*margin-top: 100px; Tient compte de la hauteur barre nav*/
+  margin-bottom: -100px; /*tient compte du decalage navbar*/
 }
 
 .wrapper section:nth-child(1) {
-  background-color: red;
+  background-color: transparent;
 }
 .wrapper section:nth-child(2) {
   background-color: blue;
-}
-
-#Projet1 {
-  background-color: red;
-}
-
-#Projet2 {
-  background-color: transparent;
 }

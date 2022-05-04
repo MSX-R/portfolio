@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items:flex-start; /*center pour centrer le contenu, flex start + padding 150px si top*/
-    padding: 100px 0 0 0;
+     padding: 100px 0 0 0; /* remplacer dans l'element scrollHE > section margin top et bottom*/
     border-bottom: 5px solid #fff;
     height: 100vh;
     scroll-snap-align: center;

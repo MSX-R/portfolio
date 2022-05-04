@@ -11,16 +11,16 @@ const Home = () => {
     <div className="container">
       <Header />
 
-      <div className="v-slider-bloc">
+      <div className="v-slider-bloc" id="home-part">
         <h1>Accueil</h1>
       </div>
-      <div className="v-slider-bloc">
-        <h1>Projects</h1>
-      </div>
-      <div className="v-slider-bloc">
+
+      <div className="v-slider-bloc" id="project-part">
         <ScrollHE />
       </div>
-      <div className="v-slider-bloc"> <ScrollHE /></div>
+
+      <div className="v-slider-bloc" id="form-part">
+      </div>
     </div>
   );
 };

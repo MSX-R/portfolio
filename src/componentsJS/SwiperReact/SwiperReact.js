@@ -1,21 +1,21 @@
+/* Import modules */
 import React, { useRef, useState } from "react";
-//Import React Icons elements
-import { FaReact } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"; //import de swiper
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core"; //Pour activer le keyboard
 import { Autoplay, Pagination, Navigation } from "swiper"; //Pour activer les modules de pagination et navigation
+/* Import css */
 import "./SwiperReact.css";
 // Import Swiper styles propre au composant
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-//
+//Import React Icons elements & IMAGES
+import { FaReact } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 import Im1 from "./assets/1.png";
 import Im2 from "./assets/2.png";
 import Im21 from "./assets/2-1.png";
@@ -24,6 +24,7 @@ import Im23 from "./assets/2-3.png";
 import Im3 from "./assets/3.png";
 import Im4 from "./assets/4.png";
 import Im5 from "./assets/5.png";
+
 
 SwiperCore.use([Keyboard, Mousewheel]); //Pour utiliser le keyboard et souris
 

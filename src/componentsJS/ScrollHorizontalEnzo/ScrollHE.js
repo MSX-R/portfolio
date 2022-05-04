@@ -1,6 +1,9 @@
+/* Import modules */
 import React from "react";
 import SwiperReact from "../SwiperReact/SwiperReact";
+/* Import css */
 import "./ScrollHE.css";
+
 const ScrollHE = () => {
   return (
     //     <div className="container">
@@ -17,8 +20,7 @@ const ScrollHE = () => {
 
     <div className="wrapper">
       <section id="Projet1">
-        {/* <SwiperReact /> */}Hello
-        {/* PROPS A PASSER ICI POUR PROJET 1 + PENSEZ AU CHANGEMENT VIA LES BOUTONS */}
+      <SwiperReact />
       </section>
       <section id="Projet2">
         <SwiperReact />

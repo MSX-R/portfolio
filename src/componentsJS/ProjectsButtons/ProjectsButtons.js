@@ -1,4 +1,6 @@
+/* Import modules */
 import React from 'react'
+/* Import css */
 import './ProjectsButtons.css'
 
 const ProjectsButtons = () => {
