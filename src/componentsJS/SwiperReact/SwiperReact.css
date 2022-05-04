@@ -7,7 +7,6 @@
 }
 
 
-
 .bloc-texte-projet{ /*Titre, Descri, Text descri, Outils, outils Img*/
   /* padding-top: 150px; */
   width: 600px;
@@ -76,6 +75,7 @@ justify-content: center;
   width: 100%;
   height: auto;
   object-fit: cover;
+  background-position: center;
 }
 
 

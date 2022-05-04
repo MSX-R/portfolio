@@ -107,14 +107,14 @@ const SwiperReact = () => {
           <div className="legend-project">FORMULAIRE DE CONTACT</div>
         </SwiperSlide>
       </Swiper>
-{/* 
+
       <div className="btn-project-changer">
         <button>L'ATELIER D'ADELINE</button>
         <button>CRAZY WORLD 2D</button>
         <button>SOS JEUNES POUSSES</button>
         <button>CAPIUS GALLUS</button>
         <button>POUDLARD UNIVERSITY</button>
-      </div> */}
+      </div>
     </div>
   );
 };
