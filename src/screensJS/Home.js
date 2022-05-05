@@ -4,9 +4,10 @@ import "./Home.css";
 import photosport from "../assets/photo-home.png";
 import SwiperReact from "../componentsJS/SwiperReact/SwiperReact"; //Scroll slide pour photo projet
 
-import ScrollHE from "../componentsJS/ScrollHorizontalEnzo/ScrollHE"; //Ajout scroll Horizontale pour changer de projet
+// import ScrollHE from "../componentsJS/ScrollHorizontalEnzo/ScrollHE"; //Ajout scroll Horizontale pour changer de projet
 import Nav from "../componentsJS/Navbar/Nav";
 import Formulaire from "../componentsJS/Formulaire/Formulaire";
+import TexteDefilant from "../componentsJS/TexteDefilant";
 
 const Home = () => {
   return (
@@ -16,35 +17,24 @@ const Home = () => {
 
       <div className="v-slider-bloc presentation-perso" id="home-part">
         <div className="zone-text-presentation">
-          <h1>Hello !</h1>
-          <h2>Je suis MARSALEIX ROMAIN</h2>
-          <p>Je suis un développeur web sortant d'une formation en remote effectuée auprès de la WILD CODE SCHOOL.</p>
-
-
-          <div className="Text-effect">
-          Pour me présenter furtivement, avant de me former à ce nouveau métier j'ai été : 
-<div id="flip">
-  <div><div>coach sportif</div></div>
-  <div><div>manager</div></div>
-  <div><div>organisateur d'évènements</div></div>
-  <div><div>vendeur</div></div>
-  <div><div>agent de sécurité</div></div>
-  <div><div>livreur</div></div>
-  <div><div>mais j'ai décidé d'évoler vers un metier d'avenir: DEV WEB</div></div>
-
-
-
-</div>
-
+          <div >
+            <h1>Hello !</h1>
+              <h2>Je m'appelle Marsaleix Romain</h2><img src={photosport} alt="imageSmile" className="photosport" />
+              <div className="bloc-text-description">
+              <p>Anciennement [metier], j'ai en fin d'année 2021 fait le choix de changer de me diriger vers le secteur du numérique et de me former au métier de Developpeur Web"
+                </p>
+              <p>Pour ce faire, j'ai décidre de rejoindre la Wild Code School afin de me former à distance.  Parrallement à la formation initiale, j'ai également étudié via la plateforme OpenClassRoom.</p>
+              <p>Entrant dans la période de fin de cursus de formation, j'ai une dernière chose à effectuer et non pas des moindres..</p></div>
+            
+            
           </div>
 
-
+          <TexteDefilant />
         </div>
-        
       </div>
 
       <div className="v-slider-bloc" id="project-part">
-        <ScrollHE />
+        <SwiperReact />
       </div>
 
       <div className="v-slider-bloc" id="form-part">
@@ -55,16 +45,3 @@ const Home = () => {
 };
 
 export default Home;
-
-{
-  /* <div className="bloc-main-home">
-      
-      
-      <div className="bloc-text1-home">
-        <p>Bonjour <br></br>Je m'appelle</p>
-        <div className="titres-home"><p className="nom-home">MARSALEIX</p> 
-        <p className="prenom-home">ROMAIN</p></div>
-      </div><img src={photosport} alt="imageSmile" className="photosport" />
-      </div>
-    Bienvenue sur Home   */
-}

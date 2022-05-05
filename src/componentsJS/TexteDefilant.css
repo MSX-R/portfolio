@@ -1,29 +1,75 @@
 /* ANIMATION TEXTE DEFILANT */
 
+.bloc-news {
+  display: flex;
+  align-items: center;
+}
+
+.breaking-news {
+  background-color: red;
+  border: 2px solid whitesmoke;
+  position: relative;
+  left: 2rem;
+  /* 
+  position: absolute;
+  bottom: 20px;
+  left: 5px; */
+  font-size: 3rem;
+
+  width: 20vw;
+  margin: 20px 0 0 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform: SkewX(-25deg);
+  z-index: 10;
+}
 /* le block conteneur */
 .marquee-rtl {
-    max-width: 100%;                      /* largeur de la fenêtre */
-    width: 100vw;
-    font-size: 4.5rem;
-    margin: 20px 0 0 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  right: 4rem;
+  transform: SkewX(-25deg);
+
+  /* position: absolute;
+  bottom: 20px;
+  right: 0; */
+  max-width: 100%; /* largeur de la fenêtre */
+  width: 80vw;
+  margin: 20px 0 0 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: black;
+  border: 2px solid whitesmoke;
+  /* border-left: none;
+    border-right: none; */
+  overflow-x: hidden; /*Cache le texte*/
+  z-index: 8;
+  display: flex;
+  align-items: center;
+}
+
+.text-defilant {
+  display: inline-block; /* modèle de boîte en ligne */
+  padding-right: 2em; /* un peu d'espace pour la transition */
+  padding-left: 100%; /* placement à droite du conteneur */
+  white-space: nowrap; /* pas de passage à la ligne */
+  animation: defilement-rtl 40s infinite linear;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+}
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0); /* position initiale à droite */
   }
 
-  .marquee-rtl > :first-child {
-    display: inline-block;                /* modèle de boîte en ligne */
-    padding-right: 2em;                   /* un peu d'espace pour la transition */
-    padding-left: 100%;                   /* placement à droite du conteneur */
-    white-space: nowrap;                  /* pas de passage à la ligne */
-    animation: defilement-rtl 20s infinite linear;
-  }
 
-  @keyframes defilement-rtl {
-    0% {
-      transform: translate3d(0,0,0);      /* position initiale à droite */
-    }
-    100% {
-      transform: translate3d(-100%,0,0);  /* position finale à gauche */
-    }
+  100% {
+    transform: translate3d(-100%, 0, 0); /* position finale à gauche */
   }
+}
 
-  /* FIN ANIMATION TEXTE DEFILANT */
+/* FIN ANIMATION TEXTE DEFILANT */
+
+.important-text {
+  color: #e3b93a;
+  /* color: rgb(187, 21, 21); */
+}
