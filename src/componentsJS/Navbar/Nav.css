@@ -1,0 +1,352 @@
+.navbar {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  /* position: fixed; */
+  width: 100%;
+  height: 100px;
+  padding: 0 2rem;
+  color: #fff;
+  z-index: 10;
+  background-color: rgb(4,46,66);
+  background: -moz-linear-gradient(180deg, rgba(4,46,66,1) 0%, rgba(4,46,66,1) 80%, rgba(240,240,240,0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(4,46,66,1) 0%, rgba(4,46,66,1) 80%, rgba(240,240,240,0) 100%);
+  background: linear-gradient(180deg, rgba(4,46,66,1) 0%, rgba(4,46,66,1) 80%, rgba(240,240,240,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#042e42",endColorstr="#f0f0f0",GradientType=1);;
+}
+
+/*Partie gauche*/
+.partie-gauche {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.msx-header {
+  width: 80px;
+  /* border: 2px solid black; */
+}
+.marsaleixRomain,
+.developpeurWeb {
+  padding: 0 10px;
+}
+.separation-nom-metier {
+  background-color: #f5f5f5;
+  height: 30px;
+  width: 3px;
+}
+.developpeurWeb {
+  color: #e3b93a;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_link {
+  padding: 0 1rem;
+  color: inherit;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.navbar_link:hover {
+  color: goldenrod;
+}
+
+.navbar_burger {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  display: flex;
+  z-index: 11;
+}
+
+
+
+
+.menu_mobile {
+  display: none;
+}
+
+/*Partie droite*/
+.partie-droite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.partie-droite > a {
+  display: flex;
+  align-items: center;
+  font-size: clamp(30px, 4vw, 32px);}
+
+.partie-droite > a > button {
+  font-size: clamp(10px, 1.5vw, 15px);
+}
+
+.links-navbar {
+  padding: 0 25px 0 0;
+}
+.links-navbar:hover {
+  color: #e3b93a;
+}
+
+
+
+.recruteMe {
+  border-radius: 30px;
+  height: 35px;
+  padding: 0 20px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #f5f5f5;
+  border: 2.5px solid #e3b93a;
+  cursor: pointer;
+}
+.recruteMe:hover {
+  background-color: #f5f5f5;
+  color: #042e42;
+  border: 2.5px solid #a6874e;
+  transition: all 0.2s ease-in-out;
+  height: 40px;}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    position: fixed;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+  .menu_mobile {
+    display: flex;
+  }
+  .menu_pc {
+    display: none;
+  }
+
+  .partie-gauche{
+    width: 100%;
+  }
+
+  .navbar_links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* top : 0px; */
+    right: -100vw;
+    bottom: 0;
+    height: 100vh;
+    padding: 0.3rem;
+    background-color: #000;
+    visibility:hidden;
+    transition: all 0.8s ease-in-out;
+    width: 0;
+  }
+
+  .show-nav .navbar_links {
+    right: 0;
+    width: 100vw;
+    visibility: visible;
+  }
+
+li {
+  list-style: none;
+}
+
+
+  /*Debut Partie : Ajout barre sous Item Menu Mobile*/
+  .navbar_item::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 3vw;
+    height: 1px;
+    background-color: #fff;
+  }
+
+  .navbar_item:first-child::after {
+    display: none;
+  }
+
+  .navbar_item:last-child::after {
+    display: none;
+  }
+  /*Fin Partie : Ajout barre sous Item Menu Mobile*/
+  .navbar_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    font-size: 5vw;
+    font-size: 1.5rem;
+  }
+
+  .navbar_burger {
+    display: block; /* Affichage du burger menu format mobile*/
+    position: flex;
+  
+  }
+
+  .navbar_burger:hover {
+    cursor: pointer;
+  }
+
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after {
+    display: block;
+    width: 40px; /* taille idéale milieu 30px*/
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger-bar::before,
+  .burger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0; /* Depart de la ligne de gauche a droite*/
+  }
+
+  .burger-bar::before {
+    transform: translateY(-12px);
+    width: 40px; /*Taille de la barre haute */
+  }
+
+  .burger-bar::after {
+    transform: translateY(12px);
+    width: 40px; /*Taille idéale basse 20px*/
+  }
+
+  .show-nav .burger-bar {
+    background-color: transparent;
+    width: 0;
+  }
+
+  .show-nav .burger-bar::before {
+    transform: rotate(45deg);
+  }
+
+  .show-nav .burger-bar::after {
+    transform: rotate(-45deg);
+    /* Remettre taille initiale ici , avant animation*/
+  }
+
+  /* Animation Apparititon Items Burger button*/
+  .navbar_item {
+    transform: translateY(100vh);
+  }
+
+  .show-nav .navbar_item {
+    transform: translateY(0);
+  }
+
+  .show-nav .slideInDown-0 {
+    transition: all 0.9s ease-out;
+    margin-bottom: 40px;
+  }
+
+  .show-nav .slideInDown-1 {
+    transition: all 1s ease-out;
+  }
+  .show-nav .slideInDown-2 {
+    transition: all 1.1s ease-out;
+  }
+  .show-nav .slideInDown-3 {
+    transition: all 1.2s ease-out;
+  }
+  .show-nav .slideInDown-4 {
+    transition: all 1.3s ease-out;
+  }
+  .show-nav .slideInDown-5 {
+    transition: all 1.4s ease-out;
+  }
+
+  .take-a-book {
+    display: none;
+  }
+
+  .btn-rdv {
+    display: none;
+  }
+
+  .navbar_logo {
+    width: 50px;
+    display: block;
+    position: fixed;
+    top: 0.8rem;
+    left: 1rem;
+  }
+
+.Fa-icons{
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.text-icons {
+  font-size: 1.8rem;
+}
+.recruteMe {
+  border-radius: 30px;
+  height: 35px;
+  padding: 0 20px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #f5f5f5;
+  border: 2.5px solid #e3b93a;
+  cursor: pointer;
+}
+.recruteMe:hover {
+  background-color: #f5f5f5;
+  color: #042e42;
+  border: 2.5px solid #a6874e;
+  transition: all 0.2s ease-in-out;
+  height: 40px;
+}
+
+.logo_burger_list{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.msx-header-list{
+width: 150px;
+}
+
+
+.separation-nom-metier2 {
+  background-color: #f5f5f5;
+  height: 1px;
+  width:50vw;
+  margin: 10px 0;
+}
+.marsaleixRomain2{
+  font-size: 10px;
+  color: #e3b93a;
+  font-weight: bold;
+}
+
+}

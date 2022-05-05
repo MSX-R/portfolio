@@ -10,7 +10,7 @@
     justify-content: center;
     align-items:flex-start; /*center pour centrer le contenu, flex start + padding 150px si top*/
      padding: 100px 0 0 0; /* remplacer dans l'element scrollHE > section margin top et bottom*/
-    border-bottom: 5px solid #fff;
+    /* border-bottom: 5px solid #fff; */
     height: 100vh;
     scroll-snap-align: center;
   }
@@ -108,3 +108,75 @@ padding: 0;
         width: 100%;
     }
 } */
+
+.presentation-perso{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  padding: 0 10%;
+  padding-top: 100px;
+  margin-bottom: -100px;
+}
+.zone-text-presentation{
+  
+}
+.Text-effect{
+  
+    font-family: arial, sans-serif;
+    background: #131416;
+    display: flex; align-items: center;
+    justify-content: center;
+    height: 100%; 
+    color: #fff;
+    flex-direction: column;
+    font-size: 15px; 
+    font-weight: bold;
+    text-transform: uppercase;
+  
+}
+#flip {
+  height: 35px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#flip > div > div {
+  padding: 4px 12px;
+  height: 50px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background: #42c58a;
+}
+#flip div:nth-child(2) div {
+  background: #4ec7f3;
+}
+#flip div:nth-child(3) div {
+  background: #DC143C;
+}
+#flip div:nth-child(4) div {
+  background: #DC143C;
+}#flip div:nth-child(5) div {
+  background: #DC143C;
+}#flip div:nth-child(6) div {
+  background: #DC143C;
+}#flip div:nth-child(7) div {
+  background: #DC143C;
+}
+@keyframes show {
+  0% {margin-top: -270px;}
+  5% {margin-top: -180px;}
+  33% {margin-top: -180px;}
+  38% {margin-top: -90px;}
+  66% {margin-top: -90px;}
+  71% {margin-top: 0px;}
+  99.99% {margin-top: 0px;}
+  100% {margin-top: -270px;}
+}

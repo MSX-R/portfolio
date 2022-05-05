@@ -27,9 +27,7 @@ function Header() {
       </div>
 
       <div className="partie-droite mobile-menulist">
-        {/* <Link to="/Home" className="links-navbar">
-          <FaUserCircle />
-        </Link> */}
+       
 
         <NavHashLink
           to="#home-part"
