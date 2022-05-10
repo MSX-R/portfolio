@@ -29,9 +29,10 @@ function Formulaire() {
     <div id="form">
       <h2>Formulaire de contact</h2>
       <p>
-        Mon profil vous intéresse ? Vous souhaitez en découvrir plus à mon sujet ? Vous souhaitez me proposer un stage ?
+        Mon profil vous intéresse ? Vous souhaitez en découvrir plus à mon sujet ? 
+        <br /> Vous souhaitez me proposer un stage ?
       </p>
-      <h3>Faites le moi savoir ! 
+      <h3>N'hésitez pas à me le faire savoir ! 
 </h3>
 
       <form className="container-form" onSubmit={sendEmail}>

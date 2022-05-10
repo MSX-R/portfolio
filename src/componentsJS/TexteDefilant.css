@@ -3,6 +3,10 @@
 .bloc-news {
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+  width: 100vw;
+  padding-bottom: 2%;
 }
 
 .breaking-news {
@@ -20,12 +24,12 @@
   margin: 20px 0 0 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform: SkewX(-25deg);
-  z-index: 10;
+  z-index: 2;
 }
 /* le block conteneur */
 .marquee-rtl {
   position: relative;
-  right: 4rem;
+  right: 3rem;
   transform: SkewX(-25deg);
 
   /* position: absolute;
@@ -40,7 +44,7 @@
   /* border-left: none;
     border-right: none; */
   overflow-x: hidden; /*Cache le texte*/
-  z-index: 8;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -72,4 +76,7 @@
 .important-text {
   color: #e3b93a;
   /* color: rgb(187, 21, 21); */
+}
+
+@media screen and (max-width: 600px) {
 }

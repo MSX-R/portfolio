@@ -15,18 +15,43 @@ const Home = () => {
       {/* <Header /> */}
       <Nav />
 
-      <div className="v-slider-bloc presentation-perso" id="home-part">
+      <div className="v-slider-bloc" id="home-part">
         <div className="zone-text-presentation">
-          <div >
-            <h1>Hello !</h1>
-              <h2>Je m'appelle Marsaleix Romain</h2><img src={photosport} alt="imageSmile" className="photosport" />
-              <div className="bloc-text-description">
-              <p>Anciennement [metier], j'ai en fin d'année 2021 fait le choix de changer de me diriger vers le secteur du numérique et de me former au métier de Developpeur Web"
-                </p>
-              <p>Pour ce faire, j'ai décidre de rejoindre la Wild Code School afin de me former à distance.  Parrallement à la formation initiale, j'ai également étudié via la plateforme OpenClassRoom.</p>
-              <p>Entrant dans la période de fin de cursus de formation, j'ai une dernière chose à effectuer et non pas des moindres..</p></div>
-            
-            
+          <h1>Hello !</h1>
+          <h2>
+            Je m'appelle Marsaleix Romain, <br className="br-presentation" />
+            je suis <span className="dev-presentation">Développeur Web !</span>
+          </h2>
+          <img src={photosport} alt="imageSmile" className="photosport" />
+          <div className="bloc-text-description">
+            <p>
+              Anciennement <b>coach sportif</b>, j'ai fait le choix de{" "}
+              <abbr title=' on peut même dire " changer de vie " pour être totalement honnête &#128514;'>
+                changer de voie
+              </abbr>{" "}
+              et de m'orienter dans le secteur des métiers du Numérique, un
+              secteur qui ne cesse d'évoluer !
+            </p>{" "}
+            <br />
+            <p>
+              En fin d'année 2021, j'ai décidé de me former auprès de{" "}
+              <em>la Wild Code School</em> en intégrant une formation en remote.
+            </p>
+            <br />
+            <p>
+              <b>
+                {" "}
+                Ayant terminé la partie "cours", je dois dorénavant trouver un
+                stage
+              </b>{" "}
+              afin de mettre à profit mon savoir-faire auprès d'une entreprise,
+              gagner en compétences{" "}
+              <b>
+                {" "}
+                et surtout participer à une aventure, qui je le souhaite, sera
+                très enrichissante !
+              </b>
+            </p>
           </div>
 
           <TexteDefilant />

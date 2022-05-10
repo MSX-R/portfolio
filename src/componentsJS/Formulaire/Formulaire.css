@@ -1,46 +1,54 @@
 #form {
   width: 90vw;
   max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #form p {
-  margin-top: 10px;
+  margin: 2% 0;
   display: flex;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
 }
 
-#form h3 {
-  margin-top: 10px;
-}
+
 
 .container-form {
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 10px;
-}
+  /* margin-top: 8%; */
+  width: 100%;
+  padding: 20px ;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
 
 .container-form label {
   font-size: 18px;
   text-align: left;
-  padding-bottom: 3px;
+  padding-bottom: 2%;
 }
 
 .container-form input,
 .container-form textarea {
   padding: 7px;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
   font-size: 12px;
+  border-radius: 5px;
 }
 
 .container-form textarea {
-  min-height: 100px;
+  min-height: 80px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 container-form button {
-  padding: 20px 15px;
+  padding: 0px 15px;
   width: 200px;
   background: transparent;
   border: 1px solid #000;
@@ -48,11 +56,17 @@ container-form button {
   cursor: pointer;
 }
 
+.container-form input:last-child {
+  margin: 0;
+  margin-top: 20px;
+
+}
+
+
 #btnSubmit {
   background-color: #0d0d0d;
   color: #fff;
   border: 1px solid #fff;
-  margin-top: 10px;
 }
 
 #btnSubmit:hover {

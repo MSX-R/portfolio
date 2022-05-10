@@ -165,7 +165,13 @@
   .show-nav .navbar_links {
     right: 0;
     width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
     visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
 
 li {
@@ -196,9 +202,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
-    font-size: 5vw;
-    font-size: 1.5rem;
+    padding: 5%;
   }
 
   .navbar_burger {
@@ -240,9 +244,10 @@ li {
     width: 40px; /*Taille idéale basse 20px*/
   }
 
+
+
   .show-nav .burger-bar {
     background-color: transparent;
-    width: 0;
   }
 
   .show-nav .burger-bar::before {
@@ -265,7 +270,7 @@ li {
 
   .show-nav .slideInDown-0 {
     transition: all 0.9s ease-out;
-    margin-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   .show-nav .slideInDown-1 {
@@ -284,6 +289,10 @@ li {
     transition: all 1.4s ease-out;
   }
 
+  .slideInDown-0 ,.slideInDown-1, .slideInDown-2, .slideInDown-3, .slideInDown-4 {
+    width: 100%;
+  }
+
   .take-a-book {
     display: none;
   }
@@ -292,23 +301,18 @@ li {
     display: none;
   }
 
-  .navbar_logo {
-    width: 50px;
-    display: block;
-    position: fixed;
-    top: 0.8rem;
-    left: 1rem;
-  }
+
 
 .Fa-icons{
   font-size: 50px;
   padding-bottom: 10px;
 }
 .text-icons {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .recruteMe {
   border-radius: 30px;
+  width: 100%;
   height: 35px;
   padding: 0 20px;
   font-weight: bold;
@@ -333,7 +337,7 @@ align-items: center;
 }
 
 .msx-header-list{
-width: 150px;
+width: 20%;
 }
 
 
