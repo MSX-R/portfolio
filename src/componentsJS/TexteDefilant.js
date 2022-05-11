@@ -6,8 +6,7 @@ const TexteDefilant = () => {
   return (
     <div class="bloc-news">
       <div className="breaking-news">
-        FLASH <RiTimerFlashLine />
-        INFOS
+        FLASH <RiTimerFlashLine className="chrono-icon-flash"/> INFOS
       </div>
 
       <div className="marquee-rtl">

@@ -26,15 +26,16 @@ function Formulaire() {
   };
 
   return (
-    <div id="form">
-      <h2>Formulaire de contact</h2>
-      <p>
-        Mon profil vous intéresse ? Vous souhaitez en découvrir plus à mon sujet ? 
-        <br /> Vous souhaitez me proposer un stage ?
-      </p>
-      <h3>N'hésitez pas à me le faire savoir ! 
-</h3>
-
+    <div className="formulaire">
+      <div className="text-form">
+        <h2>FORMULAIRE DE CONTACT</h2>
+        <p>
+          Mon profil vous intéresse ?<br className="br-form" /> Vous souhaitez
+          en découvrir plus à mon sujet ?
+          <br /> Vous souhaitez me proposer un stage ?
+        </p>
+        <h3>N'hésitez pas à me le faire savoir !</h3>
+      </div>
       <form className="container-form" onSubmit={sendEmail}>
         <label htmlFor="nom">Nom</label>
         <input
@@ -71,7 +72,7 @@ function Formulaire() {
         <label htmlFor="message">Votre demande</label>
 
         <textarea
-          placeholder="Bonjour Romain, j'ai un poste de stagiaire à vous proposer au sein de mon entreprise. Laissez-moi vous en dire plus au sujet de ce que nous recherchons et ce que nous vous proposons..."
+          placeholder="Bonjour Romain, j'ai un poste de stagiaire à vous proposer au sein de mon entreprise. Laissez-moi vous en dire plus à ce sujet et ce que nous vous proposons..."
           name="user_message"
         ></textarea>
 

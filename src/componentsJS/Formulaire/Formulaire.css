@@ -1,21 +1,16 @@
-#form {
-  width: 90vw;
-  max-width: 500px;
-  height: 100%;
+.formulaire {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
+  width: 600px;
+  max-width: 95vw;
 }
 
-#form p {
-  margin: 2% 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.text-form h3 {
+  padding: 10px 0;
 }
-
-
 
 .container-form {
   display: flex;
@@ -23,10 +18,13 @@
   margin: auto;
   /* margin-top: 8%; */
   width: 100%;
-  padding: 20px ;
+  padding: 20px;
   /* border: 2px solid whitesmoke; */
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
 .container-form label {
   font-size: 18px;
@@ -59,9 +57,7 @@ container-form button {
 .container-form input:last-child {
   margin: 0;
   margin-top: 20px;
-
 }
-
 
 #btnSubmit {
   background-color: #0d0d0d;
@@ -73,4 +69,21 @@ container-form button {
   background-color: #a27e40;
   color: #fff;
   border: 1px solid #fff;
+}
+
+.br-form {
+  display: none;
+}
+@media screen and (max-width: 740px) {
+  #form {
+    justify-content: space-around;
+  }
+
+  .container-form {
+    margin: 0;
+    width: 95%;
+  }
+  .br-form {
+    display: block;
+  }
 }

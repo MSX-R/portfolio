@@ -32,11 +32,13 @@ const SwiperReact = () => {
   return (
     <div className="contenu-swiper">
       <div className="bloc-texte-projet">
-        <h2>L'ATELIER D'ADELINE</h2>
+        <h2>L'ATELIER D'ADELINE</h2> 
+        {/* Titre à changer */}
 
         <div>
           <h3 className="titre-description-projet">Description du projet</h3>
-          <p className="description-projet">
+          <p className="description-projet">         {/* description à changer */}
+
             Site internet proposant une présentation d'entreprise, une galerie
             photo, un tableau tarifaire ainsi qu'un formulaire de contact
             fonctionnel.
@@ -44,8 +46,8 @@ const SwiperReact = () => {
         </div>
 
         <h3 className="titre-outils-projet">Outils utilisés :</h3>
-        <div className="outils-projets">
-          <FaHtml5 className="outils-icons" />
+        <div className="outils-projets">         {/* Outils à changer */}
+          <FaHtml5 className="outils-icons" /> 
           <FaCss3Alt className="outils-icons" />
           <SiJavascript className="outils-icons" />
           <FaReact className="outils-icons" />

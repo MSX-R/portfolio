@@ -8,6 +8,7 @@ import SwiperReact from "../componentsJS/SwiperReact/SwiperReact"; //Scroll slid
 import Nav from "../componentsJS/Navbar/Nav";
 import Formulaire from "../componentsJS/Formulaire/Formulaire";
 import TexteDefilant from "../componentsJS/TexteDefilant";
+import BtnProjectChanger from "../componentsJS/BtnProjectChanger/BtnProjectChanger";
 
 const Home = () => {
   return (
@@ -16,13 +17,16 @@ const Home = () => {
       <Nav />
 
       <div className="v-slider-bloc" id="home-part">
+        
         <div className="zone-text-presentation">
+          {" "}
           <h1>Hello !</h1>
+          <img src={photosport} alt="imageSmile" className="photosport" />
           <h2>
             Je m'appelle Marsaleix Romain, <br className="br-presentation" />
             je suis <span className="dev-presentation">Développeur Web !</span>
           </h2>
-          <img src={photosport} alt="imageSmile" className="photosport" />
+
           <div className="bloc-text-description">
             <p>
               Anciennement <b>coach sportif</b>, j'ai fait le choix de{" "}
@@ -32,7 +36,6 @@ const Home = () => {
               et de m'orienter dans le secteur des métiers du Numérique, un
               secteur qui ne cesse d'évoluer !
             </p>{" "}
-            <br />
             <p>
               En fin d'année 2021, j'ai décidé de me former auprès de{" "}
               <em>la Wild Code School</em> en intégrant une formation en remote.
@@ -53,13 +56,13 @@ const Home = () => {
               </b>
             </p>
           </div>
-
           <TexteDefilant />
         </div>
       </div>
 
       <div className="v-slider-bloc" id="project-part">
         <SwiperReact />
+        {/* <BtnProjectChanger/> */}
       </div>
 
       <div className="v-slider-bloc" id="form-part">

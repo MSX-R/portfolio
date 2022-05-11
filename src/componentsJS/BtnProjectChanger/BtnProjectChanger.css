@@ -1,0 +1,30 @@
+.btn-project-changer {
+  margin: 2% 0;
+  height: fit-content;
+  width: 100vw;
+}
+
+.btn-project-changer button {
+  margin: 5px;
+  border-radius: 9999px;
+  border: 2px solid hsl(38, 47%, 47%);
+  padding: 5px 10px;
+  background-color: rgb(4, 46, 66);
+  width: fit-content;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 740px) {
+  .btn-project-changer {
+    padding-bottom: 0;
+    width: 95%;
+  }
+  .btn-project-changer button {
+    border-radius: 9999px;
+    width: fit-content;
+    /* border: 1px solid red; */
+  }
+}
