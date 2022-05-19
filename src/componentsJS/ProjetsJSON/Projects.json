@@ -1,0 +1,92 @@
+[
+  {
+    "title": "L'atelier d'Adeline",
+    "description": "Site internet proposant une présentation d'entreprise, une galerie photo, un tableau tarifaire ainsi qu'un formulaire de contact fonctionnel.",
+    "outils": [
+      { "iconName": "FaHtml5" },
+      { "iconName": "FaCss3Alt" },
+      { "iconName": "SiJavascript" },
+      { "iconName": "FaReact" },
+      { "iconName": "FaGithub" }
+    ],
+    "pictures": [
+      {
+        "picture": "imgAdeline1",
+        "name": "PAGE D'ENTREE SUR LE SITE"
+      },
+      {
+        "picture": "imgAdeline2",
+        "name": "ACCUEIL DU SITE"
+      },
+      {
+        "picture": "imgAdeline3",
+        "name": "VISUEL DU TEXTE"
+      },
+      {
+        "picture": "imgAdeline4",
+        "name": "LE FOOTER"
+      },
+      {
+        "picture": "imgAdeline5",
+        "name": "LE SALON DE COIFFURE"
+      },
+      {
+        "picture": "imgAdeline6",
+        "name": "BOOK PHOTO"
+      },
+      {
+        "picture": "imgAdeline7",
+        "name": "TARIFS DU SALON"
+      },
+      {
+        "picture": "imgAdeline8",
+        "name": "FORMULAIRE DE CONTACT"
+      }
+    ]
+  },
+  {
+    "title": "SOS JP",
+    "description": "Site internet proposant une présentation d'entreprise, une galerie photo, un tableau tarifaire ainsi qu'un formulaire de contact fonctionnel.",
+    "outils": [
+      { "iconName": "FaHtml5" },
+      { "iconName": "FaCss3Alt" },
+      { "iconName": "SiJavascript" },
+      { "iconName": "FaReact" },
+      { "iconName": "FaGithub" }
+    ],
+    "pictures": [
+      {
+        "picture": "imgAdeline1",
+        "name": "PAGE D'ENTREE SUR LE SITE"
+      },
+      {
+        "picture": "imgAdeline2",
+        "name": "ACCUEIL DU SITE"
+      },
+      {
+        "picture": "imgAdeline3",
+        "name": "VISUEL DU TEXTE"
+      },
+      {
+        "picture": "imgAdeline4",
+        "name": "LE FOOTER"
+      },
+      {
+        "picture": "imgAdeline5",
+        "name": "LE SALON DE COIFFURE"
+      },
+      {
+        "picture": "imgAdeline6",
+        "name": "BOOK PHOTO"
+      },
+      {
+        "picture": "imgAdeline7",
+        "name": "TARIFS DU SALON"
+      },
+      {
+        "picture": "imgAdeline8",
+        "name": "FORMULAIRE DE CONTACT"
+      }
+    ]
+  }
+]

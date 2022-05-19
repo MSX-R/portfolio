@@ -17,7 +17,7 @@
   position: relative;
   left: 2rem;
   font-size: 3rem;
-text-align: center;
+  text-align: center;
   width: 20vw;
   margin: 20px 0 0 0;
   padding: 0 5px;
@@ -52,11 +52,12 @@ text-align: center;
   padding-right: 2em; /* un peu d'espace pour la transition */
   padding-left: 100%; /* placement à droite du conteneur */
   white-space: nowrap; /* pas de passage à la ligne */
-  animation: defilement-rtl 10s infinite linear;
+  /* animation: defilement-rtl 10s infinite linear; */
 
   text-transform: uppercase;
   padding: 1.2rem;
   font-size: 2.5rem;
+  
   color: #042e42;
   color: whitesmoke;
 }
@@ -82,24 +83,20 @@ text-align: center;
   .bloc-news {
     margin-bottom: 2vw;
   }
-
-
-
-  
 }
 
 @media screen and (max-width: 800px) {
   .breaking-news {
     font-size: clamp(18px, 3vw, 24px);
-
-  }.text-defilant {
+  }
+  .text-defilant {
     padding: 0.5rem;
     font-size: clamp(16px, 2.5vw, 20px);
   }
 }
 
 @media screen and (max-width: 975px) {
-  .chrono-icon-flash{
-    display:none;
+  .chrono-icon-flash {
+    display: none;
   }
 }

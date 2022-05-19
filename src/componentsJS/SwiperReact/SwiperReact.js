@@ -1,124 +1,111 @@
-/* Import modules */
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react"; //import de swiper
+import { useState } from "react";
+
+// Swiper
+import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core"; //Pour activer le keyboard
-import { Autoplay, Pagination, Navigation } from "swiper"; //Pour activer les modules de pagination et navigation
-/* Import css */
+
+// Style
 import "./SwiperReact.css";
-// Import Swiper styles propre au composant
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-//Import React Icons elements & IMAGES
-import { FaReact } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import Im1 from "./assets/1.png";
-import Im2 from "./assets/2.png";
-import Im21 from "./assets/2-1.png";
-import Im22 from "./assets/2-2.png";
-import Im23 from "./assets/2-3.png";
-import Im3 from "./assets/3.png";
-import Im4 from "./assets/4.png";
-import Im5 from "./assets/5.png";
 
+// React Icons
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+
+//JSON
+import Projects from "../ProjetsJSON/Projects.json";
 
 SwiperCore.use([Keyboard, Mousewheel]); //Pour utiliser le keyboard et souris
 
 const SwiperReact = () => {
+  const [path, setPath] = useState(0);
+
+  const changePath = (number) => {
+    setPath(number);
+  };
+
+  const icons = (icon) => {
+    switch (icon) {
+      case "FaReact":
+        return <FaReact className="outils-icons" />;
+      case "FaHtml5":
+        return <FaHtml5 className="outils-icons" />;
+      case "FaCss3Alt":
+        return <FaCss3Alt className="outils-icons" />;
+      case "FaGithub":
+        return <FaGithub className="outils-icons" />;
+      case "SiJavascript":
+        return <SiJavascript className="outils-icons" />;
+      default:
+        console.log(`Error`);
+    }
+  };
   return (
-    <div className="contenu-swiper">
-      <div className="bloc-texte-projet">
-        <h2>L'ATELIER D'ADELINE</h2> 
-        {/* Titre à changer */}
-
-        <div>
-          <h3 className="titre-description-projet">Description du projet</h3>
-          <p className="description-projet">         {/* description à changer */}
-
-            Site internet proposant une présentation d'entreprise, une galerie
-            photo, un tableau tarifaire ainsi qu'un formulaire de contact
-            fonctionnel.
-          </p>
-        </div>
-
-        <h3 className="titre-outils-projet">Outils utilisés :</h3>
-        <div className="outils-projets">         {/* Outils à changer */}
-          <FaHtml5 className="outils-icons" /> 
-          <FaCss3Alt className="outils-icons" />
-          <SiJavascript className="outils-icons" />
-          <FaReact className="outils-icons" />
-          <FaGithub className="outils-icons" />
-        </div>
-      </div>
-
-      <Swiper
-        // centeredSlides={true}
-
-        autoplay={{
-          delay: 500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          type: "progressbar",
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-        loop={true} //Boucle active
-        direction="horizontal"
-        keyboard={true}
-        mousewheel={true}
-      >
-        <SwiperSlide className="Slide">
-          <img src={Im1} alt="Accueil du site" />
-          <div className="legend-project">PAGE D'ENTREE SUR LE SITE</div>
-          {/* <div className="description-project">En cliquant sur le logo,</div> */}
-        </SwiperSlide>
-        <SwiperSlide className="Slide">
-          <img src={Im2} alt="Homepage photo" />
-          <div className="legend-project">ACCUEIL DU SITE</div>
-        </SwiperSlide>
-        <SwiperSlide className="Slide">
-          <img src={Im21} alt="Homepage presentation" />
-          <div className="legend-project">VISUEL TEXTE</div>
-        </SwiperSlide>
-        <SwiperSlide className="Slide">
-          <img src={Im22} alt="Homepage presentation footer" />
-          <div className="legend-project">LE FOOTER</div>
-        </SwiperSlide>
-        <SwiperSlide className="Slide">
-          {" "}
-          <img src={Im23} alt="Presentation du salon" />
-          <div className="legend-project">LE SALON DE COIFFURE</div>
-        </SwiperSlide>
-        <SwiperSlide className="Slide">
-          {" "}
-          <img src={Im3} alt="Galerie photos" />
-          <div className="legend-project">BOOK PHOTO</div>
-        </SwiperSlide>
-        <SwiperSlide className="Slide">
-          <img src={Im4} alt="Tableau tarifaires" />
-          <div className="legend-project">TARIFS DU SALON</div>
-        </SwiperSlide>
-
-        <SwiperSlide className="Slide">
-          <img src={Im5} alt="Formulaire de contact" />
-          <div className="legend-project">FORMULAIRE DE CONTACT</div>
-        </SwiperSlide>
-      </Swiper>
-
+    <>
       <div className="btn-project-changer">
-        <button>L'ATELIER D'ADELINE</button>
+        <button onClick={() => changePath(0)}>L'ATELIER D'ADELINE</button>
         <button>CRAZY WORLD 2D</button>
-        <button>SOS JEUNES POUSSES</button>
+        <button onClick={() => changePath(1)}>SOS JEUNES POUSSES</button>
         <button>CAPIUS GALLUS</button>
         <button>POUDLARD UNIVERSITY</button>
       </div>
-    </div>
+      {Projects &&
+        [Projects[path]].map((item, i) => (
+          <div key={i} className="contenu-swiper">
+            <div className="bloc-texte-projet">
+              <h2>{item.title}</h2>
+
+              <div>
+                <h3 className="titre-description-projet">
+                  Description du projet
+                </h3>
+                <p className="description-projet">{item.description}</p>
+              </div>
+              <div className="outils-projets">
+                <h3 className="titre-outils-projet">Outils utilisés :</h3>
+                {item.outils.map((el, i) => {
+                  return <p key={i}>{icons(el.iconName)}</p>;
+                })}
+              </div>
+            </div>
+
+            <Swiper
+              centeredSlides={true}
+              autoplay={{
+                delay: 500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                type: "progressbar",
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper"
+              loop={true}
+              direction="horizontal"
+              keyboard={true}
+              mousewheel={true}
+            >
+              {item.pictures.map((el, i) => {
+                return (
+                  <SwiperSlide key={i} className="Slide">
+                    <div>
+                      <img
+                        src={require(`./assets/${el.picture}.png`)}
+                        alt={el.name}
+                      />
+                      <div className="legend-project">{el.name}</div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        ))}
+    </>
   );
 };
 

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   /* padding-bottom: 5%; */
@@ -17,11 +17,6 @@
   width: 600px;
   /* border: 2px solid red; */
   height: fit-content;
-  text-align: left;
-}
-
-.bloc-texte-projet h2 {
-  text-align: center;
 }
 
 .bloc-texte-projet h3 {
@@ -31,7 +26,7 @@
 .outils-projets {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .outils-icons {
@@ -40,8 +35,7 @@
 }
 
 .swiper {
-  width: 700px; /*taille photo slider*/
-  max-width: 95vw;
+  width: 600px;
   height: fit-content;
   /* margin-top: 40px; */
 }
