@@ -46,7 +46,7 @@
   },
   {
     "title": "SOS JEUNES POUSSES",
-    "description": "Site d'informations destinés aux actuels et futurs entrepreneurs de la ville de Grenoble. ",
+    "description": "Création d'un site internet proposant un accompagnement à la création de projet professionnel. L'association SOS JEUNES POUSSES à pour but de délivrer des informations et d'accompagner tout porteur de projet.",
     "outils": [
       { "iconName": "FaHtml5" },
       { "iconName": "FaCss3Alt" },
@@ -58,42 +58,46 @@
     ],
     "pictures": [
       {
-        "picture": "imgAdeline1",
-        "name": "PAGE D'ENTREE SUR LE SITE"
+        "picture": "imgSOSJP1",
+        "name": "PAGE D'ACCUEIL DU SITE"
       },
       {
-        "picture": "imgAdeline2",
-        "name": "ACCUEIL DU SITE"
+        "picture": "imgSOSJP2",
+        "name": "CHRONOLOGIE D'UN PROJET"
       },
       {
-        "picture": "imgAdeline3",
-        "name": "VISUEL DU TEXTE"
+        "picture": "imgSOSJP3",
+        "name": "EXEMPLE D'ARTICLE"
       },
       {
-        "picture": "imgAdeline4",
-        "name": "LE FOOTER"
+        "picture": "imgSOSJP4",
+        "name": "INSCRIPTION VIA MODAL"
       },
       {
-        "picture": "imgAdeline5",
-        "name": "LE SALON DE COIFFURE"
+        "picture": "imgSOSJP5",
+        "name": "MENU DES ARTICLES"
       },
       {
-        "picture": "imgAdeline6",
-        "name": "BOOK PHOTO"
+        "picture": "imgSOSJP6",
+        "name": "PAGE DE CONNECTION ADMIN"
       },
       {
-        "picture": "imgAdeline7",
-        "name": "TARIFS DU SALON"
+        "picture": "imgSOSJP7",
+        "name": "MENU ADMIN"
       },
       {
-        "picture": "imgAdeline8",
-        "name": "FORMULAIRE DE CONTACT"
+        "picture": "imgSOSJP8",
+        "name": "CREATION NOUVEL ARTICLE"
+      },
+      {
+        "picture": "imgSOSJP9",
+        "name": "MODIFICATION D'ELEMENT"
       }
     ]
   },
   {
     "title": "MOODY PLATEFORME VOD",
-    "description": "Plateforme VOD créé afin de proposer une expérience originale aux visiteurs du site. Choisir une catégorie de films ou séries en fonction de ses émotions actuels & la possibilité de participer à un quizz afin de verifier leur niveau de connaissance cinématographique. ",
+    "description": "Plateforme VOD créé afin de proposer une expérience originale aux visiteurs du site. Choisir une catégorie de films ou séries en fonction de son état émotionnel.",
     "outils": [
       { "iconName": "FaHtml5" },
       { "iconName": "FaCss3Alt" },
@@ -103,36 +107,24 @@
     ],
     "pictures": [
       {
-        "picture": "imgAdeline1",
-        "name": "PAGE D'ENTREE SUR LE SITE"
+        "picture": "imgMoody1",
+        "name": "PAGE D'ENTREE SUR LE SITE - CHOIX D'HUMEUR"
       },
       {
-        "picture": "imgAdeline2",
-        "name": "ACCUEIL DU SITE"
+        "picture": "imgMoody2",
+        "name": "CATALOGUE DE FILMS OU SERIES SELON HUMEUR"
       },
       {
-        "picture": "imgAdeline3",
-        "name": "VISUEL DU TEXTE"
+        "picture": "imgMoody3",
+        "name": "BAS DE PAGE"
       },
       {
-        "picture": "imgAdeline4",
-        "name": "LE FOOTER"
+        "picture": "imgMoody4",
+        "name": "CARTE DE FILM"
       },
       {
-        "picture": "imgAdeline5",
-        "name": "LE SALON DE COIFFURE"
-      },
-      {
-        "picture": "imgAdeline6",
-        "name": "BOOK PHOTO"
-      },
-      {
-        "picture": "imgAdeline7",
-        "name": "TARIFS DU SALON"
-      },
-      {
-        "picture": "imgAdeline8",
-        "name": "FORMULAIRE DE CONTACT"
+        "picture": "imgMoody5",
+        "name": "SECTION DES MINI-JEUX"
       }
     ]
   },
@@ -147,36 +139,24 @@
     ],
     "pictures": [
       {
-        "picture": "imgAdeline1",
+        "picture": "imgPoudlardUniversity1",
         "name": "PAGE D'ENTREE SUR LE SITE"
       },
       {
-        "picture": "imgAdeline2",
-        "name": "ACCUEIL DU SITE"
+        "picture": "imgPoudlardUniversity2",
+        "name": "CONTENU DE PAGE"
       },
       {
-        "picture": "imgAdeline3",
-        "name": "VISUEL DU TEXTE"
+        "picture": "imgPoudlardUniversity3",
+        "name": "BAS DE PAGE"
       },
       {
-        "picture": "imgAdeline4",
-        "name": "LE FOOTER"
+        "picture": "imgPoudlardUniversity4",
+        "name": "PAGE EVENEMENTS"
       },
       {
-        "picture": "imgAdeline5",
-        "name": "LE SALON DE COIFFURE"
-      },
-      {
-        "picture": "imgAdeline6",
-        "name": "BOOK PHOTO"
-      },
-      {
-        "picture": "imgAdeline7",
-        "name": "TARIFS DU SALON"
-      },
-      {
-        "picture": "imgAdeline8",
-        "name": "FORMULAIRE DE CONTACT"
+        "picture": "imgPoudlardUniversity5",
+        "name": "SECTION SPORTS - CARTES EVENEMENTS"
       }
     ]
   },

@@ -12,8 +12,20 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // React Icons
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaNodeJs, FaUnity} from "react-icons/fa";
-import { SiJavascript, SiMysql, SiVisualstudio, SiAdobephotoshop } from "react-icons/si";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub,
+  FaNodeJs,
+  FaUnity,
+} from "react-icons/fa";
+import {
+  SiJavascript,
+  SiMysql,
+  SiVisualstudio,
+  SiAdobephotoshop,
+} from "react-icons/si";
 
 //JSON
 import Projects from "../ProjetsJSON/Projects.json";
@@ -61,7 +73,9 @@ const SwiperReact = () => {
             <div className="btn-project-changer">
               <button onClick={() => changePath(0)}>L'ATELIER D'ADELINE</button>
               <button onClick={() => changePath(1)}>SOS JEUNES POUSSES</button>
-              <button onClick={() => changePath(2)}>MOODY PLATEFORME VOD</button>
+              <button onClick={() => changePath(2)}>
+                MOODY PLATEFORME VOD
+              </button>
               <button onClick={() => changePath(3)}>POUDLARD UNIVERSITY</button>
               <button onClick={() => changePath(4)}>SUPER MULTIVERSE 2D</button>
             </div>
@@ -75,7 +89,7 @@ const SwiperReact = () => {
                 <p className="description-projet">{item.description}</p>
               </div>
               <div className="outils-projets">
-                <h3 className="titre-outils-projet">Outils utilisés :</h3>
+                <h3 className="titre-outils-projet">Outils :</h3>
                 {item.outils.map((el, i) => {
                   return <p key={i}>{icons(el.iconName)}</p>;
                 })}

@@ -1,14 +1,16 @@
 import React from "react";
+import "./Portfolio.css";
 import photosport from "../assets/photo-home.png";
-import SwiperReact from "../componentsJS/SwiperReact/SwiperReact";
+import SwiperReact from "../componentsJS/SwiperReact/SwiperReact"; //Scroll slide pour photo projet
+
+import Nav from "../componentsJS/Navbar/Nav";
 import Formulaire from "../componentsJS/Formulaire/Formulaire";
 import TexteDefilant from "../componentsJS/TexteDefilant";
-
-import "./Portfolio.css";
 
 const Portfolio = () => {
   return (
     <div className="container">
+      <Nav />
       <div className="v-slider-bloc" id="home-part">
         <div className="zone-text-presentation">
           <h1>Hello !</h1>
