@@ -12,8 +12,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // React Icons
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaNodeJs, FaUnity} from "react-icons/fa";
+import { SiJavascript, SiMysql, SiVisualstudio, SiAdobephotoshop } from "react-icons/si";
 
 //JSON
 import Projects from "../ProjetsJSON/Projects.json";
@@ -39,22 +39,32 @@ const SwiperReact = () => {
         return <FaGithub className="outils-icons" />;
       case "SiJavascript":
         return <SiJavascript className="outils-icons" />;
+      case "FaNodeJs":
+        return <FaNodeJs className="outils-icons" />;
+      case "SiMysql":
+        return <SiMysql className="outils-icons" />;
+      case "SiVisualstudio":
+        return <SiVisualstudio className="outils-icons" />;
+      case "FaUnity":
+        return <FaUnity className="outils-icons" />;
+      case "SiAdobephotoshop":
+        return <SiAdobephotoshop className="outils-icons" />;
       default:
         console.log(`Error`);
     }
   };
   return (
     <>
-      <div className="btn-project-changer">
-        <button onClick={() => changePath(0)}>L'ATELIER D'ADELINE</button>
-        <button>CRAZY WORLD 2D</button>
-        <button onClick={() => changePath(1)}>SOS JEUNES POUSSES</button>
-        <button>CAPIUS GALLUS</button>
-        <button>POUDLARD UNIVERSITY</button>
-      </div>
       {Projects &&
         [Projects[path]].map((item, i) => (
           <div key={i} className="contenu-swiper">
+            <div className="btn-project-changer">
+              <button onClick={() => changePath(0)}>L'ATELIER D'ADELINE</button>
+              <button onClick={() => changePath(1)}>SOS JEUNES POUSSES</button>
+              <button onClick={() => changePath(2)}>MOODY PLATEFORME VOD</button>
+              <button onClick={() => changePath(3)}>POUDLARD UNIVERSITY</button>
+              <button onClick={() => changePath(4)}>SUPER MULTIVERSE 2D</button>
+            </div>
             <div className="bloc-texte-projet">
               <h2>{item.title}</h2>
 

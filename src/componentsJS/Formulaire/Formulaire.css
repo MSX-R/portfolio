@@ -8,18 +8,17 @@
   max-width: 95vw;
 }
 
-.text-form h3 {
+.text-form h3,
+.text-form p {
   padding: 10px 0;
 }
 
 .container-form {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  /* margin-top: 8%; */
+  margin-top: 20px;
   width: 100%;
   padding: 20px;
-  /* border: 2px solid whitesmoke; */
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -29,7 +28,6 @@
 .container-form label {
   font-size: 18px;
   text-align: left;
-  padding-bottom: 2%;
 }
 
 .container-form input,
@@ -41,7 +39,7 @@
 }
 
 .container-form textarea {
-  min-height: 80px;
+  min-height: 125px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -74,6 +72,7 @@ container-form button {
 .br-form {
   display: none;
 }
+
 @media screen and (max-width: 740px) {
   #form {
     justify-content: space-around;
@@ -83,6 +82,7 @@ container-form button {
     margin: 0;
     width: 95%;
   }
+
   .br-form {
     display: block;
   }

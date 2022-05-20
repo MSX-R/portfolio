@@ -1,24 +1,16 @@
 import React from "react";
-import "./Portfolio.css";
-// import Header from "../componentsJS/Header";
 import photosport from "../assets/photo-home.png";
-import SwiperReact from "../componentsJS/SwiperReact/SwiperReact"; //Scroll slide pour photo projet
-
-// import ScrollHE from "../componentsJS/ScrollHorizontalEnzo/ScrollHE"; //Ajout scroll Horizontale pour changer de projet
-import Nav from "../componentsJS/Navbar/Nav";
+import SwiperReact from "../componentsJS/SwiperReact/SwiperReact";
 import Formulaire from "../componentsJS/Formulaire/Formulaire";
 import TexteDefilant from "../componentsJS/TexteDefilant";
-// import BtnProjectChanger from "../componentsJS/BtnProjectChanger/BtnProjectChanger";
+
+import "./Portfolio.css";
 
 const Portfolio = () => {
   return (
     <div className="container">
-      {/* <Header /> */}
-      <Nav />
-
       <div className="v-slider-bloc" id="home-part">
         <div className="zone-text-presentation">
-          {" "}
           <h1>Hello !</h1>
           <img src={photosport} alt="imageSmile" className="photosport" />
           <h2>
@@ -32,26 +24,15 @@ const Portfolio = () => {
               <abbr title=' on peut même dire " changer de vie " pour être totalement honnête &#128514;'>
                 changer de voie
               </abbr>{" "}
-              et de me former au métier de Développeur Web.
-            </p>{" "}
-            <p>
-              En fin d'année 2021, j'ai décidé de me former auprès de{" "}
-              <em>la Wild Code School</em> en remote.
+              pour le <b>Développement Web.</b>
             </p>
-            <br />
             <p>
-              <b>
-                {" "}
-                Ayant terminé la partie "cours", je dois dorénavant trouver un
-                stage
-              </b>{" "}
-              afin de mettre à profit mon savoir-faire auprès d'une entreprise,
-              gagner en compétences{" "}
-              <b>
-                {" "}
-                et surtout participer à une aventure, qui je le souhaite, sera
-                très enrichissante !
-              </b>
+              Pour se faire, j'ai suivi une formation intensive auprès de{" "}
+              <em>la Wild Code School</em>.
+            </p>
+
+            <p>
+              <b>Aujourd'hui, j'ai la possibilité et l'envie d'effectuer un stage en entreprise afin de gagner en compétences.</b>
             </p>
           </div>
           <TexteDefilant />
@@ -60,7 +41,6 @@ const Portfolio = () => {
 
       <div className="v-slider-bloc" id="project-part">
         <SwiperReact />
-        {/* <BtnProjectChanger/> */}
       </div>
 
       <div className="v-slider-bloc" id="form-part">

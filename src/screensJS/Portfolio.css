@@ -3,7 +3,6 @@
   width: 100vw;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  border: 2px solid yellow;
 }
 
 .v-slider-bloc {
@@ -11,14 +10,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /*center pour centrer le contenu, flex start + padding 150px si top*/
-  padding-top: 100px; /* remplacer dans l'element scrollHE > section margin top et bottom*/
-  /* border-bottom: 5px solid #fff; */
+  align-items: center;
+  padding-top: 100px;
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;
-  border: 3px solid red;
-  /* padding-bottom: -100px; */
+  padding-bottom: 20px;
 }
 
 .photosport {
@@ -38,20 +35,21 @@
   max-width: 90vw;
 }
 
+.bloc-text-description p {
+  padding-bottom: 10px;
+}
+
+.bloc-text-description p:last-child{
+  padding-bottom:0;
+}
 .presentation-perso {
-  /*Top slide page tenant compte de la nav 100px et resp*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100vw;
-  /* padding: 0 10%; */
-  /* margin-bottom: -100px; */
-  /* border: 2px solid orange; */
   background-color: blue;
 }
 .zone-text-presentation {
-  /*Top SLIDE INTERIEUR*/
-  /* border: 2px solid red; */
   height: 100%;
   width: 800px;
   max-width: 90vw;
@@ -78,10 +76,11 @@
     justify-content: space-around;
     max-height: 100vh;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
+
   .zone-text-presentation h1 {
-    font-size: 3.5rem;
+    font-size: 7rem;
     text-align: center;
   }
 
@@ -97,4 +96,3 @@
     display: block;
   }
 }
-

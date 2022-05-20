@@ -72,7 +72,7 @@ function Formulaire() {
         <label htmlFor="message">Votre demande</label>
 
         <textarea
-          placeholder="Bonjour Romain, j'ai un poste de stagiaire à vous proposer au sein de mon entreprise. Laissez-moi vous en dire plus à ce sujet et ce que nous vous proposons..."
+          placeholder="Bonjour Romain, j'ai une opportunité à vous proposer au sein de mon entreprise. Laissez-moi vous en dire plus à ce sujet et ce que je souhaite vous proposer..."
           name="user_message"
         ></textarea>
 

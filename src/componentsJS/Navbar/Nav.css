@@ -1,52 +1,63 @@
 .navbar {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-around;
   position: fixed;
-  /* position: fixed; */
   width: 100%;
   height: 100px;
   padding: 0 2rem;
   color: #fff;
   z-index: 10;
-  background-color: rgb(4,46,66);
-  background: -moz-linear-gradient(180deg, rgba(4,46,66,1) 0%, rgba(4,46,66,1) 80%, rgba(240,240,240,0) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(4,46,66,1) 0%, rgba(4,46,66,1) 80%, rgba(240,240,240,0) 100%);
-  background: linear-gradient(180deg, rgba(4,46,66,1) 0%, rgba(4,46,66,1) 80%, rgba(240,240,240,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#042e42",endColorstr="#f0f0f0",GradientType=1);;
+  background-color: rgb(4, 46, 66);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(4, 46, 66, 1) 0%,
+    rgba(4, 46, 66, 1) 80%,
+    rgba(240, 240, 240, 0) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(4, 46, 66, 1) 0%,
+    rgba(4, 46, 66, 1) 80%,
+    rgba(240, 240, 240, 0) 100%
+  );
+
+  background: linear-gradient(
+    180deg,
+    rgba(4, 46, 66, 1) 0%,
+    rgba(4, 46, 66, 1) 80%,
+    rgba(240, 240, 240, 0) 100%
+  );
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#042e42",endColorstr="#f0f0f0",GradientType=1);
 }
 
-/*Partie gauche*/
 .partie-gauche {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid red; */
 }
+
 .msx-header {
   width: 80px;
-  /* border: 2px solid black; */
 }
+
 .marsaleixRomain,
 .developpeurWeb {
   padding: 0 10px;
 }
+
 .separation-nom-metier {
   background-color: #f5f5f5;
   height: 30px;
   width: 3px;
 }
+
 .developpeurWeb {
   color: #e3b93a;
   font-weight: bold;
 }
-
-
-
-
-
-
 
 .navbar_links {
   display: flex;
@@ -74,24 +85,22 @@
   z-index: 11;
 }
 
-
-
-
 .menu_mobile {
   display: none;
 }
 
-/*Partie droite*/
 .partie-droite {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
 }
+
 .partie-droite > a {
   display: flex;
   align-items: center;
-  font-size: clamp(30px, 4vw, 32px);}
+  font-size: clamp(30px, 4vw, 32px);
+}
 
 .partie-droite > a > button {
   font-size: clamp(10px, 1.5vw, 15px);
@@ -100,11 +109,10 @@
 .links-navbar {
   padding: 0 25px 0 0;
 }
+
 .links-navbar:hover {
   color: #e3b93a;
 }
-
-
 
 .recruteMe {
   border-radius: 30px;
@@ -121,13 +129,10 @@
   color: #042e42;
   border: 2.5px solid #a6874e;
   transition: all 0.2s ease-in-out;
-  height: 40px;}
-
-
-
+  height: 40px;
+}
 
 @media screen and (max-width: 600px) {
-
   .navbar {
     position: fixed;
     height: 80px;
@@ -135,14 +140,16 @@
     flex-direction: row;
     width: 100vw;
   }
+
   .menu_mobile {
     display: flex;
   }
+
   .menu_pc {
     display: none;
   }
 
-  .partie-gauche{
+  .partie-gauche {
     width: 100%;
   }
 
@@ -151,13 +158,12 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    /* top : 0px; */
     right: -100vw;
     bottom: 0;
     height: 100vh;
     padding: 0.3rem;
     background-color: #000;
-    visibility:hidden;
+    visibility: hidden;
     transition: all 0.8s ease-in-out;
     width: 0;
   }
@@ -171,13 +177,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
-li {
-  list-style: none;
-}
-
+  li {
+    list-style: none;
+  }
 
   /*Debut Partie : Ajout barre sous Item Menu Mobile*/
   .navbar_item::after {
@@ -208,7 +212,6 @@ li {
   .navbar_burger {
     display: block; /* Affichage du burger menu format mobile*/
     position: flex;
-  
   }
 
   .navbar_burger:hover {
@@ -243,8 +246,6 @@ li {
     transform: translateY(12px);
     width: 40px; /*Taille idéale basse 20px*/
   }
-
-
 
   .show-nav .burger-bar {
     background-color: transparent;
@@ -289,7 +290,11 @@ li {
     transition: all 1.4s ease-out;
   }
 
-  .slideInDown-0 ,.slideInDown-1, .slideInDown-2, .slideInDown-3, .slideInDown-4 {
+  .slideInDown-0,
+  .slideInDown-1,
+  .slideInDown-2,
+  .slideInDown-3,
+  .slideInDown-4 {
     width: 100%;
   }
 
@@ -301,56 +306,52 @@ li {
     display: none;
   }
 
+  .Fa-icons {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  .text-icons {
+    font-size: 1.5rem;
+  }
+  .recruteMe {
+    border-radius: 30px;
+    width: 100%;
+    height: 35px;
+    padding: 0 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #f5f5f5;
+    border: 2.5px solid #e3b93a;
+    cursor: pointer;
+  }
+  .recruteMe:hover {
+    background-color: #f5f5f5;
+    color: #042e42;
+    border: 2.5px solid #a6874e;
+    transition: all 0.2s ease-in-out;
+    height: 40px;
+  }
 
+  .logo_burger_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.Fa-icons{
-  font-size: 50px;
-  padding-bottom: 10px;
-}
-.text-icons {
-  font-size: 1.5rem;
-}
-.recruteMe {
-  border-radius: 30px;
-  width: 100%;
-  height: 35px;
-  padding: 0 20px;
-  font-weight: bold;
-  background-color: transparent;
-  color: #f5f5f5;
-  border: 2.5px solid #e3b93a;
-  cursor: pointer;
-}
-.recruteMe:hover {
-  background-color: #f5f5f5;
-  color: #042e42;
-  border: 2.5px solid #a6874e;
-  transition: all 0.2s ease-in-out;
-  height: 40px;
-}
+  .msx-header-list {
+    width: 20%;
+  }
 
-.logo_burger_list{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.msx-header-list{
-width: 20%;
-}
-
-
-.separation-nom-metier2 {
-  background-color: #f5f5f5;
-  height: 1px;
-  width:50vw;
-  margin: 10px 0;
-}
-.marsaleixRomain2{
-  font-size: 10px;
-  color: #e3b93a;
-  font-weight: bold;
-}
-
+  .separation-nom-metier2 {
+    background-color: #f5f5f5;
+    height: 1px;
+    width: 50vw;
+    margin: 10px 0;
+  }
+  .marsaleixRomain2 {
+    font-size: 10px;
+    color: #e3b93a;
+    font-weight: bold;
+  }
 }
