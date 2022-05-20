@@ -8,10 +8,10 @@ function Formulaire() {
 
     emailjs
       .sendForm(
-        "service_akncxed",
-        "template_hojc46n",
+        "service_cke9mha",
+        "template_kdu7mra",
         e.target,
-        "0ItmtyYDKo0ml59QP"
+        "u4Bsdgwe03YEAP_7F"
       )
       .then(
         (result) => {
@@ -22,7 +22,7 @@ function Formulaire() {
         }
       );
     e.target.reset();
-    alert("Votre demande a bien été envoyé ! Je vous recontacte sous peu ! ");
+    alert(" Votre message a bien été envoyé ! Je vous recontacte sous peu ! ");
   };
 
   return (

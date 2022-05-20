@@ -1,7 +1,7 @@
 [
   {
     "title": "L'atelier d'Adeline",
-    "description": "Site créé pour un salon de coiffure afin de gagner en visibilité",
+    "description": "Site créé pour un salon de coiffure afin pour d'avoir un site officiel en complément des comptes pro sur les réseaux sociaux.",
     "outils": [
       { "iconName": "FaHtml5" },
       { "iconName": "FaCss3Alt" },
@@ -87,7 +87,7 @@
       },
       {
         "picture": "imgSOSJP8",
-        "name": "CREATION NOUVEL ARTICLE"
+        "name": "CREATION D'UN NOUVEL ARTICLE"
       },
       {
         "picture": "imgSOSJP9",
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "title": "MOODY PLATEFORME VOD",
+    "title": "MOODY VOD",
     "description": "Plateforme VOD créé afin de proposer une expérience originale aux visiteurs du site. Choisir une catégorie de films ou séries en fonction de son état émotionnel.",
     "outils": [
       { "iconName": "FaHtml5" },
@@ -162,7 +162,7 @@
   },
   {
     "title": "Super Multiverse 2D",
-    "description": "Premier prototype de jeu vidéo 2D crée sous Unity mélant plusieurs univers : Jeux video, Manga & Cinéma. Edition de sprites et création des animations via travail sous Photoshop. Mise en place de 3 niveaux jouables.",
+    "description": "Premier prototype de jeu vidéo 2D crée sous Unity mélant plusieurs univers : Jeux-video, Manga & Cinéma. Edition de sprites et création des animations via travail sous Photoshop. Mise en place de 3 niveaux jouables.",
     "outils": [
       { "iconName": "FaUnity" },
       { "iconName": "SiVisualstudio" },
@@ -170,36 +170,36 @@
     ],
     "pictures": [
       {
-        "picture": "imgAdeline1",
-        "name": "PAGE D'ENTREE SUR LE SITE"
+        "picture": "imgSuperMultiverse0",
+        "name": "SE DEPLACER DANS LE JEU"
       },
       {
-        "picture": "imgAdeline2",
-        "name": "ACCUEIL DU SITE"
+        "picture": "imgSuperMultiverse1",
+        "name": "MONTER A L'ÉCHELLE"
       },
       {
-        "picture": "imgAdeline3",
-        "name": "VISUEL DU TEXTE"
+        "picture": "imgSuperMultiverse2",
+        "name": "EXPLORER DES ZONES CACHÉES"
       },
       {
-        "picture": "imgAdeline4",
-        "name": "LE FOOTER"
+        "picture": "imgSuperMultiverse3",
+        "name": "EMPRUNTER DES CHEMINS SECRETS"
       },
       {
-        "picture": "imgAdeline5",
-        "name": "LE SALON DE COIFFURE"
+        "picture": "imgSuperMultiverse4",
+        "name": "RECOLTER DES ITEMS - Z-BALLS"
       },
       {
-        "picture": "imgAdeline6",
-        "name": "BOOK PHOTO"
+        "picture": "imgSuperMultiverse5",
+        "name": "ATTEINDRE LA FIN D'UN NIVEAU"
       },
       {
-        "picture": "imgAdeline7",
-        "name": "TARIFS DU SALON"
+        "picture": "imgSuperMultiverse6",
+        "name": "EXPLORER D'AUTRES NIVEAUX"
       },
       {
-        "picture": "imgAdeline8",
-        "name": "FORMULAIRE DE CONTACT"
+        "picture": "imgSuperMultiverse7",
+        "name": "GAME OVER - MOURIR AU COMBAT"
       }
     ]
   }

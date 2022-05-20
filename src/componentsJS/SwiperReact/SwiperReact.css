@@ -138,5 +138,6 @@
   .btn-project-changer button {
     border-radius: 9999px;
     width: fit-content;
+    font-size: 10px;
   }
 }
