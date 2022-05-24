@@ -18,6 +18,8 @@ function Nav() {
     setShowLinks(!showLinks);
   };
 
+  const closeMenu = () => setShowLinks(false);
+
   console.log(showLinks); /* Pour verifier que ca passe bien de true a false */
 
   return (
@@ -25,7 +27,7 @@ function Nav() {
       <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
         <div className="partie-gauche mobile-logo">
           {" "}
-          {/* A garder format mobile */}
+          {/* NavBar Mobile */}
           <Link to="/">
             <img src={logoBlancHeader} alt="logo-mini" className="msx-header" />
           </Link>
@@ -75,14 +77,20 @@ function Nav() {
           <a href="tel:0789619164" title="Cliquer pour passer un appel">
             <button className="recruteMe">ME RECRUTER</button>
           </a>
-          
         </div>
 
         {/* MENU MOBILE */}
         <ul className="navbar_links menu_mobile">
-          <div className="navbar_item slideInDown-0 logo_burger_list">
-            <img src={logoBlancHeader} alt="logo-mini" className="msx-header msx-header-list" />
-            
+          <div
+            className="navbar_item slideInDown-0 logo_burger_list"
+            onClick={closeMenu}
+          >
+            <img
+              src={logoBlancHeader}
+              alt="logo-mini"
+              className="msx-header msx-header-list"
+            />
+
             <div className="separation-nom-metier2"></div>
             <p className="marsaleixRomain2">MARSALEIX ROMAIN</p>
           </div>
@@ -94,6 +102,7 @@ function Nav() {
               //etc...
               className="links-navbar navbar_link "
               title="Accéder à l'Accueil"
+              onClick={closeMenu}
             >
               <FaUserCircle className="Fa-icons" />
               <p className="text-icons">Accéder à l'Accueil</p>
@@ -107,6 +116,7 @@ function Nav() {
               //etc...
               className="links-navbar navbar_link "
               title="Accéder aux projets"
+              onClick={closeMenu}
             >
               <FaLaptopCode className="Fa-icons" />
               <p className="text-icons">Accéder aux Projets</p>
@@ -120,6 +130,7 @@ function Nav() {
               //etc...
               className="links-navbar navbar_link "
               title="Accéder au Formulaire de contact"
+              onClick={closeMenu}
             >
               <FaTeamspeak className="Fa-icons" />
               <p className="text-icons">Accéder au Formulaire de contact</p>
