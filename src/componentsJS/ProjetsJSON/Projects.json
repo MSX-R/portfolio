@@ -96,7 +96,7 @@
     ]
   },
   {
-    "title": "MOODY VOD",
+    "title": "MOODY PLATEFORME VOD",
     "description": "Plateforme VOD créé afin de proposer une expérience originale aux visiteurs du site. Choisir une catégorie de films ou séries en fonction de son état émotionnel.",
     "outils": [
       { "iconName": "FaHtml5" },

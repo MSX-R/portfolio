@@ -26,7 +26,6 @@ import {
   SiVisualstudio,
   SiAdobephotoshop,
 } from "react-icons/si";
-
 //JSON
 import Projects from "../ProjetsJSON/Projects.json";
 
@@ -71,13 +70,21 @@ const SwiperReact = () => {
         [Projects[path]].map((item, i) => (
           <div key={i} className="contenu-swiper">
             <div className="btn-project-changer">
-              <button onClick={() => changePath(0)}>L'ATELIER D'ADELINE</button>
-              <button onClick={() => changePath(1)}>SOS JEUNES POUSSES</button>
-              <button onClick={() => changePath(2)}>
+              <button className="btn-project" onClick={() => changePath(0)}>
+                L'ATELIER D'ADELINE
+              </button>
+              <button className="btn-project" onClick={() => changePath(1)}>
+                SOS JEUNES POUSSES
+              </button>
+              <button className="btn-project" onClick={() => changePath(2)}>
                 MOODY PLATEFORME VOD
               </button>
-              <button onClick={() => changePath(3)}>POUDLARD UNIVERSITY</button>
-              <button onClick={() => changePath(4)}>SUPER MULTIVERSE 2D</button>
+              <button className="btn-project" onClick={() => changePath(3)}>
+                POUDLARD UNIVERSITY
+              </button>
+              <button className="btn-project" onClick={() => changePath(4)}>
+                SUPER MULTIVERSE 2D
+              </button>
             </div>
             <div className="bloc-texte-projet">
               <h2>{item.title}</h2>
