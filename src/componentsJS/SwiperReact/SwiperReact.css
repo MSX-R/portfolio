@@ -116,10 +116,14 @@
 }
 
 .btn-project:hover {
+  background-color: whitesmoke;
+}
+
+.btn-project:active {
   background-color: hsl(38, 47%, 47%);
 }
 
-.btn-project-clicked {
+/* .btn-project-clicked {
   margin: 5px;
   border-radius: 9999px;
   border: 2px solid hsl(38, 47%, 47%);
@@ -129,8 +133,7 @@
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  color: whitesmoke;
-}
+  color: whitesmoke; }*/
 
 @media screen and (max-width: 740px) {
   .contenu-swiper {
