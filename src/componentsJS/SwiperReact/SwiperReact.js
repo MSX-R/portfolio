@@ -34,9 +34,11 @@ SwiperCore.use([Keyboard, Mousewheel]); //Pour utiliser le keyboard et souris
 const SwiperReact = () => {
   const [path, setPath] = useState(0);
 
-  const changePath = (number) => {
+  const changePath = (number, event) => {
     setPath(number);
-  };
+}
+
+
 
   const icons = (icon) => {
     switch (icon) {
@@ -70,19 +72,19 @@ const SwiperReact = () => {
         [Projects[path]].map((item, i) => (
           <div key={i} className="contenu-swiper">
             <div className="btn-project-changer">
-              <button className="btn-project" onClick={() => changePath(0)}>
+              <button className="btn-project" id="btn" onClick={() => changePath(0)}>
                 L'ATELIER D'ADELINE
               </button>
-              <button className="btn-project" onClick={() => changePath(1)}>
+              <button className="btn-project" id="btn" onClick={() => changePath(1)}>
                 SOS JEUNES POUSSES
               </button>
-              <button className="btn-project" onClick={() => changePath(2)}>
+              <button className="btn-project" id="btn" onClick={() => changePath(2)}>
                 MOODY PLATEFORME VOD
               </button>
-              <button className="btn-project" onClick={() => changePath(3)}>
+              <button className="btn-project" id="btn" onClick={() => changePath(3)}>
                 POUDLARD UNIVERSITY
               </button>
-              <button className="btn-project" onClick={() => changePath(4)}>
+              <button className="btn-project" id="btn" onClick={() => changePath(4)}>
                 SUPER MULTIVERSE 2D
               </button>
             </div>
