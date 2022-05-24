@@ -117,10 +117,13 @@
 
 .btn-project:hover {
   background-color: whitesmoke;
+  color: #042E42;
 }
 
 .btn-project:active {
   background-color: hsl(38, 47%, 47%);
+  color: whitesmoke;
+
 }
 
 /* .btn-project-clicked {
