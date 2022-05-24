@@ -50,7 +50,7 @@ function Formulaire() {
           type="text"
           id="prenom-client"
           name="user_firstname"
-          placeholder="Entrez votre prenom"
+          placeholder="Entrez votre prénom"
         />
 
         <label htmlFor="telephone">Téléphone</label>
@@ -58,7 +58,7 @@ function Formulaire() {
           type="tel"
           id="telephone-client"
           name="user_telephone"
-          placeholder="06.05.04.03.02"
+          placeholder="06 05 04 03 02"
         />
 
         <label htmlFor="email">Email</label>
@@ -66,7 +66,7 @@ function Formulaire() {
           type="email"
           id="email-client"
           name="user_email"
-          placeholder="votreentreprise@gmail.com"
+          placeholder="monemail@gmail.com"
         />
 
         <label htmlFor="message">Votre demande</label>
