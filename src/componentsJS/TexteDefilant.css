@@ -7,11 +7,10 @@
 }
 
 .breaking-news {
-  background-color: red;
-  background-color: #e3b93a;
-  color: #042e42;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
+  background-color: var(--color3);
+  color: var(--color1);
+  color: var(--color2);
+  border: 2px solid var(--color2);
   position: relative;
   left: 2rem;
   font-size: 3rem;
@@ -31,8 +30,8 @@
   width: 80vw;
   margin: 20px 0 0 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: rgb(91, 91, 91);
-  border: 2px solid #e3b93a;
+  background-color: var(--color5);
+  border: 2px solid var(--color3);
   overflow-x: hidden;
   z-index: 1;
   display: flex;
@@ -47,8 +46,8 @@
   text-transform: uppercase;
   padding: 1.2rem;
   font-size: 2.5rem;
-  color: #042e42;
-  color: whitesmoke;
+  color: var(--color1);
+  color: var(--color2);
 }
 
 @keyframes defilement-rtl {
@@ -62,7 +61,7 @@
 }
 
 .important-text {
-  color: #e3b93a;
+  color: var(--colorSpecial); /* Exception */
 }
 
 @media screen and (max-width: 600px) {

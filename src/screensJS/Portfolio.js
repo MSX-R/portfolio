@@ -34,7 +34,10 @@ const Portfolio = () => {
             </p>
 
             <p>
-              <b>Aujourd'hui, j'ai la possibilité et l'envie d'effectuer un stage en entreprise afin de gagner en compétences.</b>
+              <b>
+                Aujourd'hui, j'ai la possibilité et l'envie d'effectuer un stage
+                en entreprise afin de gagner en compétences.
+              </b>
             </p>
           </div>
           <TexteDefilant />

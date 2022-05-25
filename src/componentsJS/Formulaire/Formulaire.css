@@ -47,7 +47,7 @@ container-form button {
   padding: 0px 15px;
   width: 200px;
   background: transparent;
-  border: 1px solid #000;
+  border: 1px solid var(--color4);
   border-radius: 3px;
   cursor: pointer;
 }
@@ -58,15 +58,15 @@ container-form button {
 }
 
 #btnSubmit {
-  background-color: #0d0d0d;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--color4);
+  color: var(--color2);
+  border: 1px solid var(--color2);
 }
 
 #btnSubmit:hover {
-  background-color: #a27e40;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--color3);
+  color: var(--color2);
+  border: 1px solid var(--color2);
 }
 
 .br-form {

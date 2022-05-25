@@ -1,14 +1,14 @@
 .App {
   text-align: center;
-  color: #F5F5F5;
-  background-color: #042E42;
+  color: var(--color2);
+  background-color: var(--color1);
 
 }
 
 a {
   text-decoration: none;
   list-style: none;
-  color: whitesmoke;
+  color: var(--color2);
 }
 
 * {

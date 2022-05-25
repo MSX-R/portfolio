@@ -83,10 +83,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  background-color: hsl(38, 47%, 47%);
+  background-color: var(--color3);
   padding: 5px;
   width: 100%;
-  color: whitesmoke;
+  color: var(--color2);
   font-size: 15px;
 
   font-weight: bold;
@@ -105,38 +105,26 @@
 .btn-project {
   margin: 5px;
   border-radius: 9999px;
-  border: 2px solid hsl(38, 47%, 47%);
+  border: 2px solid var(--color3);
   padding: 5px 10px;
   background-color: transparent;
   width: fit-content;
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  color: whitesmoke;
+  color: var(--color2);
 }
 
 .btn-project:hover {
-  background-color: whitesmoke;
+  background-color: var(--color2);
   color: #042E42;
 }
 
 .btn-project:active {
-  background-color: hsl(38, 47%, 47%);
-  color: whitesmoke;
+  background-color: var(--color3);
+  color: var(--color2);
 
 }
-
-/* .btn-project-clicked {
-  margin: 5px;
-  border-radius: 9999px;
-  border: 2px solid hsl(38, 47%, 47%);
-  padding: 5px 10px;
-  background-color: hsl(38, 47%, 47%);
-  width: fit-content;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  color: whitesmoke; }*/
 
 @media screen and (max-width: 740px) {
   .contenu-swiper {
@@ -155,7 +143,7 @@
   .bloc-texte-projet {
     height: fit-content;
     padding: 20px;
-    border: 2px solid whitesmoke;
+    border: 2px solid var(--color2);
   }
 
   .btn-project-changer button {
