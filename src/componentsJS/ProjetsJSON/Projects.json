@@ -1,7 +1,7 @@
 [
   {
     "title": "L'atelier d'Adeline",
-    "description": "Site créé pour un salon de coiffure afin pour d'avoir un site officiel en complément des comptes pro sur les réseaux sociaux.",
+    "description": "Site internet créé pour un salon de coiffure afin d'apporter une présence virtuelle supplémentaire hors réseaux sociaux.",
     "outils": [
       { "iconName": "FaHtml5" },
       { "iconName": "FaCss3Alt" },
@@ -162,7 +162,7 @@
   },
   {
     "title": "Super Multiverse 2D",
-    "description": "Premier prototype de jeu vidéo 2D crée sous Unity mélant plusieurs univers : Jeux-video, Manga & Cinéma. Edition de sprites et création des animations via travail sous Photoshop. Mise en place de 3 niveaux jouables.",
+    "description": "Premier prototype de jeu vidéo 2D crée sous Unity mélant plusieurs univers : Jeux-video, Manga & Cinéma. Edition de sprites et création des animations sous Photoshop. Mise en place de 3 niveaux jouables.",
     "outils": [
       { "iconName": "FaUnity" },
       { "iconName": "SiVisualstudio" },

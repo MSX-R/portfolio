@@ -20,3 +20,29 @@
   box-shadow: 4px 4px 10px var(--color4);
   background-color: var(--color3);
 }
+
+.logo-link {
+  transform: translateY(1em);
+  transition: transform 200ms;
+}
+
+.logo-link::after{
+  content : "Cliquez pour accéder au portfolio";
+  display: inline-block;
+width: 100%;
+font-size: clamp(14px, 3vw, 16px);
+font-style: italic;
+margin-top:-30px;
+color: var(--color2);
+opacity: 0;
+transition: 200ms;
+}
+
+.logo-link:hover{
+  transform: none;
+}
+
+.logo-link:hover::after{
+  opacity: 1;
+  margin-top: 30px;
+}
