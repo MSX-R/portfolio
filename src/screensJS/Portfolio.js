@@ -21,22 +21,18 @@ const Portfolio = () => {
           </h2>
           <div className="bloc-text-description">
             <p>
-              Anciennement <b>coach sportif et manager</b>, j'ai fait le choix
-              de{" "}
+              Auparavant <b>coach sportif et manager</b>, j'ai fait le choix de{" "}
               <abbr title=' on peut même dire " changer de vie " pour être totalement honnête &#128514;'>
                 changer de voie
               </abbr>{" "}
               pour le <b>Développement Web.</b>
             </p>
-            <p>
-              Pour se faire, j'ai suivi une formation intensive auprès de{" "}
-              <em>la Wild Code School</em>.
-            </p>
 
             <p>
-              <b>
-                Aujourd'hui, j'ai la possibilité et l'envie d'effectuer un stage
-                en entreprise afin de gagner en compétences.
+              Suite à 6 mois de formation & projets auprès de la Wild Code
+              School, <b>
+                je suis à la recherche d'une opportunité me permettant de
+                travailler en entreprise tout en gagnant en compétences.
               </b>
             </p>
           </div>

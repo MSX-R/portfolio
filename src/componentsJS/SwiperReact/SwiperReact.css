@@ -26,6 +26,10 @@
   padding: 10px 0 10px 0;
 }
 
+.description-projet{
+text-align: justify;
+}
+
 .outils-projets {
   display: flex;
   align-items: center;
