@@ -74,9 +74,19 @@ function Nav() {
             <FaTeamspeak />
           </NavHashLink>
 
-          <a href="tel:0789619164" title="Cliquer pour passer un appel">
+          <NavHashLink
+            to="#form-part"
+            activeClassName="selected"
+            activeStyle={{ color: "red" }}
+            title="Accéder au Formulaire de contact"
+            onClick={closeMenu}
+          >
             <button className="recruteMe">ME RECRUTER</button>
-          </a>
+          </NavHashLink>
+
+          {/* <a href="0011223344" title="Cliquer pour passer un appel">
+            <button className="recruteMe">ME RECRUTER</button>
+          </a> */}
         </div>
 
         {/* MENU MOBILE */}
@@ -138,16 +148,25 @@ function Nav() {
           </li>
 
           <li className="navbar_item slideInDown-4">
-            <a
-              href="tel:0789619164"
+            <NavHashLink
+              to="#form-part"
+              activeClassName="selected"
+              activeStyle={{ color: "red" }}
+              title="Accéder au Formulaire de contact"
+              onClick={closeMenu}
+            >
+              <button className="recruteMe">ME RECRUTER</button>
+            </NavHashLink>
+
+            {/* <a
+              href="tel:0011223344"
               className="navbar_link "
               title="Cliquer pour passer un appel"
             >
               <button className="recruteMe">ME RECRUTER</button>
-            </a>
+            </a> */}
           </li>
         </ul>
-        {/* MENU MOBILE */}
       </nav>
     </div>
   );
