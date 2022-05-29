@@ -151,6 +151,7 @@ function Nav() {
             <NavHashLink
               to="#form-part"
               activeClassName="selected"
+              className="links-navbar navbar_link "
               activeStyle={{ color: "red" }}
               title="Accéder au Formulaire de contact"
               onClick={closeMenu}
@@ -161,7 +162,7 @@ function Nav() {
             {/* <a
               href="tel:0011223344"
               className="navbar_link "
-              title="Cliquer pour passer un appel"
+              // title="Cliquer pour passer un appel"
             >
               <button className="recruteMe">ME RECRUTER</button>
             </a> */}
