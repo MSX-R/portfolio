@@ -43,6 +43,7 @@ function Formulaire() {
           id="nom-client"
           name="user_lastname"
           placeholder="Entrez votre nom"
+          required
         />
 
         <label htmlFor="prenom">Prénom</label>
@@ -51,6 +52,7 @@ function Formulaire() {
           id="prenom-client"
           name="user_firstname"
           placeholder="Entrez votre prénom"
+          required
         />
 
         <label htmlFor="telephone">Téléphone</label>
@@ -59,6 +61,7 @@ function Formulaire() {
           id="telephone-client"
           name="user_telephone"
           placeholder="06 05 04 03 02"
+          required
         />
 
         <label htmlFor="email">Email</label>
@@ -67,6 +70,7 @@ function Formulaire() {
           id="email-client"
           name="user_email"
           placeholder="monemail@gmail.com"
+          required
         />
 
         <label htmlFor="message">Votre demande</label>
@@ -74,6 +78,7 @@ function Formulaire() {
         <textarea
           placeholder="Bonjour Romain, j'ai une opportunité à vous proposer au sein de mon entreprise. Laissez-moi vous en dire plus à ce sujet et ce que je souhaite vous proposer..."
           name="user_message"
+          required
         ></textarea>
 
         <input type="submit" value="Envoyer" id="btnSubmit" />
