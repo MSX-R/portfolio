@@ -1,10 +1,9 @@
 import React from 'react'
-import '.SlideNav.css'
+import { Link } from 'react-router-dom';
 import { NavHashLink } from "react-router-hash-link"; // POUR PLACER DES ANCRES VIA ID dans le SITE
 /*Import des icones */
-import { FaUserCircle } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
-import { FaTeamspeak } from "react-icons/fa";
+import { FaUserCircle, FaLinkedin, FaLaptopCode,FaTeamspeak  } from "react-icons/fa";
+import "./slide.css";
 
 
 const SlideNav = () => {
@@ -42,6 +41,11 @@ const SlideNav = () => {
           >
             <FaTeamspeak />
           </NavHashLink>
+
+          <a href="https://www.linkedin.com/in/romainmarsaleix/" className="slideNavButton" >
+          <FaLinkedin/>
+          </a>
+
     </div>
   )
 }

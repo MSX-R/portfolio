@@ -34,9 +34,7 @@ function Nav() {
           <p className="marsaleixRomain">MARSALEIX ROMAIN</p>
           <div className="separation-nom-metier"></div>
           <p className="developpeurWeb">Développeur web/mobile</p>
-          <button className="navbar_burger" onClick={handleShowLinks}>
-            <span className="burger-bar"></span>
-          </button>
+         
         </div>
 
         {/* MENU PC */}

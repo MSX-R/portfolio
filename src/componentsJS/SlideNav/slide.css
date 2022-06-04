@@ -1,0 +1,24 @@
+.slideNav {
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 11;
+    background: var(--color3); 
+    border-top: 2px solid var(--color2);
+    }
+    
+    .slideNavButton {
+    font-size: 30px;
+    padding: 10px 0;
+    color: var(--color2)
+    }
+
+    @media screen and (min-width: 601px) {
+    .slideNav {
+        display: none;
+    }
+    }

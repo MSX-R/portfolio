@@ -6,13 +6,15 @@ import SwiperReact from "../componentsJS/SwiperReact/SwiperReact"; //Scroll slid
 import Nav from "../componentsJS/Navbar/Nav";
 import Formulaire from "../componentsJS/Formulaire/Formulaire";
 import TexteDefilant from "../componentsJS/TexteDefilant";
+import SlideNav from "../componentsJS/SlideNav/SlideNav";
 
 const Portfolio = () => {
   return (
     <div className="container">
       <Nav />
+      <SlideNav/>
       <div className="v-slider-bloc" id="home-part">
-        <div className="zone-text-presentation">
+        {/* <div className="zone-text-presentation"> */}
           <h1>Hello !</h1>
           <img src={photosport} alt="imageSmile" className="photosport" />
           <h2>
@@ -37,10 +39,10 @@ const Portfolio = () => {
             </p>
           </div>
           <TexteDefilant />
-        </div>
+        {/* </div> */}
       </div>
 
-      <div className="v-slider-bloc" id="project-part">
+      <div className="v-slider-bloc backgroundGold" id="project-part">
         <SwiperReact />
       </div>
 
