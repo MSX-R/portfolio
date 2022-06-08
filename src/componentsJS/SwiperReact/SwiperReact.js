@@ -128,10 +128,12 @@ const SwiperReact = () => {
                 return (
                   <SwiperSlide key={i} className="Slide">
                     <div>
+                    
                       <img
                         src={require(`./assets/${el.picture}.png`)}
                         alt={el.name}
                       />
+                      
                       <div className="legend-project">{el.name}</div>
                     </div>
                   </SwiperSlide>

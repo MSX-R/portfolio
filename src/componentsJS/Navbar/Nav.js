@@ -4,10 +4,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 /*Import des icones */
-import { FaUserCircle } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
-import { FaTeamspeak } from "react-icons/fa";
-import logoBlancHeader from "../../assets/logoblanc.png";
+import { FaUserCircle, FaLaptopCode, FaTeamspeak } from "react-icons/fa";
+import MsxLogo from "../../assets/logoblanc.png";
 
 import { NavHashLink } from "react-router-hash-link"; // POUR PLACER DES ANCRES VIA ID dans le SITE
 
@@ -24,58 +22,62 @@ function Nav() {
 
   return (
     <div>
-      <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-        <div className="partie-gauche mobile-logo">
-          {" "}
-          {/* NavBar Mobile */}
+      <nav
+        className={`navbar ${
+          showLinks ? "showNavbarMobile" : "hideNavbarMobile"
+        }`}
+      >
+        <div className="navbarLeftBlock">
           <Link to="/">
-            <img src={logoBlancHeader} alt="logo-mini" className="msx-header" />
+            <img src={MsxLogo} alt="logo-mini" className="msxIcon" />
           </Link>
           <p className="marsaleixRomain">MARSALEIX ROMAIN</p>
-          <div className="separation-nom-metier"></div>
+          <div className="separationLineNameJob"></div>
           <p className="developpeurWeb">Développeur web/mobile</p>
-          <button className="navbar_burger" onClick={handleShowLinks}>
-            <span className="burger-bar"></span>
+
+          {/* MENU MOBILE */}
+          <button className="navbarBurger" onClick={handleShowLinks}>
+            <span className="burgerBar"></span>
           </button>
         </div>
 
         {/* MENU PC */}
-        <div className="partie-droite menu_pc">
+        <div className="navbarRightBlock desktopMod">
           <NavHashLink
-            to="#home-part"
+            to="#homePart"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             //etc...
-            className="links-navbar"
+            className="navbarLinks"
             title="Accéder à l'Accueil"
           >
             <FaUserCircle />
           </NavHashLink>
 
           <NavHashLink
-            to="#project-part"
+            to="#projectPart"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             //etc...
-            className="links-navbar "
+            className="navbarLinks"
             title="Accéder aux Projets"
           >
             <FaLaptopCode />
           </NavHashLink>
 
           <NavHashLink
-            to="#form-part"
+            to="#formPart"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             //etc...
-            className="links-navbar "
+            className="navbarLinks "
             title="Accéder au Formulaire de contact"
           >
             <FaTeamspeak />
           </NavHashLink>
 
           <NavHashLink
-            to="#form-part"
+            to="#formPart"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             title="Accéder au Formulaire de contact"
@@ -84,33 +86,30 @@ function Nav() {
             <button className="recruteMe">ME RECRUTER</button>
           </NavHashLink>
 
-          {/* <a href="0011223344" title="Cliquer pour passer un appel">
-            <button className="recruteMe">ME RECRUTER</button>
-          </a> */}
         </div>
 
         {/* MENU MOBILE */}
-        <ul className="navbar_links menu_mobile">
+        <ul className="navbarMenuLinks mobileMod">
           <div
-            className="navbar_item slideInDown-0 logo_burger_list"
+            className="navbarItem slideInDown-0"
             onClick={closeMenu}
           >
             <img
-              src={logoBlancHeader}
-              alt="logo-mini"
-              className="msx-header msx-header-list"
+              src={MsxLogo}
+              alt="Logo MSX taille miniature"
+              className="msxIcon msxIconMobileMenu"
             />
 
-            <div className="separation-nom-metier2"></div>
+            <div className="separationLineNameJob2"></div>
             <p className="marsaleixRomain2">MARSALEIX ROMAIN</p>
           </div>
-          <li className="navbar_item slideInDown-1">
+          <li className="navbarItem slideInDown-1">
             <NavHashLink
-              to="#home-part"
+              to="#homePart"
               activeClassName="selected"
               activeStyle={{ color: "red" }}
               //etc...
-              className="links-navbar navbar_link "
+              className="navbarLinks navbarLink "
               title="Accéder à l'Accueil"
               onClick={closeMenu}
             >
@@ -118,13 +117,13 @@ function Nav() {
               <p className="text-icons">Accéder à l'Accueil</p>
             </NavHashLink>
           </li>
-          <li className="navbar_item slideInDown-2">
+          <li className="navbarItem slideInDown-2">
             <NavHashLink
-              to="#project-part"
+              to="#projectPart"
               activeClassName="selected"
               activeStyle={{ color: "red" }}
               //etc...
-              className="links-navbar navbar_link "
+              className="navbarLinks navbarLink "
               title="Accéder aux projets"
               onClick={closeMenu}
             >
@@ -132,13 +131,13 @@ function Nav() {
               <p className="text-icons">Accéder aux Projets</p>
             </NavHashLink>
           </li>
-          <li className="navbar_item slideInDown-3">
+          <li className="navbarItem slideInDown-3">
             <NavHashLink
-              to="#form-part"
+              to="#formPart"
               activeClassName="selected"
               activeStyle={{ color: "red" }}
               //etc...
-              className="links-navbar navbar_link "
+              className="navbarLinks navbarLink "
               title="Accéder au Formulaire de contact"
               onClick={closeMenu}
             >
@@ -147,11 +146,11 @@ function Nav() {
             </NavHashLink>
           </li>
 
-          <li className="navbar_item slideInDown-4">
+          <li className="navbarItem slideInDown-4">
             <NavHashLink
               to="#form-part"
               activeClassName="selected"
-              className="links-navbar navbar_link "
+              className="navbarLinks navbarLink "
               activeStyle={{ color: "red" }}
               title="Accéder au Formulaire de contact"
               onClick={closeMenu}
@@ -161,7 +160,7 @@ function Nav() {
 
             {/* <a
               href="tel:0011223344"
-              className="navbar_link "
+              className="navbarLink "
               // title="Cliquer pour passer un appel"
             >
               <button className="recruteMe">ME RECRUTER</button>

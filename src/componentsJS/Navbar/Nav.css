@@ -33,13 +33,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color1)",endColorstr="#f0f0f0",GradientType=1);
 }
 
-.partie-gauche {
+.navbarLeftBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.msx-header {
+.msxIcon {
   width: 80px;
 }
 
@@ -48,7 +48,7 @@
   padding: 0 10px;
 }
 
-.separation-nom-metier {
+.separationLineNameJob {
   background-color: var(--color2);
   height: 30px;
   width: 3px;
@@ -59,23 +59,23 @@
   font-weight: bold;
 }
 
-.navbar_links {
+.navbarMenuLinks {
   display: flex;
   align-items: center;
 }
 
-.navbar_link {
+.navbarLink {
   padding: 0 1rem;
   color: inherit;
   font-weight: normal;
   font-size: 1.2rem;
 }
 
-.navbar_link:hover {
+.navbarLink:hover {
   color: goldenrod;
 }
 
-.navbar_burger {
+.navbarBurger {
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -85,32 +85,32 @@
   z-index: 11;
 }
 
-.menu_mobile {
+.mobileMod {
   display: none;
 }
 
-.partie-droite {
+.navbarRightBlock {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
 }
 
-.partie-droite > a {
+.navbarRightBlock > a {
   display: flex;
   align-items: center;
   font-size: clamp(30px, 4vw, 32px);
 }
 
-.partie-droite > a > button {
+.navbarRightBlock > a > button {
   font-size: clamp(10px, 1.5vw, 15px);
 }
 
-.links-navbar {
+.navbarLinks {
   padding: 0 25px 0 0;
 }
 
-.links-navbar:hover {
+.navbarLinks:hover {
   color: var(--colorSpecial);
 }
 
@@ -141,19 +141,19 @@
     width: 100vw;
   }
 
-  .menu_mobile {
+  .mobileMod {
     display: flex;
   }
 
-  .menu_pc {
+  .desktopMod {
     display: none;
   }
 
-  .partie-gauche {
+  .navbarLeftBlock {
     width: 100%;
   }
 
-  .navbar_links {
+  .navbarMenuLinks {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -168,7 +168,7 @@
     width: 0;
   }
 
-  .show-nav .navbar_links {
+  .showNavbarMobile .navbarMenuLinks {
     right: 0;
     width: 100vw;
     height: 100vh;
@@ -184,7 +184,7 @@
   }
 
   /*Debut Partie : Ajout barre sous Item Menu Mobile*/
-  .navbar_item::after {
+  .navbarItem::after {
     content: "";
     display: block;
     margin: auto;
@@ -193,15 +193,15 @@
     background-color: var(--color2);
   }
 
-  .navbar_item:first-child::after {
+  .navbarItem:first-child::after {
     display: none;
   }
 
-  .navbar_item:last-child::after {
+  .navbarItem:last-child::after {
     display: none;
   }
   /*Fin Partie : Ajout barre sous Item Menu Mobile*/
-  .navbar_link {
+  .navbarLink {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,18 +209,18 @@
     padding: 5%;
   }
 
-  .navbar_burger {
+  .navbarBurger {
     display: block; /* Affichage du burger menu format mobile*/
     position: flex;
   }
 
-  .navbar_burger:hover {
+  .navbarBurger:hover {
     cursor: pointer;
   }
 
-  .burger-bar,
-  .burger-bar::before,
-  .burger-bar::after {
+  .burgerBar,
+  .burgerBar::before,
+  .burgerBar::after {
     display: block;
     width: 40px; /* taille idéale milieu 30px*/
     height: 3px;
@@ -230,63 +230,64 @@
     transition: all 0.5s ease-in-out;
   }
 
-  .burger-bar::before,
-  .burger-bar::after {
+  .burgerBar::before,
+  .burgerBar::after {
     content: "";
     position: absolute;
     left: 0; /* Depart de la ligne de gauche a droite*/
+    width: 40px;
   }
 
-  .burger-bar::before {
+  .burgerBar::before {
     transform: translateY(-12px);
-    width: 40px; /*Taille de la barre haute */
   }
 
-  .burger-bar::after {
+  .burgerBar::after {
     transform: translateY(12px);
-    width: 40px; /*Taille idéale basse 20px*/
   }
 
-  .show-nav .burger-bar {
+  .showNavbarMobile .burgerBar {
     background-color: transparent;
   }
 
-  .show-nav .burger-bar::before {
+  .showNavbarMobile .burgerBar::before {
     transform: rotate(45deg);
   }
 
-  .show-nav .burger-bar::after {
+  .showNavbarMobile .burgerBar::after {
     transform: rotate(-45deg);
-    /* Remettre taille initiale ici , avant animation*/
   }
 
-  /* Animation Apparititon Items Burger button*/
-  .navbar_item {
+  .navbarItem {
     transform: translateY(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .show-nav .navbar_item {
+  .showNavbarMobile .navbarItem {
     transform: translateY(0);
   }
 
-  .show-nav .slideInDown-0 {
+  .showNavbarMobile .slideInDown-0 {
     transition: all 0.9s ease-out;
     padding-bottom: 50px;
   }
 
-  .show-nav .slideInDown-1 {
+  .showNavbarMobile .slideInDown-1 {
     transition: all 1s ease-out;
   }
-  .show-nav .slideInDown-2 {
+  .showNavbarMobile .slideInDown-2 {
     transition: all 1.1s ease-out;
   }
-  .show-nav .slideInDown-3 {
+  .showNavbarMobile .slideInDown-3 {
     transition: all 1.2s ease-out;
   }
-  .show-nav .slideInDown-4 {
+  .showNavbarMobile .slideInDown-4 {
     transition: all 1.3s ease-out;
   }
-  .show-nav .slideInDown-5 {
+  .showNavbarMobile .slideInDown-5 {
     transition: all 1.4s ease-out;
   }
 
@@ -332,21 +333,14 @@
     height: 40px;
   }
 
-  .logo_burger_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .msx-header-list {
+  .msxIconMobileMenu{
     width: 20%;
   }
 
-  .separation-nom-metier2 {
+  .separationLineNameJob2 {
     background-color: var(--color2);
     height: 1px;
-    width: 50vw;
+    width: 40vw;
     margin: 10px 0;
   }
   .marsaleixRomain2 {

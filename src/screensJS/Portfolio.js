@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <div className="container">
       <Nav />
-      <div className="v-slider-bloc" id="home-part">
+      <div className="v-slider-bloc" id="homePart">
         <div className="zone-text-presentation">
           <h1>Hello !</h1>
           <img src={photosport} alt="imageSmile" className="photosport" />
@@ -40,11 +40,11 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="v-slider-bloc" id="project-part">
+      <div className="v-slider-bloc" id="projectPart">
         <SwiperReact />
       </div>
 
-      <div className="v-slider-bloc" id="form-part">
+      <div className="v-slider-bloc" id="formPart">
         <Formulaire />
       </div>
     </div>
