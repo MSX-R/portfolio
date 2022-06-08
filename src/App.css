@@ -2,7 +2,7 @@
   text-align: center;
   color: var(--color2);
   background-color: var(--color1);
-
+height: 100vh;
 }
 
 a {

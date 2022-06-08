@@ -27,6 +27,7 @@ function Nav() {
           showLinks ? "showNavbarMobile" : "hideNavbarMobile"
         }`}
       >
+        
         <div className="navbarLeftBlock">
           <Link to="/">
             <img src={MsxLogo} alt="logo-mini" className="msxIcon" />
@@ -44,7 +45,7 @@ function Nav() {
         {/* MENU PC */}
         <div className="navbarRightBlock desktopMod">
           <NavHashLink
-            to="#homePart"
+            to="/Marsaleix-Romain/Presentation"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             //etc...
@@ -55,7 +56,7 @@ function Nav() {
           </NavHashLink>
 
           <NavHashLink
-            to="#projectPart"
+            to="/Marsaleix-Romain/Projets"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             //etc...
@@ -66,7 +67,7 @@ function Nav() {
           </NavHashLink>
 
           <NavHashLink
-            to="#formPart"
+            to="/Marsaleix-Romain/Formulaire-de-contact"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             //etc...
@@ -77,7 +78,7 @@ function Nav() {
           </NavHashLink>
 
           <NavHashLink
-            to="#formPart"
+            to="/Marsaleix-Romain/Formulaire-de-contact"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
             title="Accéder au Formulaire de contact"
@@ -105,7 +106,7 @@ function Nav() {
           </div>
           <li className="navbarItem slideInDown-1">
             <NavHashLink
-              to="#homePart"
+              to="/Marsaleix-Romain/Presentation"
               activeClassName="selected"
               activeStyle={{ color: "red" }}
               //etc...
@@ -119,7 +120,7 @@ function Nav() {
           </li>
           <li className="navbarItem slideInDown-2">
             <NavHashLink
-              to="#projectPart"
+              to="/Marsaleix-Romain/Projets"
               activeClassName="selected"
               activeStyle={{ color: "red" }}
               //etc...
@@ -133,7 +134,7 @@ function Nav() {
           </li>
           <li className="navbarItem slideInDown-3">
             <NavHashLink
-              to="#formPart"
+              to="/Marsaleix-Romain/Formulaire-de-contact"
               activeClassName="selected"
               activeStyle={{ color: "red" }}
               //etc...
@@ -148,7 +149,7 @@ function Nav() {
 
           <li className="navbarItem slideInDown-4">
             <NavHashLink
-              to="#form-part"
+              to="/Marsaleix-Romain/Formulaire-de-contact"
               activeClassName="selected"
               className="navbarLinks navbarLink "
               activeStyle={{ color: "red" }}

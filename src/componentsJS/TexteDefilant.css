@@ -1,9 +1,10 @@
 .bloc-news {
+  width: 100vw;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  padding-bottom: 2%;
+  flex-direction: row;
 }
 
 .breaking-news {
@@ -13,10 +14,11 @@
   border: 2px solid var(--color2);
   position: relative;
   left: 2rem;
-  font-size: 3rem;
+  font-size: clamp(18px, 3vw, 24px);
+  /* font-weight: bold; */
   text-align: center;
   width: 20vw;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0; */
   padding: 0 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform: SkewX(-25deg);
@@ -24,11 +26,11 @@
 }
 .marquee-rtl {
   position: relative;
-  right: 3rem;
+  right: 2rem;
   transform: SkewX(-25deg);
   max-width: 100%;
   width: 80vw;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0; */
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: var(--color5);
   border: 2px solid var(--color3);
@@ -38,14 +40,23 @@
   align-items: center;
 }
 
+.marquee-rtl > :first-child {
+  display: inline-block; /* modèle de boîte en ligne */
+  padding-right: 2em; /* un peu d'espace pour la transition */
+  padding-left: 100%; /* placement à droite du conteneur */
+  white-space: nowrap; /* pas de passage à la ligne */
+  animation: defilement-rtl 20s infinite linear;
+}
+
 .text-defilant {
-  display: inline-block;
-  padding-right: 2em;
-  padding-left: 100%;
+  /* display: inline-block; */
+  /* padding-right: 2em;
+  padding-left: 100%; */
   white-space: nowrap;
   text-transform: uppercase;
-  padding: 1.2rem;
-  font-size: 2.5rem;
+  padding: 0.5rem;
+  font-size: clamp(16px, 2.5vw, 20px);
+
   color: var(--color1);
   color: var(--color2);
 }
@@ -60,29 +71,34 @@
   }
 }
 
+.chrono-icon-flash {
+  display: none;
+}
+
 .important-text {
   color: var(--colorSpecial); /* Exception */
 }
-
+/* 
 @media screen and (max-width: 600px) {
   .bloc-news {
     margin-bottom: 2vw;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .breaking-news {
-    font-size: clamp(18px, 3vw, 24px);
+    font-size: 3rem;
   }
 
   .text-defilant {
-    padding: 0.5rem;
-    font-size: clamp(16px, 2.5vw, 20px);
+    padding: 1.2rem;
+    font-size: 2.5rem;
+
   }
 }
-
-@media screen and (max-width: 975px) {
+*/
+@media screen and (min-width: 975px) {
   .chrono-icon-flash {
-    display: none;
+    display: flex;
   }
 }

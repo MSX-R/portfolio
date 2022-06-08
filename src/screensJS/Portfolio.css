@@ -1,21 +1,30 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .container {
-  height: 100vh;
-  width: 100vw;
+  height: 80vh;
+  width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .v-slider-bloc {
   font-size: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
+  justify-content: flex-start;
+  padding-top: 3%;
   height: 100vh;
   width: 100vw;
   scroll-snap-align: center;
   padding-bottom: 20px;
+  border: 2px solid orange;
 }
 
 .photosport {
@@ -63,46 +72,8 @@
   text-transform: uppercase;
 }
 
-/* ANIMATION TEXTE DEFILANT */
-
-/* le block conteneur */
-.marquee-rtl {
-  max-width: 100%; /* largeur de la fenêtre */
-  width: 100vw;
-  font-size: 4.5rem;
-  margin: 20px 0 0 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.marquee-rtl > :first-child {
-  display: inline-block; /* modèle de boîte en ligne */
-  padding-right: 2em; /* un peu d'espace pour la transition */
-  padding-left: 100%; /* placement à droite du conteneur */
-  white-space: nowrap; /* pas de passage à la ligne */
-  animation: defilement-rtl 20s infinite linear;
-}
-
-@keyframes defilement-rtl {
-  0% {
-    transform: translate3d(0, 0, 0); /* position initiale à droite */
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0); /* position finale à gauche */
-  }
-}
-
-/* FIN ANIMATION TEXTE DEFILANT */
 
 @media screen and (max-width: 600px) {
-  .v-slider-bloc {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-height: 100vh;
-    padding-top: 80px;
-    padding-bottom: 20px;
-  }
-
   .zone-text-presentation h1 {
     font-size: 7rem;
     text-align: center;
