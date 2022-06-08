@@ -7,6 +7,7 @@
   --color4: hsl(0, 0%, 5%);/*   var(--color4)   */
   --color5: hsl(0, 0%, 36%); /*   var(--color5)   */
   --colorSpecial: hsl(45, 100%, 61%); /* Exception */
+  --swiper-navigation-color:hsl(0, 0%, 96%); 
 }
 
 /* FONT SIZE */

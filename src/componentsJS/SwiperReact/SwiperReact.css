@@ -74,13 +74,29 @@ text-align: justify;
 
 .swiper-slide img {
   border-radius: 0 0 25px 25px;
-
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
   background-position: center;
 }
+
+
+.swiper-button-prev, .swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+height:75px !important;
+opacity: 0.5;
+width: calc(50px/ 44 * 27) !important;
+background: var(--color1);
+border: 3px solid var(--colorSpecial);
+border-radius: 9999px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 30px !important;
+font-weight: bold;}
+
 
 .legend-project {
   display: flex;

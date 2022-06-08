@@ -29,6 +29,8 @@ import {
 //JSON
 import Projects from "../ProjetsJSON/Projects.json";
 
+
+
 SwiperCore.use([Keyboard, Mousewheel]); //Pour utiliser le keyboard et souris
 
 const SwiperReact = () => {
