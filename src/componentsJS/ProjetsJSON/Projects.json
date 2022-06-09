@@ -202,5 +202,32 @@
         "name": "GAME OVER - MOURIR AU COMBAT"
       }
     ]
+  },
+  {
+    "title": "Créations Graphiques",
+    "description": "Quelques créations graphiques/numériques réalisées par moi-même pour ma propre entreprise ou pour des professionnels faisant partie de mon réseau.",
+    "outils": [
+      { "iconName": "SiAdobephotoshop" },
+      { "iconName": "SiAdobepremierepro" },
+      { "iconName": "FaFigma" }
+    ],
+    "pictures": [
+      {
+        "picture": "creation6",
+        "name": "BANDE POUR RESEAUX SOCIAUX"
+      },
+      {
+        "picture": "creation7",
+        "name": "RECTO CARTE PROFESSIONNELLE"
+      },
+      {
+        "picture": "creation9",
+        "name": "LOGO COACH SPORTIF"
+      },
+      {
+        "picture": "creation10",
+        "name": "LOGO DIAGNOSTIQUEUR"
+      }
+    ]
   }
 ]

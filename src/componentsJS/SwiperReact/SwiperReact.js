@@ -19,15 +19,19 @@ import {
   FaGithub,
   FaNodeJs,
   FaUnity,
+  FaFigma,
+  FaTeamspeak
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiMysql,
   SiVisualstudio,
   SiAdobephotoshop,
+  SiAdobepremierepro,
 } from "react-icons/si";
 //JSON
 import Projects from "../ProjetsJSON/Projects.json";
+import {Link} from "react-router-dom"
 
 
 
@@ -64,6 +68,11 @@ const SwiperReact = () => {
         return <FaUnity className="outils-icons" />;
       case "SiAdobephotoshop":
         return <SiAdobephotoshop className="outils-icons" />;
+        case "SiAdobepremierepro":
+        return <SiAdobepremierepro className="outils-icons" />;
+        case "FaFigma":
+        return <FaFigma className="outils-icons" />;
+        
       default:
         console.log(`Error`);
     }
@@ -73,24 +82,27 @@ const SwiperReact = () => {
       {Projects &&
         [Projects[path]].map((item, i) => (
           <div key={i} className="contenu-swiper">
-            <div className="btn-project-changer">
-              <button className="btn-project" id="btn" onClick={() => changePath(0)}>
+            <div className="btn-project-changer blocSpace ">
+              <button className="btn-project " id="btn" onClick={() => changePath(0)}>
                 L'ATELIER D'ADELINE
               </button>
-              <button className="btn-project" id="btn" onClick={() => changePath(1)}>
+              <button className="btn-project " id="btn" onClick={() => changePath(1)}>
                 SOS JEUNES POUSSES
               </button>
-              <button className="btn-project" id="btn" onClick={() => changePath(2)}>
+              <button className="btn-project " id="btn" onClick={() => changePath(2)}>
                 MOODY PLATEFORME VOD
               </button>
-              <button className="btn-project" id="btn" onClick={() => changePath(3)}>
+              <button className="btn-project " id="btn" onClick={() => changePath(3)}>
                 POUDLARD UNIVERSITY
               </button>
-              <button className="btn-project" id="btn" onClick={() => changePath(4)}>
+              <button className="btn-project "  id="btn" onClick={() => changePath(4)}>
                 SUPER MULTIVERSE 2D
               </button>
+              <button className="btn-project "  id="btn" onClick={() => changePath(5)}>
+                créations graphiques
+              </button>
             </div>
-            <div className="bloc-texte-projet">
+            <div className="blocText-projet">
               <h2>{item.title}</h2>
 
               <div>
@@ -99,7 +111,7 @@ const SwiperReact = () => {
                 </h3>
                 <p className="description-projet">{item.description}</p>
               </div>
-              <div className="outils-projets">
+              <div className="outils-projets blocSpace">
                 <h3 className="titre-outils-projet">Outils :</h3>
                 {item.outils.map((el, i) => {
                   return <p key={i}>{icons(el.iconName)}</p>;
@@ -118,7 +130,7 @@ const SwiperReact = () => {
               }}
               navigation={true}
               modules={[Pagination, Navigation]}
-              className="mySwiper"
+              className="mySwiper blocSpace"
               loop={true}
               direction="horizontal"
               keyboard={true}
@@ -126,7 +138,7 @@ const SwiperReact = () => {
             >
               {item.pictures.map((el, i) => {
                 return (
-                  <SwiperSlide key={i} className="Slide">
+                  <SwiperSlide key={i} className="Slide ">
                     <div>
                     
                       <img
@@ -140,7 +152,20 @@ const SwiperReact = () => {
                 );
               })}
             </Swiper>
+
+            <Link
+              to="/Marsaleix-Romain/Formulaire-de-contact"
+              activeClassName="selected"
+              activeStyle={{ color: "red" }}
+              //etc...
+              className="navbarLinks navbarLink "
+              title="Accéder au Formulaire de contact"
+            >
+              <FaTeamspeak className="Fa-icons" />
+              <p className="text-icons">Accéder au Formulaire de contact</p>
+            </Link>
           </div>
+
         ))}
     </>
   );

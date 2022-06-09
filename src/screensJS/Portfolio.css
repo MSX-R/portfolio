@@ -2,19 +2,23 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100%;
+  width: 100vw;
 }
 
 .container {
-  height: 80vh;
-  width: 100%;
+  height: 80vh; /* A RETIRER SI FULL PAGE*/
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: auto;
+  border: 2px solid green;
+  padding: 3rem 0;
 }
 
-.v-slider-bloc {
+/* .v-slider-bloc {
   font-size: 30px;
   display: flex;
   flex-direction: column;
@@ -25,24 +29,25 @@
   scroll-snap-align: center;
   padding-bottom: 20px;
   border: 2px solid orange;
-}
+} */
+
+
+
+
 
 .photosport {
-  height: 35vw;
+  height: 45vw;
   max-height: 200px;
-  max-width: 200px;
-  width: 35vw;
+  max-width: 300px;
+  width: 45vw;
   object-fit: cover;
   object-position: center;
   border-radius: 9999px;
   border: 2px solid var(--color2);
-  margin: 2px;
+  margin-left: 40%;
 }
 
-.bloc-text-description {
-  width: 600px;
-  max-width: 90vw;
-}
+
 
 .bloc-text-description p {
   padding-bottom: 10px;
@@ -52,7 +57,7 @@
   padding-bottom: 0;
 }
 
-.zone-text-presentation {
+/* .zone-text-presentation {
   height: 100%;
   width: 800px;
   max-width: 90vw;
@@ -61,19 +66,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .br-presentation {
   display: none;
 }
 
 .dev-presentation {
-  font-size: larger;
   text-transform: uppercase;
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .zone-text-presentation h1 {
     font-size: 7rem;
     text-align: center;
@@ -84,7 +88,7 @@
     width: 90vw;
     text-align: center;
   }
-}
+} */
 
 @media screen and (max-width: 805px) {
   .br-presentation {

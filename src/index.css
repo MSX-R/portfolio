@@ -11,8 +11,12 @@
 }
 
 /* FONT SIZE */
+h1 {
+  font-size: clamp(50px, 8vw, 72px);
+
+}
 h2 {
-  font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(20px, 4vw, 42px);
 }
 h3 {
   font-size: clamp(16px, 3vw, 20px);
@@ -20,6 +24,31 @@ h3 {
 }
 p {
   font-size: clamp(14px, 3vw, 16px);
+}
+
+
+/*Espacement*/
+.TextBlocSpace {
+  margin-bottom: 1rem !important;
+}
+
+.blocSpace {
+  margin-bottom: 3rem;
+}
+
+/*Mise en forme Text Responsive*/
+.blocText {
+  width: 75%;
+  max-width: 700px;
+  height: fit-content;
+  text-align: justify;
+}
+
+/*Mise en forme Contenu Responsive = .swiper*/
+.contentSize{
+  max-width: 700px; /*taille photo slider*/
+  width: 95%;
+  height: fit-content;
 }
 
 body {

@@ -1,10 +1,12 @@
 .bloc-news {
-  width: 100vw;
   height: 10vh;
+  max-width: 1200px;
+  width: 95vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin: auto;
 }
 
 .breaking-news {
@@ -16,7 +18,9 @@
   left: 2rem;
   font-size: clamp(18px, 3vw, 24px);
   /* font-weight: bold; */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20vw;
   /* margin: 20px 0 0 0; */
   padding: 0 5px;
@@ -73,6 +77,7 @@
 
 .chrono-icon-flash {
   display: none;
+  margin: 0 10px;
 }
 
 .important-text {
@@ -100,5 +105,12 @@
 @media screen and (min-width: 975px) {
   .chrono-icon-flash {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .breaking-news{
+    width: 30vw;
   }
 }

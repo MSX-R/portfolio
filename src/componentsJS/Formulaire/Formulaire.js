@@ -2,6 +2,9 @@ import React from "react";
 import emailjs from "emailjs-com";
 import "./Formulaire.css";
 
+import {FaUserCircle} from "react-icons/fa";
+import {Link} from "react-router-dom";
+
 function Formulaire() {
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,8 +29,8 @@ function Formulaire() {
   };
 
   return (
-    <div className="formulaire">
-      <div className="text-form">
+    <div className="contenu-swiper">
+      <div className="text-form blocSpace blocText">
         <h2>FORMULAIRE DE CONTACT</h2>
         <p>
           Mon profil vous intéresse ?<br className="br-form" /> Vous souhaitez
@@ -36,7 +39,7 @@ function Formulaire() {
         </p>
         <h3>N'hésitez pas à me le faire savoir !</h3>
       </div>
-      <form className="container-form" onSubmit={sendEmail}>
+      <form className="container-form contentSize blocSpace" onSubmit={sendEmail}>
         <label htmlFor="nom">Nom</label>
         <input
           type="text"
@@ -81,8 +84,20 @@ function Formulaire() {
           required
         ></textarea>
 
-        <input type="submit" value="Envoyer" id="btnSubmit" />
+        <input type="submit" value="Envoyer" id="btnSubmit" className="recruteMe" />
       </form>
+
+      <Link
+              to="/Marsaleix-Romain/Presentation"
+              activeClassName="selected"
+              activeStyle={{ color: "red" }}
+              //etc...
+              className="navbarLinks navbarLink "
+              title="Accéder à l'Accueil"
+            >
+              <FaUserCircle className="Fa-icons" />
+              <p className="text-icons">Revenir à l'accueil du site</p>
+            </Link>
     </div>
   );
 }
