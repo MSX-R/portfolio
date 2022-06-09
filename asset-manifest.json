@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.18721c99.css",
-    "main.js": "/portfolio/static/js/main.4116712f.js",
+    "main.css": "/portfolio/static/css/main.382f7557.css",
+    "main.js": "/portfolio/static/js/main.ffc14b12.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/imgAdeline2.png": "/portfolio/static/media/imgAdeline2.50534470a12432b5e245.png",
+    "static/media/creation10.png": "/portfolio/static/media/creation10.29b0d887800075b5b38f.png",
     "static/media/imgSuperMultiverse3.png": "/portfolio/static/media/imgSuperMultiverse3.d3624fc069b4741b4573.png",
     "static/media/imgPoudlardUniversity1.png": "/portfolio/static/media/imgPoudlardUniversity1.19a3c176c9bbc0a41080.png",
     "static/media/imgSuperMultiverse0.png": "/portfolio/static/media/imgSuperMultiverse0.13927720c54aec91a910.png",
@@ -26,6 +27,7 @@
     "static/media/imgAdeline8.png": "/portfolio/static/media/imgAdeline8.a5004ba3817c25f63681.png",
     "static/media/imgAdeline7.png": "/portfolio/static/media/imgAdeline7.a4730751631b234fb51c.png",
     "static/media/imgAdeline4.png": "/portfolio/static/media/imgAdeline4.6e22e9d9eedacd5553a9.png",
+    "static/media/creation9.png": "/portfolio/static/media/creation9.b5b91d6b20f7dd5a3a03.png",
     "static/media/imgPoudlardUniversity6.png": "/portfolio/static/media/imgPoudlardUniversity6.10cf8d58fd58f0297119.png",
     "static/media/imgPoudlardUniversity2.png": "/portfolio/static/media/imgPoudlardUniversity2.12a0dd25977b086acdb8.png",
     "static/media/imgSuperMultiverse2.png": "/portfolio/static/media/imgSuperMultiverse2.1a42c723fb3c2a353d71.png",
@@ -35,19 +37,21 @@
     "static/media/imgPoudlardUniversity3.png": "/portfolio/static/media/imgPoudlardUniversity3.b1222c651000843cab9f.png",
     "static/media/imgSOSJP4.png": "/portfolio/static/media/imgSOSJP4.0e17ecfc9d2b6680e0f2.png",
     "static/media/imgSOSJP7.png": "/portfolio/static/media/imgSOSJP7.fbb9da63b580f2f0db52.png",
+    "static/media/creation6.png": "/portfolio/static/media/creation6.43124cad9930b57ef6c3.png",
     "static/media/imgMoody5.png": "/portfolio/static/media/imgMoody5.587b547635cdb57fd085.png",
     "static/media/imgSOSJP8.png": "/portfolio/static/media/imgSOSJP8.59aab75f66c1438bcbf5.png",
     "static/media/imgSOSJP9.png": "/portfolio/static/media/imgSOSJP9.c98d554babe19a013be3.png",
     "static/media/imgSOSJP2.png": "/portfolio/static/media/imgSOSJP2.08b3fa6ffdd2690f8b6d.png",
+    "static/media/creation7.png": "/portfolio/static/media/creation7.c88d82eeef1ee0385531.png",
     "static/media/imgSOSJP6.png": "/portfolio/static/media/imgSOSJP6.11c9dff63a5cd44a0d14.png",
     "static/media/logoblanc.png": "/portfolio/static/media/logoblanc.888120a6940ff0715c9d.png",
     "index.html": "/portfolio/index.html",
-    "main.18721c99.css.map": "/portfolio/static/css/main.18721c99.css.map",
-    "main.4116712f.js.map": "/portfolio/static/js/main.4116712f.js.map",
+    "main.382f7557.css.map": "/portfolio/static/css/main.382f7557.css.map",
+    "main.ffc14b12.js.map": "/portfolio/static/js/main.ffc14b12.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18721c99.css",
-    "static/js/main.4116712f.js"
+    "static/css/main.382f7557.css",
+    "static/js/main.ffc14b12.js"
   ]
 }
