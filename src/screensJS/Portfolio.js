@@ -9,11 +9,12 @@ import "../componentsJS/TexteDefilant.css";
 const Portfolio = () => {
   return (
     <div className="screen">
-      <Nav />      
+      <Nav />
 
       <div className="container">
         <Outlet />
-      </div><TexteDefilant />
+      </div>
+      <TexteDefilant />
     </div>
   );
 };

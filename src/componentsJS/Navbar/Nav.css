@@ -151,7 +151,7 @@ display: flex;  width: 100%;
   .navbar {
 display: flex;
     height: 10vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     width: 100vw;
