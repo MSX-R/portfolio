@@ -1,5 +1,6 @@
 import React from "react";
 import "./Portfolio.css";
+import "./Welcome.css"
 
 import Nav from "../componentsJS/Navbar/Nav";
 import { Outlet } from "react-router-dom";

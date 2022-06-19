@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Welcome from "./screensJS/Welcome";
+import Loader from "./screensJS/Loader";
 import Portfolio from "./screensJS/Portfolio";
 // import Nav from './componentsJS/Navbar/Nav'
 
@@ -14,11 +14,11 @@ const App = () => {
     <div className="App">
       {/* <Nav /> */}
       <Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/Marsaleix-Romain" element={<Portfolio />} >
-          <Route path ="/Marsaleix-Romain/Presentation" element={<Presentation />}/>
-          <Route path ="/Marsaleix-Romain/Projets" element={<SwiperReact />}/>
-          <Route path ="/Marsaleix-Romain/Formulaire-de-contact" element={<Formulaire />}/>
+        <Route path="/" element={<Loader />} />
+        <Route path="/Marsaleix-Romain" element={<Portfolio />}>
+        <Route path="/Marsaleix-Romain/Presentation" element={<Presentation />}/>
+        <Route path="/Marsaleix-Romain/Projets" element={<SwiperReact />} />
+        <Route path="/Marsaleix-Romain/Formulaire-de-contact" element={<Formulaire />}/>
         </Route>
       </Routes>
     </div>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return ( 
+
   <div className="page-welcome">
     <Link to="/Marsaleix-Romain/Presentation" className='logo-link'>
     <div className="bloc-logo">
