@@ -31,10 +31,6 @@
   border: 2px solid orange;
 } */
 
-
-
-
-
 .photosport {
   height: 45vw;
   max-height: 200px;
@@ -46,8 +42,6 @@
   border: 2px solid var(--color2);
   margin-left: 40%;
 }
-
-
 
 .bloc-text-description p {
   padding-bottom: 10px;
@@ -76,7 +70,6 @@
   text-transform: uppercase;
 }
 
-
 /* @media screen and (max-width: 600px) {
   .zone-text-presentation h1 {
     font-size: 7rem;
@@ -89,6 +82,13 @@
     text-align: center;
   }
 } */
+
+.hidden {
+  display: none;
+}
+
+/* CSS DE LA PAGE WELCOME LOGO */
+
 
 
 @media screen and (max-width: 805px) {

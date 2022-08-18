@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import'./Welcome.css'
 import logobleu from '../assets/logoblanc.png'
 import { Link } from 'react-router-dom';
 
 const Welcome = () => {
+
+  const [invisible, setInvisible] = useState([]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setInvisible("hidden");
+      window.location.href = "http://localhost:3000/portfolio/Marsaleix-Romain/Presentation"
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return ( 
-  <div className="page-welcome">
+    <div className={`page-welcome  ${invisible}`}>
     <Link to="/Marsaleix-Romain/Presentation" className='logo-link'>
     <div className="bloc-logo">
      <img src={logobleu} alt="logo" className="logo-welcome"/>

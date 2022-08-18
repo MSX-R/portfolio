@@ -11,6 +11,8 @@
 .logo-welcome {
   width: 42%;
   transition: all 0.5s ease-out 10ms;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 0.7em; */
 }
 
 .logo-welcome:hover {
@@ -26,23 +28,32 @@
   transition: transform 200ms;
 }
 
-.logo-link::after{
-  content : "Cliquez pour accéder au portfolio";
+.logo-link::after {
+  content: "Cliquez pour accéder au portfolio";
+  
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  width: fit-content;
+  padding: 30px;
   display: inline-block;
-width: 100%;
-font-size: clamp(14px, 3vw, 16px);
-font-style: italic;
-margin-top:-30px;
-color: var(--color2);
-opacity: 0;
-transition: 200ms;
+  font-size: clamp(14px, 3vw, 16px);
+  font-style: italic;
+  margin-top: -30px;
+  color: var(--color2);
+  opacity: 0;
+  transition: 200ms;
 }
 
-.logo-link:hover{
+.logo-link:hover {
   transform: none;
 }
 
-.logo-link:hover::after{
+.logo-link:hover::after {
   opacity: 1;
   margin-top: 30px;
 }
