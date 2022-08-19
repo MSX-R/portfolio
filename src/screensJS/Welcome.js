@@ -10,9 +10,9 @@ const Welcome = () => {
     const timer = setTimeout(() => {
       setInvisible("hidden");
       window.location.href =
-        "https://msx-r.github.io/portfolio/Marsaleix-Romain/Presentation";
-        // "http://localhost:3000/portfolio/Marsaleix-Romain/Presentation";
-    }, 5000);
+        // "https://msx-r.github.io/portfolio/Marsaleix-Romain/Presentation";
+      "http://localhost:3000/portfolio/Marsaleix-Romain/Presentation";
+    }, 8500);
     return () => clearTimeout(timer);
   }, []);
 

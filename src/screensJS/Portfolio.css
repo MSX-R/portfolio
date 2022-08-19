@@ -32,16 +32,16 @@
 } */
 
 .photosport {
-  height: 45vw;
-  max-height: 200px;
-  max-width: 300px;
-  width: 45vw;
+ 
+  height: 50vw;
+    max-height: 250px;
+    max-width:450px;
+    width: 50vw;
   object-fit: cover;
   object-position: center;
   border-radius: 9999px;
   border: 2px solid var(--color2);
-  margin-left: 40%;
-}
+margin : 0 auto 30px}
 
 .bloc-text-description p {
   padding-bottom: 10px;
@@ -92,8 +92,15 @@
 margin:30px auto;
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 600px) {
   .br-presentation {
     display: block;
   }
+
+  .photosport {
+    height: 45vw;
+    max-height: 300px;
+    max-width: 300px;
+    width: 60vw;
+}
 }

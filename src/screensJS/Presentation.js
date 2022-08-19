@@ -48,8 +48,8 @@ const Presentation = () => {
           </em>
         </p>
 
-        <a href="https://www.linkedin.com/in/romainmarsaleix/">
-          <button className="recruteMe">
+        <a href="https://www.linkedin.com/in/romainmarsaleix/" className="recruteMePresentationBtn">
+          <button className="recruteMe color-change-2x">
             {" "}
             linkedin.com/in/romainmarsaleix{" "}
           </button>

@@ -6,9 +6,9 @@
 
 .presentationTitles{
 text-align: left;
-width: 85%;
+width: 75%;
 position: relative;
-top: -20px;
+/* top: -20px; */
 }
 
 .presentationText{
@@ -20,4 +20,34 @@ align-items: center;
 .wildLogo{
 width: 11rem;
 opacity: 0.9;
+}
+
+.recruteMePresentationBtn{
+margin: 20px auto 10px
+}
+
+.color-change-2x {
+  background-color: transparent;
+  -webkit-animation: color-change-2x 4s linear infinite alternate both;
+  animation: color-change-2x 4s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: var(--color1);
+  }
+  100% {
+    background:  var(--color3);
+    border: 2.5px solid #C0C0C0 ;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: var(--color3);
+    border:2.5px solid #C0C0C0 ;
+
+  }
+  100% {
+    background:  var(--color1);
+  }
 }
