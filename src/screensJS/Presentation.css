@@ -26,11 +26,13 @@ opacity: 0.9;
 margin: 20px auto 10px
 }
 
+
 .color-change-2x {
   background-color: transparent;
   -webkit-animation: color-change-2x 4s linear infinite alternate both;
   animation: color-change-2x 4s linear infinite alternate both;
 }
+
 
 @-webkit-keyframes color-change-2x {
   0% {
@@ -50,4 +52,10 @@ margin: 20px auto 10px
   100% {
     background:  var(--color1);
   }
+}
+
+.color-change-2x:hover{ 
+  background: var(--color2)!important ;
+  border:3px solid var(--colorSpecial) ;
+
 }
