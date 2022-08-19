@@ -7,6 +7,7 @@
   justify-content: center;
   flex-direction: row;
   margin: auto;
+  
 }
 
 .breaking-news {
@@ -17,12 +18,10 @@
   position: relative;
   left: 2rem;
   font-size: clamp(18px, 3vw, 24px);
-  /* font-weight: bold; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20vw;
-  /* margin: 20px 0 0 0; */
   padding: 0 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform: SkewX(-25deg);
@@ -34,7 +33,6 @@
   transform: SkewX(-25deg);
   max-width: 100%;
   width: 80vw;
-  /* margin: 20px 0 0 0; */
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: var(--color5);
   border: 2px solid var(--color3);
@@ -53,9 +51,6 @@
 }
 
 .text-defilant {
-  /* display: inline-block; */
-  /* padding-right: 2em;
-  padding-left: 100%; */
   white-space: nowrap;
   text-transform: uppercase;
   padding: 0.5rem;

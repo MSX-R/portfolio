@@ -87,9 +87,10 @@
   display: none;
 }
 
-/* CSS DE LA PAGE WELCOME LOGO */
-
-
+/* new parameters */
+.contenu-swiper{
+margin:30px auto;
+}
 
 @media screen and (max-width: 805px) {
   .br-presentation {

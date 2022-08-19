@@ -25,10 +25,10 @@ const Portfolio = () => {
 
   return (
     <div className="screen">
-       {/* <div className={`page-welcome  ${invisible}`}>
+      {/* <div className={`page-welcome  ${invisible}`}>
         <Link to="/Marsaleix-Romain/Presentation" className="logo-link">  */}
-        {/* link à remplacer par un onclick */}
-           {/* <div className="bloc-logo">
+      {/* link à remplacer par un onclick */}
+      {/* <div className="bloc-logo">
              <img */}
       {/* //         src={logoblanc}
       //         alt="logo"
@@ -40,10 +40,15 @@ const Portfolio = () => {
 
       <Nav />
 
-      <div className="container">
+      <Outlet />
+      <TexteDefilant />
+
+
+      {/* Latest version */}
+      {/* <div className="container">
         <Outlet />
       </div>
-      <TexteDefilant />
+      <TexteDefilant /> */}
     </div>
   );
 };

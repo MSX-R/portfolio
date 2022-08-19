@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const Presentation = () => {
   return (
     <div className="contenu-swiper" id="homePart">
+      
       <img src={photosport} alt="imageSmile" className="photosport" />
       <div className="blocText blocSpace presentationTitles">
         <h1 className="TextBlocSpace">Hello !</h1>
