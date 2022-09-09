@@ -6,42 +6,11 @@
   width: 100vw;
 }
 
-.container {
-  height: 80vh; /* A RETIRER SI FULL PAGE*/
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: auto;
-  /* border: 2px solid green; */
-  padding: 3rem 0;
-}
 
-/* .v-slider-bloc {
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 3%;
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: center;
-  padding-bottom: 20px;
-  border: 2px solid orange;
-} */
 
-.photosport {
- 
-  height: 50vw;
-    max-height: 250px;
-    max-width:450px;
-    width: 50vw;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 9999px;
-  border: 2px solid var(--color2);
-margin : 0 auto 30px}
+
+
+
 
 .bloc-text-description p {
   padding-bottom: 10px;
@@ -92,15 +61,4 @@ margin : 0 auto 30px}
 margin:30px auto;
 }
 
-@media screen and (max-width: 600px) {
-  .br-presentation {
-    display: block;
-  }
 
-  .photosport {
-    height: 45vw;
-    max-height: 300px;
-    max-width: 300px;
-    width: 60vw;
-}
-}

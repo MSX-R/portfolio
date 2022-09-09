@@ -1,5 +1,5 @@
 import React from "react";
-import photosport from "../assets/photo-home.png";
+import photoID from "../assets/yellowLigth.png";
 import "./Presentation.css";
 
 import {  FaLaptopCode} from "react-icons/fa";
@@ -9,7 +9,7 @@ const Presentation = () => {
   return (
     <div className="contenu-swiper" id="homePart">
       
-      <img src={photosport} alt="imageSmile" className="photosport" />
+      <img src={photoID} alt="imageSmile" className="photoID" />
       <div className="blocText blocSpace presentationTitles">
         <h1 className="TextBlocSpace">Hello !</h1>
         <h2>

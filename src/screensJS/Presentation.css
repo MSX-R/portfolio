@@ -1,31 +1,39 @@
-
-
 .blocPres {
   display: flex;
 }
 
-.presentationTitles{
-text-align: left;
-width: 75%;
-position: relative;
-/* top: -20px; */
+.photoID {
+  height: 50vw;
+  max-height: 250px;
+  max-width: 450px;
+  width: 50vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 9999px;
+  border: 3px solid var(--color2);
+  margin: 0 auto 30px;
 }
 
-.presentationText{
-display: flex;
-flex-direction: column;
-align-items: center;
+.presentationTitles {
+  text-align: left;
+  width: 75%;
+  position: relative;
 }
 
-.wildLogo{
-width: 11rem;
-opacity: 0.9;
+.presentationText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.recruteMePresentationBtn{
-margin: 20px auto 10px
+.wildLogo {
+  width: 11rem;
+  opacity: 0.9;
 }
 
+.recruteMePresentationBtn {
+  margin: 20px auto 10px;
+}
 
 .color-change-2x {
   background-color: transparent;
@@ -33,29 +41,39 @@ margin: 20px auto 10px
   animation: color-change-2x 4s linear infinite alternate both;
 }
 
-
 @-webkit-keyframes color-change-2x {
   0% {
     background: var(--color1);
   }
   100% {
-    background:  var(--color3);
-    border: 2.5px solid #C0C0C0 ;
+    background: var(--color3);
+    border: 2.5px solid #c0c0c0;
   }
 }
 @keyframes color-change-2x {
   0% {
     background: var(--color3);
-    border:2.5px solid #C0C0C0 ;
-
+    border: 2.5px solid #c0c0c0;
   }
   100% {
-    background:  var(--color1);
+    background: var(--color1);
   }
 }
 
-.color-change-2x:hover{ 
-  background: var(--color2)!important ;
-  border:3px solid var(--colorSpecial) ;
+.color-change-2x:hover {
+  background: var(--color2) !important ;
+  border: 3px solid var(--colorSpecial);
+}
 
+@media screen and (max-width: 600px) {
+  .br-presentation {
+    display: block;
+  }
+
+  .photoID {
+    height: 45vw;
+    max-height: 300px;
+    max-width: 300px;
+    width: 60vw;
+  }
 }
