@@ -2,53 +2,44 @@ import React from "react";
 import photoID from "../assets/yellowLigth.png";
 import "./Presentation.css";
 
-import {  FaLaptopCode} from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Presentation = () => {
+const Presentation = ({ langue }) => {
   return (
     <div className="contenu-swiper" id="homePart">
-      
       <img src={photoID} alt="imageSmile" className="photoID" />
       <div className="blocText blocSpace presentationTitles">
-        <h1 className="TextBlocSpace">Hello !</h1>
+        <h1 className="TextBlocSpace">{langue["presentation.title-1"]}</h1>
         <h2>
-          Je m'appelle{" "}
-          <span className="dev-presentation">Marsaleix Romain</span>,{" "}
-          <br className="br-presentation" />
-          je suis <span className="dev-presentation">Développeur Web !</span>
+          {langue["presentation.title-2-a"]} MARSALEIX ROMAIN
+          <br />
+          {langue["presentation.title-2-b"]}
         </h2>{" "}
       </div>
 
       <div className="blocText presentationText blocSpace">
         <p>
-          Auparavant <b>coach sportif et manager</b>, j'ai lors de l'année 2021
-          fait le choix de{" "}
-          <abbr title=' on peut même dire " changer de vie " pour être totalement honnête &#128514;'>
-            changer de métier{" "}
+          {langue["presentation.text-1"]}
+          <abbr title={langue["presentation.text-1-abbr-description"]}>
+            {langue["presentation.text-1-abbr-word"]}
           </abbr>
-          et de me former auprès de la Wild Code School en formation 100%
-          remote.
-        </p>
-
+          {langue["presentation.text-2"]}
+        </p>{" "}
         <br />
-        <p className="blocSpace">
-          Suite à 6 mois de formation & de projets ,{" "}
-          <b>
-            je suis à la recherche d'une opportunité me permettant de travailler
-            en entreprise tout en gagnant en compétences.
-          </b>
-        </p>
+        <p className="blocSpace">{langue["presentation.text-3"]}</p> <br />
         <br />
         <p className=" TextBlocSpace">
           <em>
-            Vous souhaitez en savoir plus à mon sujet ?
+            {langue["presentation.knowMore-part1"]}
             <br />
-            N'hésitez pas à consulter mon profil Linkedin.
+            {langue["presentation.knowMore-part2"]}
           </em>
         </p>
-
-        <a href="https://www.linkedin.com/in/romainmarsaleix/" className="recruteMePresentationBtn">
+        <a
+          href="https://www.linkedin.com/in/romainmarsaleix/"
+          className="recruteMePresentationBtn"
+        >
           <button className="recruteMe color-change-2x">
             {" "}
             linkedin.com/in/romainmarsaleix{" "}
@@ -56,16 +47,16 @@ const Presentation = () => {
         </a>
       </div>
       <Link
-              to="/Marsaleix-Romain/Projets"
-              activeClassName="selected"
-              activeStyle={{ color: "red" }}
-              //etc...
-              className="navbarLinks navbarLink "
-              title="Accéder aux projets"
-            >
-              <FaLaptopCode className="Fa-icons" />
-              <p className="text-icons">Accéder aux Projets</p>
-            </Link>
+        to="/Marsaleix-Romain/Projets"
+        activeClassName="selected"
+        activeStyle={{ color: "red" }}
+        //etc...
+        className="navbarLinks navbarLink "
+        title={langue.goToProjects}
+      >
+        <FaLaptopCode className="Fa-icons" />
+        <p className="text-icons">{langue.goToProjects}</p>
+      </Link>
     </div>
   );
 };

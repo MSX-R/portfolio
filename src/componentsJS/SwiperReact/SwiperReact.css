@@ -80,8 +80,10 @@
   display: block;
   width: 100%;
   height: auto;
+  max-height: 360px;
   object-fit: cover;
   background-position: center;
+  border: 8px solid silver;
 }
 
 .swiper-button-prev,
@@ -150,6 +152,47 @@
   color: var(--color2);
 }
 
+.legendETicons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+  /* background-color: antiquewhite; */
+  margin-top: 2vh;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: bold;
+  width: 100%;
+}
+
+.legend-project {
+  width: 70%;
+  /*Optionnel : ok si boutons sur les cotés*/
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+
+  margin: 0;
+}
+
+.projet-btn-next,
+.projet-btn-prev {
+  height: max-content;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 2px solid var(--colorSpecial);
+  padding: 5px;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.iconGitHub:hover {
+  color: var(--colorSpecial);
+}
 /* @media screen and (max-width: 740px) {
   .contenu-swiper {
     flex-direction: column;

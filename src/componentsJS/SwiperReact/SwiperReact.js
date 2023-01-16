@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 // Swiper
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,7 +19,7 @@ import {
   FaNodeJs,
   FaUnity,
   FaFigma,
-  FaTeamspeak
+  FaTeamspeak,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -30,21 +29,19 @@ import {
   SiAdobepremierepro,
 } from "react-icons/si";
 //JSON
-import Projects from "../ProjetsJSON/Projects.json";
-import {Link} from "react-router-dom"
 
-
+import { Link } from "react-router-dom";
+import SlideNextButton from "./swiperbtnNEXT";
+import SlidePrevButton from "./swiperbtnPREV";
 
 SwiperCore.use([Keyboard, Mousewheel]); //Pour utiliser le keyboard et souris
 
-const SwiperReact = () => {
+const SwiperReact = ({ langue, projectVersion }) => {
   const [path, setPath] = useState(0);
 
   const changePath = (number, event) => {
     setPath(number);
-}
-
-
+  };
 
   const icons = (icon) => {
     switch (icon) {
@@ -68,53 +65,107 @@ const SwiperReact = () => {
         return <FaUnity className="outils-icons" />;
       case "SiAdobephotoshop":
         return <SiAdobephotoshop className="outils-icons" />;
-        case "SiAdobepremierepro":
+      case "SiAdobepremierepro":
         return <SiAdobepremierepro className="outils-icons" />;
-        case "FaFigma":
+      case "FaFigma":
         return <FaFigma className="outils-icons" />;
-        
+
       default:
         console.log(`Error`);
     }
   };
+
   return (
     <>
-      {Projects &&
-        [Projects[path]].map((item, i) => (
+      {projectVersion &&
+        [projectVersion[path]].map((item, i) => (
           <div key={i} className="contenu-swiper">
             <div className="btn-project-changer blocSpace ">
-              <button className="btn-project " id="btn" onClick={() => changePath(0)}>
+              <button
+                className="btn-project "
+                id="btn"
+                onClick={() => changePath(0)}
+              >
                 L'ATELIER D'ADELINE
               </button>
-              <button className="btn-project " id="btn" onClick={() => changePath(1)}>
+              <button
+                className="btn-project "
+                id="btn"
+                onClick={() => changePath(1)}
+              >
                 SOS JEUNES POUSSES
               </button>
-              <button className="btn-project " id="btn" onClick={() => changePath(2)}>
+              <button
+                className="btn-project "
+                id="btn"
+                onClick={() => changePath(2)}
+              >
                 MOODY PLATEFORME VOD
               </button>
-              <button className="btn-project " id="btn" onClick={() => changePath(3)}>
+              <button
+                className="btn-project "
+                id="btn"
+                onClick={() => changePath(3)}
+              >
                 POUDLARD UNIVERSITY
               </button>
-              <button className="btn-project "  id="btn" onClick={() => changePath(4)}>
+              <button
+                className="btn-project "
+                id="btn"
+                onClick={() => changePath(4)}
+              >
                 SUPER MULTIVERSE 2D
               </button>
-              <button className="btn-project "  id="btn" onClick={() => changePath(5)}>
+              <button
+                className="btn-project "
+                id="btn"
+                onClick={() => changePath(5)}
+              >
                 créations graphiques
               </button>
             </div>
+
             <div className="blocText-projet">
-              <h2>{item.title}</h2>
+              {item.lien_Github ? ( // s il exite un lien github dans objet item = creation d'un link externe github
+                <Link to={item.lien_Github}>
+                  <h2>{item.title}</h2>
+                </Link>
+              ) : (
+                <h2>{item.title}</h2>
+              )}
+              {/* NE MARCHE PAS LES LIENS POUR ATTACHER GITHUB!!! */}
 
               <div>
                 <h3 className="titre-description-projet">
-                  Description du projet
+                  {langue["projets.description"]}
                 </h3>
                 <p className="description-projet">{item.description}</p>
               </div>
               <div className="outils-projets blocSpace">
-                <h3 className="titre-outils-projet">Outils :</h3>
+                <h3 className="titre-outils-projet">
+                  {langue["projets.stack"]}
+                </h3>
+
                 {item.outils.map((el, i) => {
-                  return <p key={i}>{icons(el.iconName)}</p>;
+                  return (
+                    <p
+                      key={i}
+                      className={
+                        el.iconName === "FaGithub" &&
+                        item.title !== "POUDLARD UNIVERSITY"
+                          ? "iconGitHub"
+                          : ""
+                      }
+                    >
+                      {/* {item.lien_Github ? (
+                        <a href={langue["projets[${i}].description"]} target>
+                          {icons(el.iconName)}
+                        </a>
+                      ) : ( */}
+                      {icons(el.iconName)}
+                      {/* )} */}
+                    </p>
+                  );
                 })}
               </div>
             </div>
@@ -127,8 +178,10 @@ const SwiperReact = () => {
               }}
               pagination={{
                 type: "progressbar",
+                nextEl: ".review-swiper-button-next",
+                prevEl: ".review-swiper-button-prev",
               }}
-              navigation={true}
+              navigation={false} //Desactivation des boutons au centre de l'image ! true pour reactiver
               modules={[Pagination, Navigation]}
               className="mySwiper blocSpace"
               loop={true}
@@ -140,13 +193,31 @@ const SwiperReact = () => {
                 return (
                   <SwiperSlide key={i} className="Slide ">
                     <div>
-                    
-                      <img
-                        src={require(`./assets/${el.picture}.png`)}
-                        alt={el.name}
-                      />
-                      
-                      <div className="legend-project">{el.name}</div>
+                      <a
+                        TARGET="_blank"
+                        href={require(`./assets/${el.picture}.png`)}
+                      >
+                        <img
+                          src={require(`./assets/${el.picture}.png`)}
+                          alt={el.name}
+                          title="Cliquez sur l'image pour l'afficher dans un nouvel onglet"
+                        />{" "}
+                      </a>
+                    </div>
+
+                    <div className="legendETicons">
+                      <SlidePrevButton />
+                      {/* <button onClick={() => swiper.slidePrevious()}>
+                          
+                        </button> */}
+                      <div className="legend-project">
+                        {el.name.toUpperCase()}
+                      </div>{" "}
+                      {/*                         
+                        <button onClick={() => swiper.slideNext()}>
+                          
+                          </button> */}
+                      <SlideNextButton />
                     </div>
                   </SwiperSlide>
                 );
@@ -159,13 +230,12 @@ const SwiperReact = () => {
               activeStyle={{ color: "red" }}
               //etc...
               className="navbarLinks navbarLink "
-              title="Accéder au Formulaire de contact"
+              title={langue.goToContact}
             >
               <FaTeamspeak className="Fa-icons" />
-              <p className="text-icons">Accéder au Formulaire de contact</p>
+              <p className="text-icons">{langue.goToContact}</p>
             </Link>
           </div>
-
         ))}
     </>
   );

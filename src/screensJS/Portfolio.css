@@ -3,14 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
-
-
-
-
-
-
 
 .bloc-text-description p {
   padding-bottom: 10px;
@@ -57,8 +51,6 @@
 }
 
 /* new parameters */
-.contenu-swiper{
-margin:30px auto;
+.contenu-swiper {
+  margin: 30px auto;
 }
-
-

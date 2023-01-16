@@ -10,20 +10,22 @@ import logoblanc from "../assets/logoblanc.png";
 import { Link } from "react-router-dom";
 //
 
-const Portfolio = () => {
-
-  
-
+const Portfolio = ({
+  langue,
+  setLangue,
+  projectVersion,
+  setProjectVersion,
+}) => {
   return (
     <div className="screen">
-      <Nav />
-      <Outlet />
-      <TexteDefilant />
-      {/* Latest version */}
-      {/* <div className="container">
-        <Outlet />
-      </div>
-      <TexteDefilant /> */}
+      <Nav
+        langue={langue}
+        setLangue={setLangue}
+        projectVersion={projectVersion}
+        setProjectVersion={setProjectVersion}
+      />
+      <Outlet langue={langue} />
+      <TexteDefilant langue={langue} />
     </div>
   );
 };

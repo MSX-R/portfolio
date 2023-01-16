@@ -6,11 +6,19 @@ import { Link } from "react-router-dom";
 /*Import des icones */
 import { FaUserCircle, FaLaptopCode, FaTeamspeak } from "react-icons/fa";
 import MsxLogo from "../../assets/logoblanc.png";
-
 import { NavHashLink } from "react-router-hash-link"; // POUR PLACER DES ANCRES VIA ID dans le SITE
 
-function Nav() {
+//LANGUAGE CHANGER
+import frFlag from "../../assets/frFlag.png";
+import ukFlag from "../../assets/ukFlag.png";
+import UK from "../../languages/eng-ENG.json";
+import FR from "../../languages/fr-FR.json";
+import projetsFR from "../ProjetsJSON/projets-FR.json"; //projet francais
+import projetsUK from "../ProjetsJSON/projets-ENG.json"; //projet francais
+
+function Nav({ langue, setLangue, setProjectVersion }) {
   const [showLinks, setShowLinks] = useState(false);
+  const [drapeau, setDrapeau] = useState(ukFlag);
 
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
@@ -20,6 +28,18 @@ function Nav() {
 
   console.log(showLinks); /* Pour verifier que ca passe bien de true a false */
 
+  const langueChange = (drapeau) => {
+    if (drapeau === frFlag) {
+      setLangue(FR);
+      setDrapeau(ukFlag);
+      setProjectVersion(projetsFR);
+    } else {
+      setLangue(UK);
+      setDrapeau(frFlag);
+      setProjectVersion(projetsUK);
+    }
+  };
+
   return (
     <div>
       <nav
@@ -27,16 +47,15 @@ function Nav() {
           showLinks ? "showNavbarMobile" : "hideNavbarMobile"
         }`}
       >
-        
         <div className="navbarLeftBlock">
           <Link to="/">
             <img src={MsxLogo} alt="logo-mini" className="msxIcon" />
           </Link>
           <p className="marsaleixRomain">MARSALEIX ROMAIN</p>
           <div className="separationLineNameJob"></div>
-          <p className="developpeurWeb">Développeur web/mobile</p>
+          <p className="developpeurWeb">{langue["nav_metier"]}</p>
 
-          {/* MENU MOBILE */}
+          {/* MENU BURGERMOBILE */}
           <button className="navbarBurger" onClick={handleShowLinks}>
             <span className="burgerBar"></span>
           </button>
@@ -50,7 +69,7 @@ function Nav() {
             activeStyle={{ color: "red" }}
             //etc...
             className="navbarLinks"
-            title="Accéder à l'Accueil"
+            title={langue.goToHome}
           >
             <FaUserCircle />
           </NavHashLink>
@@ -61,7 +80,7 @@ function Nav() {
             activeStyle={{ color: "red" }}
             //etc...
             className="navbarLinks"
-            title="Accéder aux Projets"
+            title={langue.goToProjects}
           >
             <FaLaptopCode />
           </NavHashLink>
@@ -72,11 +91,16 @@ function Nav() {
             activeStyle={{ color: "red" }}
             //etc...
             className="navbarLinks "
-            title="Accéder au Formulaire de contact"
+            title={langue.goToContact}
           >
             <FaTeamspeak />
           </NavHashLink>
-
+          <img
+            onClick={() => langueChange(drapeau)}
+            src={drapeau}
+            alt="french flag"
+            className="rotate-center navFlag"
+          />
           <NavHashLink
             to="/Marsaleix-Romain/Formulaire-de-contact"
             activeClassName="selected"
@@ -86,15 +110,11 @@ function Nav() {
           >
             <button className="recruteMe">ME RECRUTER</button>
           </NavHashLink>
-
         </div>
 
         {/* MENU MOBILE */}
         <ul className="navbarMenuLinks mobileMod">
-          <div
-            className="navbarItem slideInDown-0"
-            onClick={closeMenu}
-          >
+          <div className="navbarItem slideInDown-0" onClick={closeMenu}>
             <img
               src={MsxLogo}
               alt="Logo MSX taille miniature"
@@ -156,16 +176,20 @@ function Nav() {
               title="Accéder au Formulaire de contact"
               onClick={closeMenu}
             >
-              <button className="recruteMe">ME RECRUTER</button>
+              <button className="recruteMe">
+                {langue.nav_recrutement.toUpperCase()}
+              </button>
             </NavHashLink>
+          </li>
 
-            {/* <a
-              href="tel:0011223344"
-              className="navbarLink "
-              // title="Cliquer pour passer un appel"
-            >
-              <button className="recruteMe">ME RECRUTER</button>
-            </a> */}
+          <li className="navbarItem slideInDown-5">
+            <img
+              onClick={() => langueChange(drapeau)}
+              src={drapeau}
+              alt="language flag"
+              activeClassName="selected"
+              className="rotate-center navFlagMobile navbarLink"
+            />
           </li>
         </ul>
       </nav>

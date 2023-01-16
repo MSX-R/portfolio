@@ -8,10 +8,12 @@
   text-decoration: none;
   list-style: none;
   color: var(--color2);
+  /* padding-bottom: 25px; */
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }

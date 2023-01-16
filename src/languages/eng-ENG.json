@@ -1,0 +1,57 @@
+{
+  "nav_metier": "Web developper",
+  "nav_recrutement": "Hire me",
+
+  "goToHome": "Navigate to the homepage",
+  "goBackToHome": "Go back to the homepage",
+  "goToProjects": "Navigate to the projects",
+  "goToContact": "Navigate to the contact form",
+
+  "flash_infos-intro": "Currently, I'm a study-work student who's looking for",
+  "flash_infos-missionY": " an opportunity with a Tech Company ",
+  "flash_infos-to-duration": " for a contract duration of ",
+  "flash_infos-durationY": " 12 months ",
+  "flash_infos-to-location": " on the aera of ",
+  "flash_infos-location": " Sophia Antipolis",
+
+  "presentation.title-1": "Hello !",
+  "presentation.title-2-a": "I am ",
+  "presentation.title-2-b": "I am a Web developper !",
+  "presentation.text-1": "Previously, I was a sports coach and manager in several companies but in 2021 I decided to ",
+  "presentation.text-1-abbr-word": " change my career",
+  "presentation.text-1-abbr-description": "To be totally honest, I feel like I have changed my life!",
+  "presentation.text-2": " and to follow a remote training with the Wild Code School.",
+  "presentation.text-3": "After 6 months of training & projects, I am looking for an opportunity to work in a company while gaining skills.",
+  "presentation.knowMore-part1": "Would you like to find out more about me?",
+  "presentation.knowMore-part2": "Feel free to check my Linkedin profile.",
+
+  "projets.description": "Project description",
+  "projets.stack": "Tools :",
+
+  "formulaire.title": "CONTACT FORM",
+  "formulaire.intro-1": "Are you interested about my profile? Would you like to know more about me?",
+  "formulaire.intro-2": "Do you have an opportunity for me?",
+  "formulaire.fin-intro": "Don't hesitate to let me know!",
+  "formulaire.formLastName": "Last name",
+  "formulaire.formLastNamePlaceholder": "Enter your last name here",
+  "formulaire.formFirstName": "First name",
+  "formulaire.formFirstNamePlaceholder": "Enter your first name here",
+  "formulaire.formTelephone": "Phone number",
+  "formulaire.formTelephonePlaceholder": "06 05 04 03 02",
+  "formulaire.formEmail": "Email adress",
+  "formulaire.formEmailPlaceholder": "youremail@gmail.com",
+  "formulaire.formMessage": "Your message",
+  "formulaire.formMessagePlaceholder": "Hello Romain, I have an opportunity for you within my company. Let me tell you more about it in an interview. Can we arrange a date together? Call me back.  Your future manager. ",
+  "formulaire.reset": "Clear",
+  "formulaire.sentAction": "Get in touch :D !",
+
+  "Fsent": " Your message has been sent! I will contact you soon!  ",
+  "Ferror": " Your message could not be sent. An error has occurred. ",
+
+  "Desc.adeline": "",
+  "Desc.sos": "",
+  "Desc.moody": "",
+  "Desc.poudlard": "",
+  "Desc.multiverse": "",
+  "Desc-creations": ""
+}

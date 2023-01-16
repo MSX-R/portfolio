@@ -2,7 +2,7 @@ import React from "react";
 import "./TexteDefilant.css";
 import { RiTimerFlashLine } from "react-icons/ri";
 
-const TexteDefilant = () => {
+const TexteDefilant = ({ langue }) => {
   return (
     <div className="bloc-news">
       <div className="breaking-news">
@@ -11,11 +11,19 @@ const TexteDefilant = () => {
 
       <div className="marquee-rtl">
         <p className="text-defilant">
-          Je suis actuellement à la recherche d'
-          <span className="important-text"> une alternance en entreprise</span> d'une
-          durée de <span className="important-text"> 12 mois</span> sur le
-          secteur{" "}
-          <span className="important-text">Sophia Antipolis - Nice</span>.
+          {langue["flash_infos-intro"]}
+          <span className="important-text">
+            {langue["flash_infos-missionY"]}
+          </span>
+          {langue["flash_infos-to-duration"]}
+          <span className="important-text">
+            {langue["flash_infos-durationY"]}
+          </span>
+          {langue["flash_infos-to-location"]}
+          <span className="important-text">
+            {langue["flash_infos-location"]}
+          </span>
+          .
         </p>
       </div>
     </div>

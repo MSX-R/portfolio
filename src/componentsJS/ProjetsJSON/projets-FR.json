@@ -7,40 +7,43 @@
       { "iconName": "FaCss3Alt" },
       { "iconName": "SiJavascript" },
       { "iconName": "FaReact" },
-      { "iconName": "FaGithub" }
+      {
+        "iconName": "FaGithub"
+      }
     ],
+    "lien_GitHub": "https://github.com/MSX-R/hairdresser-website",
     "pictures": [
       {
         "picture": "imgAdeline1",
-        "name": "PAGE D'ENTREE SUR LE SITE"
+        "name": "Entrée sur le site "
       },
       {
         "picture": "imgAdeline2",
-        "name": "ACCUEIL DU SITE"
+        "name": "La page d'accueil"
       },
       {
         "picture": "imgAdeline3",
-        "name": "VISUEL DU TEXTE"
-      },
-      {
-        "picture": "imgAdeline4",
-        "name": "LE FOOTER"
+        "name": "Aspect du contenu texte"
       },
       {
         "picture": "imgAdeline5",
-        "name": "LE SALON DE COIFFURE"
+        "name": "Le salon"
       },
       {
         "picture": "imgAdeline6",
-        "name": "BOOK PHOTO"
+        "name": "La galerie photo"
       },
       {
         "picture": "imgAdeline7",
-        "name": "TARIFS DU SALON"
+        "name": "Les Tarifs du salon"
       },
       {
         "picture": "imgAdeline8",
-        "name": "FORMULAIRE DE CONTACT"
+        "name": "Le formulaire de contact"
+      },
+      {
+        "picture": "imgAdeline4",
+        "name": "Footer du site"
       }
     ]
   },
@@ -56,42 +59,43 @@
       { "iconName": "SiMysql" },
       { "iconName": "FaGithub" }
     ],
+    "lien_GitHub": "https://github.com/MSX-R/Projet-SOS-JeunesPousses-Front",
     "pictures": [
       {
         "picture": "imgSOSJP1",
-        "name": "PAGE D'ACCUEIL DU SITE"
+        "name": "La page d'accueil"
       },
       {
         "picture": "imgSOSJP2",
-        "name": "CHRONOLOGIE D'UN PROJET"
+        "name": "Le parcours-projet"
       },
       {
         "picture": "imgSOSJP3",
-        "name": "EXEMPLE D'ARTICLE"
+        "name": "Le visuel d'un article"
       },
       {
         "picture": "imgSOSJP4",
-        "name": "INSCRIPTION VIA MODAL"
+        "name": "Le fenêtre d'inscription"
       },
       {
         "picture": "imgSOSJP5",
-        "name": "MENU DES ARTICLES"
+        "name": "Le menu des articles"
       },
       {
         "picture": "imgSOSJP6",
-        "name": "PAGE DE CONNECTION ADMIN"
+        "name": "La page de connection Admin"
       },
       {
         "picture": "imgSOSJP7",
-        "name": "MENU ADMIN"
+        "name": "Le menu Admin"
       },
       {
         "picture": "imgSOSJP8",
-        "name": "CREATION D'UN NOUVEL ARTICLE"
+        "name": "La création d'un article"
       },
       {
         "picture": "imgSOSJP9",
-        "name": "MODIFICATION D'ELEMENT"
+        "name": "La modificiation d'un article"
       }
     ]
   },
@@ -105,26 +109,27 @@
       { "iconName": "FaReact" },
       { "iconName": "FaGithub" }
     ],
+    "lien_GitHub": "https://github.com/MSX-R/projet-2-Moody",
     "pictures": [
       {
         "picture": "imgMoody1",
-        "name": "PAGE D'ENTREE SUR LE SITE - CHOIX D'HUMEUR"
+        "name": "Page d'entrée sur le site - choix d'humeur"
       },
       {
         "picture": "imgMoody2",
-        "name": "CATALOGUE DE FILMS OU SERIES SELON HUMEUR"
+        "name": "Catalogue de produits selon humeur"
       },
       {
         "picture": "imgMoody3",
-        "name": "BAS DE PAGE"
+        "name": "Le footer & la pagination"
       },
       {
         "picture": "imgMoody4",
-        "name": "CARTE DE FILM"
+        "name": "Exemple de carte-produit"
       },
       {
         "picture": "imgMoody5",
-        "name": "SECTION DES MINI-JEUX"
+        "name": "Menu de selection de mini-jeux"
       }
     ]
   },
@@ -137,26 +142,27 @@
       { "iconName": "SiJavascript" },
       { "iconName": "FaGithub" }
     ],
+    "lien_GitHub": null,
     "pictures": [
       {
         "picture": "imgPoudlardUniversity1",
-        "name": "PAGE D'ENTREE SUR LE SITE"
+        "name": "La page d'accueil"
       },
       {
         "picture": "imgPoudlardUniversity2",
-        "name": "CONTENU DE PAGE"
+        "name": "Exemple de contenu"
       },
       {
         "picture": "imgPoudlardUniversity3",
-        "name": "BAS DE PAGE"
+        "name": "Footer"
       },
       {
         "picture": "imgPoudlardUniversity4",
-        "name": "PAGE EVENEMENTS"
+        "name": "La section événements"
       },
       {
         "picture": "imgPoudlardUniversity5",
-        "name": "SECTION SPORTS - CARTES EVENEMENTS"
+        "name": "Exemples d'articles événements"
       }
     ]
   },
@@ -168,38 +174,39 @@
       { "iconName": "SiVisualstudio" },
       { "iconName": "SiAdobephotoshop" }
     ],
+    "lien_GitHub": null,
     "pictures": [
       {
         "picture": "imgSuperMultiverse0",
-        "name": "SE DEPLACER DANS LE JEU"
-      },
-      {
-        "picture": "imgSuperMultiverse1",
-        "name": "MONTER A L'ÉCHELLE"
+        "name": "Déplacer son personnage"
       },
       {
         "picture": "imgSuperMultiverse2",
-        "name": "EXPLORER DES ZONES CACHÉES"
+        "name": "Combattre des énnemis"
+      },
+      {
+        "picture": "imgSuperMultiverse1",
+        "name": "Utiliser les éléments du décor"
       },
       {
         "picture": "imgSuperMultiverse3",
-        "name": "EMPRUNTER DES CHEMINS SECRETS"
+        "name": "Découvrir des chemins secrets"
       },
       {
         "picture": "imgSuperMultiverse4",
-        "name": "RECOLTER DES ITEMS - Z-BALLS"
+        "name": "Collectionner des items"
       },
       {
         "picture": "imgSuperMultiverse5",
-        "name": "ATTEINDRE LA FIN D'UN NIVEAU"
+        "name": "Atteindre la fin d'un niveau"
       },
       {
         "picture": "imgSuperMultiverse6",
-        "name": "EXPLORER D'AUTRES NIVEAUX"
+        "name": "Explorer d'autres niveaux"
       },
       {
         "picture": "imgSuperMultiverse7",
-        "name": "GAME OVER - MOURIR AU COMBAT"
+        "name": "Mourir au combat - GAME OVER"
       }
     ]
   },
@@ -211,14 +218,15 @@
       { "iconName": "SiAdobepremierepro" },
       { "iconName": "FaFigma" }
     ],
+    "lien_GitHub": null,
     "pictures": [
       {
         "picture": "creation6",
-        "name": "BANDE POUR RESEAUX SOCIAUX"
+        "name": "Bande pour réseau social"
       },
       {
         "picture": "creation7",
-        "name": "RECTO CARTE PROFESSIONNELLE"
+        "name": "Carte Professionnelle carré"
       },
       {
         "picture": "creation9",

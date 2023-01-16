@@ -1,0 +1,239 @@
+[
+  {
+    "title": "L'atelier d'Adeline",
+    "description": "Website created for a hairdressing salon to provide an additional virtual presence outside social networks.",
+    "outils": [
+      { "iconName": "FaHtml5" },
+      { "iconName": "FaCss3Alt" },
+      { "iconName": "SiJavascript" },
+      { "iconName": "FaReact" },
+      { "iconName": "FaGithub" }
+    ],
+    "lien_GitHub": "https://github.com/MSX-R/hairdresser-website",
+    "pictures": [
+      {
+        "picture": "imgAdeline1",
+        "name": "Website entry"
+      },
+      {
+        "picture": "imgAdeline2",
+        "name": "Website omepage"
+      },
+      {
+        "picture": "imgAdeline3",
+        "name": "Visual of text content"
+      },
+      {
+        "picture": "imgAdeline5",
+        "name": "Hairdressing salon"
+      },
+      {
+        "picture": "imgAdeline6",
+        "name": "The photo gallery"
+      },
+      {
+        "picture": "imgAdeline7",
+        "name": "Salon's rates"
+      },
+      {
+        "picture": "imgAdeline8",
+        "name": "Contact form"
+      },
+      {
+        "picture": "imgAdeline4",
+        "name": "Website footer"
+      }
+    ]
+  },
+  {
+    "title": "SOS JEUNES POUSSES",
+    "description": "Creation of a website offering support for the creation of professional projects. The association SOS JEUNES POUSSES aims to provide information and support to all project leaders.",
+    "outils": [
+      { "iconName": "FaHtml5" },
+      { "iconName": "FaCss3Alt" },
+      { "iconName": "SiJavascript" },
+      { "iconName": "FaReact" },
+      { "iconName": "FaNodeJs" },
+      { "iconName": "SiMysql" },
+      { "iconName": "FaGithub" }
+    ],
+    "lien_GitHub": "https://github.com/MSX-R/Projet-SOS-JeunesPousses-Front",
+    "pictures": [
+      {
+        "picture": "imgSOSJP1",
+        "name": "Website Homepage"
+      },
+      {
+        "picture": "imgSOSJP2",
+        "name": "Project timeline"
+      },
+      {
+        "picture": "imgSOSJP3",
+        "name": "Example of an article"
+      },
+      {
+        "picture": "imgSOSJP4",
+        "name": "Registration window"
+      },
+      {
+        "picture": "imgSOSJP5",
+        "name": "Articles menu"
+      },
+      {
+        "picture": "imgSOSJP6",
+        "name": "Admin login page"
+      },
+      {
+        "picture": "imgSOSJP7",
+        "name": "Admininistrator menu"
+      },
+      {
+        "picture": "imgSOSJP8",
+        "name": "Creating a new article"
+      },
+      {
+        "picture": "imgSOSJP9",
+        "name": "Editing an article"
+      }
+    ]
+  },
+  {
+    "title": "MOODY VOD PLATFORM",
+    "description": "VOD platform created to offer an original experience to the visitors of the site. Choose a category of films or series according to your emotional state.",
+    "outils": [
+      { "iconName": "FaHtml5" },
+      { "iconName": "FaCss3Alt" },
+      { "iconName": "SiJavascript" },
+      { "iconName": "FaReact" },
+      { "iconName": "FaGithub" }
+    ],
+    "lien_GitHub": "https://github.com/MSX-R/projet-2-Moody",
+    "pictures": [
+      {
+        "picture": "imgMoody1",
+        "name": "Website entry page - mood selection"
+      },
+      {
+        "picture": "imgMoody2",
+        "name": "Product catalogue according to mood"
+      },
+      {
+        "picture": "imgMoody3",
+        "name": "Footer & pagination"
+      },
+      {
+        "picture": "imgMoody4",
+        "name": "Example of product card"
+      },
+      {
+        "picture": "imgMoody5",
+        "name": "Mini games selection menu"
+      }
+    ]
+  },
+  {
+    "title": "POUDLARD UNIVERSITY",
+    "description": "Showcase site created for a fictional  school to communicate with visitors and members of the school.",
+    "outils": [
+      { "iconName": "FaHtml5" },
+      { "iconName": "FaCss3Alt" },
+      { "iconName": "SiJavascript" },
+      { "iconName": "FaGithub" }
+    ],
+    "lien_GitHub": null,
+    "pictures": [
+      {
+        "picture": "imgPoudlardUniversity1",
+        "name": "Website entry page "
+      },
+      {
+        "picture": "imgPoudlardUniversity2",
+        "name": "Example of content"
+      },
+      {
+        "picture": "imgPoudlardUniversity3",
+        "name": "Website ooter"
+      },
+      {
+        "picture": "imgPoudlardUniversity4",
+        "name": "The events section"
+      },
+      {
+        "picture": "imgPoudlardUniversity5",
+        "name": "Examples of event articles"
+      }
+    ]
+  },
+  {
+    "title": "Super Multiverse 2D",
+    "description": "First 2D video game prototype created with Unity mixing several universes: Video games, Manga & Cinema. Sprite editing and animation creation in Photoshop. Creation of 3 playable levels.",
+    "outils": [
+      { "iconName": "FaUnity" },
+      { "iconName": "SiVisualstudio" },
+      { "iconName": "SiAdobephotoshop" }
+    ],
+    "lien_GitHub": null,
+    "pictures": [
+      {
+        "picture": "imgSuperMultiverse0",
+        "name": "Moving your character"
+      },
+      {
+        "picture": "imgSuperMultiverse2",
+        "name": "Fighting enemies"
+      },
+      {
+        "picture": "imgSuperMultiverse1",
+        "name": "Using the elements of the stage"
+      },
+      {
+        "picture": "imgSuperMultiverse3",
+        "name": "Discovering secret paths"
+      },
+      {
+        "picture": "imgSuperMultiverse4",
+        "name": "Collecting items"
+      },
+      {
+        "picture": "imgSuperMultiverse5",
+        "name": "Reaching the end of a level"
+      },
+      {
+        "picture": "imgSuperMultiverse6",
+        "name": "Explore other levels"
+      },
+      {
+        "picture": "imgSuperMultiverse7",
+        "name": "Dying in battle - GAME OVER"
+      }
+    ]
+  },
+  {
+    "title": "Graphic Creations",
+    "description": "Some graphic/digital creations made by myself for my own company or for professionals belonging to my network",
+    "outils": [
+      { "iconName": "SiAdobephotoshop" },
+      { "iconName": "SiAdobepremierepro" },
+      { "iconName": "FaFigma" }
+    ],
+    "lien_GitHub": null,
+    "pictures": [
+      {
+        "picture": "creation6",
+        "name": "Social networking tape"
+      },
+      {
+        "picture": "creation7",
+        "name": "Square Professional Card"
+      },
+      {
+        "picture": "creation9",
+        "name": "Logo for personal trainer"
+      },
+      {
+        "picture": "creation10",
+        "name": "Logo for real estate diagnostician"
+      }
+    ]
+  }
+]
