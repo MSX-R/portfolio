@@ -5,7 +5,6 @@ import "./Formulaire.css";
 import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import UK from "../../languages/eng-ENG.json";
-import FR from "../../languages/fr-FR.json";
 
 function Formulaire({ langue }) {
   const sendEmail = (e, langue) => {
