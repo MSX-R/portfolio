@@ -48,7 +48,7 @@ J'ai décidé de créer un portfolio afin de pouvoir me présenter virtuellement
 
 <hr>
 
-# Informations concernant les projets publiés
+# Information concernant les projets publiés
 
 Sur mon site, vous pourrez consulter des projets sur lesquels j'ai travaillé en équipe et bien entendu, des projets autonomes.
 Parmis ces divers projets, certains contiennent des créations graphiques réalisés par mes soins. Ayant un esprit plutôt créatif et aimant créer des élements, j'ai éssayé de laisser au sein de chaque projet une petite empreinte créative qui m'est propre.
