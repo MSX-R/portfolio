@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.96ce7cba.css",
-    "main.js": "/portfolio/static/js/main.32aeae1c.js",
+    "main.css": "/portfolio/static/css/main.438e548b.css",
+    "main.js": "/portfolio/static/js/main.bbff8e60.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/imgAdeline2.png": "/portfolio/static/media/imgAdeline2.50534470a12432b5e245.png",
     "static/media/creation10.png": "/portfolio/static/media/creation10.29b0d887800075b5b38f.png",
@@ -45,13 +45,15 @@
     "static/media/creation7.png": "/portfolio/static/media/creation7.c88d82eeef1ee0385531.png",
     "static/media/imgSOSJP6.png": "/portfolio/static/media/imgSOSJP6.11c9dff63a5cd44a0d14.png",
     "static/media/logoblanc.png": "/portfolio/static/media/logoblanc.888120a6940ff0715c9d.png",
+    "static/media/ukFlag.png": "/portfolio/static/media/ukFlag.b9a2ba74e5f8a55977e7.png",
+    "static/media/frFlag.png": "/portfolio/static/media/frFlag.73f91b4e96d67f8a03f0.png",
     "index.html": "/portfolio/index.html",
-    "main.96ce7cba.css.map": "/portfolio/static/css/main.96ce7cba.css.map",
-    "main.32aeae1c.js.map": "/portfolio/static/js/main.32aeae1c.js.map",
+    "main.438e548b.css.map": "/portfolio/static/css/main.438e548b.css.map",
+    "main.bbff8e60.js.map": "/portfolio/static/js/main.bbff8e60.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96ce7cba.css",
-    "static/js/main.32aeae1c.js"
+    "static/css/main.438e548b.css",
+    "static/js/main.bbff8e60.js"
   ]
 }
