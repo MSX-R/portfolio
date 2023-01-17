@@ -1,70 +1,59 @@
-# Getting Started with Create React App 
+# MSX-R 🔴 - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projet réalisé par [MSX-R](https://github.com/MSX-R "lien github profile").
+> Lien du site déployé : [https://msx-r.github.io/portfolio](https://msx-r.github.io/portfolio)
 
-## Available Scripts
 
-In the project directory, you can run:
+# En quoi consiste le projet ?
 
-### `npm start`
+J'ai décidé de créer un portfolio afin de pouvoir me présenter virtuellement auprès d'entreprises et possibles collaborateurs. En visitant mon site, vous pourrez découvrir qui je suis, sur quels projets j'ai travaillé et également me contacter. Le site est consultable en français et en anglais.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Navigation sur le site
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Accès au site
 
-### `npm test`
+- Cliquer sur le logo pour accéder à la page d'accueil du site
+- Patientez quelques secondes et une redirection automatisée vers la page d'accueil sera effectuée.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Navigation sur site
 
-### `npm run build`
+###### Barre de navigation (fonctionnalités)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Logo MSX : Cliquer sur le logo pour revenir à la page d'entrée sur le site
+- 1ere icone | Silhouette : Accéder à la page d'accueil du site
+- 2ème icone | Ordinateur : Accéder aux projets
+- 3ème icone | Micro-casque : Accéder au formulaire de contact
+- 4ème icone | Drapeau : Changer la langue du site (FR | ENG)
+- Linkedln | Cliquer pour être redirigé vers mon profil Linkdln
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###### Accueil : Ma présentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Courte présentation me présentant, abordant ma reconversion et le cursus suivi ainsi que ma recherche actuelle.
+- Bouton de redirection vers mon profil Linkedln
+- Lien de rediriction vers la page Projets
+- Bande animée | FLASH INFOS : Affichage d'informations plus précises concernant ma recherche actuelle
 
-### `npm run eject`
+###### Projets : Créations et participations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Boutons cliquables mentionnant des noms de projets : Cliquer sur un des boutons pour accéder aux informations du projet séléctionné
+- Présentation de projet : Découvrer mes projets par la visualisation de descriptions, d'illustrations et de légendes venant apporter quelques précisions au contenu de chacun des projets
+- Changer d'illustrations : Accéder à l'illustration précédente / suivante en cliquant sur les boutons prévus à cet effet. Le changement peut également se faire par scoll horizontal
+- Lien de redirection vers la page Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###### Formulaire de contact : Je vous intérésse ? N'hésitez pas à me contacter.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Remplissez le formulaire et cliquer sur le bouton d'envoi. Un pop-up s'ouvrira pour vous confirmer l'envoi.
+- Cliquer sur le bouton de réinitialisation pour supprimer toutes données saisies dans les champs du formulaire.
+- Lien de redirection vers la page d'accueil du site
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<hr>
 
-## Learn More
+# Information concernant les projets publiés
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sur mon site, vous pourrez consulter des projets sur lesquels j'ai travaillé en équipe et bien entendu, des projets autonomes.
+Parmis ces divers projets, certains contiennent des créations graphiques réalisés par mes soins. Ayant un esprit plutôt créatif et aimant créer des élements, j'ai éssayé de laisser au sein de chaque projet une petite empreinte créative qui m'est propre.
+Ainsi, durant la découverte des projets, vous pourriez vous retrouver en face d'une forme, d'un logo, d'une illustration, d'un composant édité ou retravaillé qui pourrait très probablement être une de mes créations. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Créateur
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MSX-R](https://github.com/MSX-R "lien github profile")
