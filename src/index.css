@@ -1,21 +1,18 @@
-
-
 :root {
   font-size: 62.5%;
   /* COLORS VARIABLES */
-  --color1: rgb(4, 47, 67);/*   var(--color1)   */
-  --color2: hsl(0, 0%, 96%);/*   var(--color2)   */
-  --color3 : hsl(38, 47%, 47%);/*   var(--color3)   */
-  --color4: hsl(0, 0%, 5%);/*   var(--color4)   */
+  --color1: rgb(4, 47, 67); /*   var(--color1)   */
+  --color2: hsl(0, 0%, 96%); /*   var(--color2)   */
+  --color3: hsl(38, 47%, 47%); /*   var(--color3)   */
+  --color4: hsl(0, 0%, 5%); /*   var(--color4)   */
   --color5: hsl(0, 0%, 36%); /*   var(--color5)   */
   --colorSpecial: hsl(45, 100%, 61%); /* Exception */
-  --swiper-navigation-color:hsl(0, 0%, 96%); 
+  --swiper-navigation-color: hsl(0, 0%, 96%);
 }
 
 /* FONT SIZE */
 h1 {
   font-size: clamp(50px, 8vw, 72px);
-
 }
 h2 {
   font-size: clamp(20px, 4vw, 42px);
@@ -27,7 +24,6 @@ h3 {
 p {
   font-size: clamp(14px, 3vw, 16px);
 }
-
 
 /*Espacement*/
 .TextBlocSpace {
@@ -47,7 +43,7 @@ p {
 }
 
 /*Mise en forme Contenu Responsive = .swiper*/
-.contentSize{
+.contentSize {
   max-width: 700px; /*taille photo slider*/
   width: 95%;
   height: fit-content;
@@ -59,12 +55,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-

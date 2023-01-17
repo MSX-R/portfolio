@@ -60,9 +60,36 @@
   }
 }
 
-.color-change-2x:hover {
+.color-change-2x:hover,
+.color-change-3:hover {
   background: var(--color2) !important ;
   border: 3px solid var(--colorSpecial);
+}
+
+/* Only : Menu mobile version  */
+.color-change-3 {
+  background-color: transparent;
+  -webkit-animation: color-change-2x 4s linear infinite alternate both;
+  animation: color-change-2x 4s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: var(--color3);
+    border: 2.5px solid #c0c0c0;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: var(--color3);
+    border: 2.5px solid #c0c0c0;
+  }
+  100% {
+    background: var(transparent);
+  }
 }
 
 @media screen and (max-width: 600px) {

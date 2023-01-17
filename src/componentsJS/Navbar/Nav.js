@@ -97,28 +97,35 @@ function Nav({ langue, setLangue, setProjectVersion }) {
           <img
             onClick={() => langueChange(drapeau)}
             src={drapeau}
-            alt="french flag"
+            alt="country language spoken flag"
             className="rotate-center navFlag"
+            title={langue.changeLanguage}
           />
-          <NavHashLink
-            to="/Marsaleix-Romain/Formulaire-de-contact"
+          <a
+            href="https://www.linkedin.com/in/romainmarsaleix/"
+            target="_blank"
+            rel="noreferrer"
             activeClassName="selected"
             activeStyle={{ color: "red" }}
-            title="Accéder au Formulaire de contact"
+            title={langue.goToContact}
             onClick={closeMenu}
           >
-            <button className="recruteMe">ME RECRUTER</button>
-          </NavHashLink>
+            <button className="recruteMe color-change-2x">
+              {langue.nav_recrutement.toUpperCase()}
+            </button>
+          </a>
         </div>
 
         {/* MENU MOBILE */}
         <ul className="navbarMenuLinks mobileMod">
           <div className="navbarItem slideInDown-0" onClick={closeMenu}>
-            <img
-              src={MsxLogo}
-              alt="Logo MSX taille miniature"
-              className="msxIcon msxIconMobileMenu"
-            />
+            <NavHashLink to="/">
+              <img
+                src={MsxLogo}
+                alt="Logo MSX taille miniature"
+                className="msxIcon msxIconMobileMenu"
+              />
+            </NavHashLink>
 
             <div className="separationLineNameJob2"></div>
             <p className="marsaleixRomain2">MARSALEIX ROMAIN</p>
@@ -130,11 +137,11 @@ function Nav({ langue, setLangue, setProjectVersion }) {
               activeStyle={{ color: "red" }}
               //etc...
               className="navbarLinks navbarLink "
-              title="Accéder à l'Accueil"
+              title={langue.goToHome}
               onClick={closeMenu}
             >
               <FaUserCircle className="Fa-icons" />
-              <p className="text-icons">Accéder à l'Accueil</p>
+              <p className="text-icons">{langue.goToHome}</p>
             </NavHashLink>
           </li>
           <li className="navbarItem slideInDown-2">
@@ -144,11 +151,11 @@ function Nav({ langue, setLangue, setProjectVersion }) {
               activeStyle={{ color: "red" }}
               //etc...
               className="navbarLinks navbarLink "
-              title="Accéder aux projets"
+              title={langue.goToProjects}
               onClick={closeMenu}
             >
               <FaLaptopCode className="Fa-icons" />
-              <p className="text-icons">Accéder aux Projets</p>
+              <p className="text-icons">{langue.goToProjects}</p>
             </NavHashLink>
           </li>
           <li className="navbarItem slideInDown-3">
@@ -158,35 +165,40 @@ function Nav({ langue, setLangue, setProjectVersion }) {
               activeStyle={{ color: "red" }}
               //etc...
               className="navbarLinks navbarLink "
-              title="Accéder au Formulaire de contact"
+              title={langue.goToContact}
               onClick={closeMenu}
             >
               <FaTeamspeak className="Fa-icons" />
-              <p className="text-icons">Accéder au Formulaire de contact</p>
+              <p className="text-icons" onClick={closeMenu}>
+                {langue.goToContact}
+              </p>
             </NavHashLink>
           </li>
 
           <li className="navbarItem slideInDown-4">
-            <NavHashLink
-              to="/Marsaleix-Romain/Formulaire-de-contact"
+            <a
+              href="https://www.linkedin.com/in/romainmarsaleix/"
+              target="_blank"
+              rel="noreferrer"
               activeClassName="selected"
               className="navbarLinks navbarLink "
               activeStyle={{ color: "red" }}
-              title="Accéder au Formulaire de contact"
+              title={langue.goToContact}
               onClick={closeMenu}
             >
-              <button className="recruteMe">
+              <button className="recruteMe color-change-2x">
                 {langue.nav_recrutement.toUpperCase()}
               </button>
-            </NavHashLink>
+            </a>
           </li>
 
-          <li className="navbarItem slideInDown-5">
+          <li onClick={closeMenu} className="navbarItem slideInDown-5">
             <img
               onClick={() => langueChange(drapeau)}
               src={drapeau}
               alt="language flag"
               activeClassName="selected"
+              title={langue.changeLanguage}
               className="rotate-center navFlagMobile navbarLink"
             />
           </li>

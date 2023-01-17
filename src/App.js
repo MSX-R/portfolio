@@ -19,7 +19,6 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <Nav /> */}
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route

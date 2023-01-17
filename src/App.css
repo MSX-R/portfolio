@@ -17,3 +17,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+@media (max-width: 1200px) and (orientation: landscape) {
+  .App {
+    padding: 25px 0;
+  }
+}

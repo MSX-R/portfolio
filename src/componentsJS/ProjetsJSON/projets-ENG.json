@@ -13,11 +13,11 @@
     "pictures": [
       {
         "picture": "imgAdeline1",
-        "name": "Website entry"
+        "name": "Entry page"
       },
       {
         "picture": "imgAdeline2",
-        "name": "Website omepage"
+        "name": "Homepage"
       },
       {
         "picture": "imgAdeline3",
@@ -29,7 +29,7 @@
       },
       {
         "picture": "imgAdeline6",
-        "name": "The photo gallery"
+        "name": "Photo gallery"
       },
       {
         "picture": "imgAdeline7",
@@ -41,7 +41,7 @@
       },
       {
         "picture": "imgAdeline4",
-        "name": "Website footer"
+        "name": "Footer"
       }
     ]
   },
@@ -61,7 +61,7 @@
     "pictures": [
       {
         "picture": "imgSOSJP1",
-        "name": "Website Homepage"
+        "name": "Homepage"
       },
       {
         "picture": "imgSOSJP2",
@@ -111,7 +111,7 @@
     "pictures": [
       {
         "picture": "imgMoody1",
-        "name": "Website entry page - mood selection"
+        "name": "Entry page - mood selection"
       },
       {
         "picture": "imgMoody2",
@@ -144,7 +144,7 @@
     "pictures": [
       {
         "picture": "imgPoudlardUniversity1",
-        "name": "Website entry page "
+        "name": "Entry page "
       },
       {
         "picture": "imgPoudlardUniversity2",
@@ -152,15 +152,15 @@
       },
       {
         "picture": "imgPoudlardUniversity3",
-        "name": "Website ooter"
+        "name": "Footer"
       },
       {
         "picture": "imgPoudlardUniversity4",
-        "name": "The events section"
+        "name": "Events section"
       },
       {
         "picture": "imgPoudlardUniversity5",
-        "name": "Examples of event articles"
+        "name": "Events articles"
       }
     ]
   },
@@ -228,11 +228,11 @@
       },
       {
         "picture": "creation9",
-        "name": "Logo for personal trainer"
+        "name": "Personal trainer logo"
       },
       {
         "picture": "creation10",
-        "name": "Logo for real estate diagnostician"
+        "name": "Real estate diagnostician logo"
       }
     ]
   }
