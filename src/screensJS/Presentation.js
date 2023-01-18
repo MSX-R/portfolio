@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Presentation.css";
 import photoID from "../assets/yellowLigth.png";
 import photoSH from "../assets/superhero3.png";
+// import photoUK from "../assets/superhero4.png";
 
 import { FaLaptopCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -9,22 +10,23 @@ import { Link } from "react-router-dom";
 const Presentation = ({ langue }) => {
   const [photo, setPhoto] = useState(photoID);
 
-  // const hoverPictureChange1to2 = (picture1, picture2) => {
-  //   if (photo === photoID) {
-  //     setPhoto(photoSH);
-  //   } else {
-  //     setPhoto(photoID);
-  //   }
-  // };
+  const hoverPictureChange1to2 = (picture1, picture2) => {
+    if (photo === photoID) {
+      setPhoto(photoSH);
+    } else {
+      setPhoto(photoID);
+    }
+  };
+
+  // if ((langue["version"] = "ENG")) {
+  //   setPhoto(photoUK);
+  // } else {
+  //   setPhoto(photoID);
+  // }
 
   return (
     <div className="contenu-swiper" id="homePart">
-      <img
-        src={photo}
-        alt="imageSmile"
-        className="photoID fade-in-left0"
-        // onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
-      />
+      <img src={photo} alt="imageSmile" className="photoID fade-in-left0" />
       <div className="blocText blocSpace presentationTitles fade-in-right ">
         <h1 className="TextBlocSpace">{langue["presentation.title-1"]}</h1>
         <h2>
@@ -45,7 +47,10 @@ const Presentation = ({ langue }) => {
         <br />
         <p className="blocSpace">{langue["presentation.text-3"]}</p> <br />
         <br />
-        <p className=" TextBlocSpace">
+        <p
+          className=" TextBlocSpace "
+          onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
+        >
           <em>
             {langue["presentation.knowMore-part1"]}
             <br />
