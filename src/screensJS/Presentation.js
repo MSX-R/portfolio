@@ -22,10 +22,10 @@ const Presentation = ({ langue }) => {
       <img
         src={photo}
         alt="imageSmile"
-        className="photoID bounce-in-top"
+        className="photoID fade-in-left0"
         // onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
       />
-      <div className="blocText blocSpace presentationTitles">
+      <div className="blocText blocSpace presentationTitles fade-in-right ">
         <h1 className="TextBlocSpace">{langue["presentation.title-1"]}</h1>
         <h2>
           {langue["presentation.title-2-a"]} MARSALEIX ROMAIN
@@ -34,7 +34,7 @@ const Presentation = ({ langue }) => {
         </h2>{" "}
       </div>
 
-      <div className="blocText presentationText blocSpace">
+      <div className="blocText presentationText blocSpace fade-in-left ">
         <p>
           {langue["presentation.text-1"]}
           <abbr title={langue["presentation.text-1-abbr-description"]}>
@@ -67,7 +67,7 @@ const Presentation = ({ langue }) => {
         activeClassName="selected"
         activeStyle={{ color: "red" }}
         //etc...
-        className="navbarLinks navbarLink "
+        className="navbarLinks navbarLink fade-in-left "
         title={langue.goToProjects}
       >
         <FaLaptopCode className="Fa-icons" />
