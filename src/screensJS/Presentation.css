@@ -3,10 +3,10 @@
 }
 
 .photoID {
-  height: 50vw;
+  height: 40vw;
   max-height: 250px;
   max-width: 450px;
-  width: 50vw;
+  width: 350px;
   object-fit: cover;
   object-position: center;
   border-radius: 9999px;

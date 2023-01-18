@@ -1,14 +1,30 @@
-import React from "react";
-import photoID from "../assets/yellowLigth.png";
+import React, { useState } from "react";
 import "./Presentation.css";
+import photoID from "../assets/yellowLigth.png";
+import photoSH from "../assets/superhero3.png";
 
 import { FaLaptopCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Presentation = ({ langue }) => {
+  const [photo, setPhoto] = useState(photoID);
+
+  const hoverPictureChange1to2 = (picture1, picture2) => {
+    if (photo === photoID) {
+      setPhoto(photoSH);
+    } else {
+      setPhoto(photoID);
+    }
+  };
+
   return (
     <div className="contenu-swiper" id="homePart">
-      <img src={photoID} alt="imageSmile" className="photoID" />
+      <img
+        src={photo}
+        alt="imageSmile"
+        className="photoID"
+        onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
+      />
       <div className="blocText blocSpace presentationTitles">
         <h1 className="TextBlocSpace">{langue["presentation.title-1"]}</h1>
         <h2>
