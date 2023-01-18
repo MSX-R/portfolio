@@ -4,10 +4,7 @@ import { RiTimerFlashLine } from "react-icons/ri";
 
 const TexteDefilant = ({ langue }) => {
   return (
-    <div
-      className="bloc-news 
-    "
-    >
+    <div className="bloc-news ">
       <div className="breaking-news">
         FLASH <RiTimerFlashLine className="chrono-icon-flash" /> INFOS
       </div>
