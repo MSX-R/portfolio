@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Presentation.css";
 import photoID from "../assets/yellowLigth.png";
 import photoSH from "../assets/superhero3.png";
-// import photoUK from "../assets/superhero4.png";
 
 import { FaLaptopCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -17,12 +16,6 @@ const Presentation = ({ langue }) => {
       setPhoto(photoID);
     }
   };
-
-  // if ((langue["version"] = "ENG")) {
-  //   setPhoto(photoUK);
-  // } else {
-  //   setPhoto(photoID);
-  // }
 
   return (
     <div className="contenu-swiper" id="homePart">
