@@ -40,7 +40,7 @@ function Nav({ langue, setLangue, setProjectVersion }) {
   };
 
   return (
-    <div className="fade-in-top-nav">
+    <div>
       <nav
         className={`navbar ${
           showLinks ? "showNavbarMobile" : "hideNavbarMobile"

@@ -80,9 +80,9 @@
 
 /* EFFET ENTREE Texte defilant */
 .fade-in-right2 {
-  -webkit-animation: fade-in-right 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.3s
+  -webkit-animation: fade-in-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 2.8s
     both;
-  animation: fade-in-right 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 2.3s both;
+  animation: fade-in-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 2.3s both;
 }
 /**
  * ----------------------------------------
