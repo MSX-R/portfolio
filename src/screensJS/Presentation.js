@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 const Presentation = ({ langue }) => {
   const [photo, setPhoto] = useState(photoID);
 
-  const hoverPictureChange1to2 = (picture1, picture2) => {
-    if (photo === photoID) {
-      setPhoto(photoSH);
-    } else {
-      setPhoto(photoID);
-    }
-  };
+  // const hoverPictureChange1to2 = (picture1, picture2) => {
+  //   if (photo === photoID) {
+  //     setPhoto(photoSH);
+  //   } else {
+  //     setPhoto(photoID);
+  //   }
+  // };
 
   return (
     <div className="contenu-swiper" id="homePart">
