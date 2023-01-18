@@ -43,10 +43,7 @@ const Presentation = ({ langue }) => {
         <br />
         <p className="blocSpace">{langue["presentation.text-3"]}</p> <br />
         <br />
-        <p
-          className=" TextBlocSpace "
-          onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
-        >
+        <p className=" TextBlocSpace ">
           <em>
             {langue["presentation.knowMore-part1"]}
             <br />
