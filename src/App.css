@@ -9,6 +9,7 @@
   list-style: none;
   color: var(--color2);
   /* padding-bottom: 25px; */
+  overflow: hidden;
 }
 
 * {
