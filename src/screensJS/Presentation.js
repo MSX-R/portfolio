@@ -29,7 +29,10 @@ const Presentation = ({ langue }) => {
         </h2>{" "}
       </div>
 
-      <div className="blocText presentationText blocSpace fade-in-left ">
+      <div
+        className="blocText presentationText blocSpace fade-in-left "
+        onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
+      >
         <p>
           {langue["presentation.text-1"]}
           <abbr title={langue["presentation.text-1-abbr-description"]}>
