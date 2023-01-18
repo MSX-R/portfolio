@@ -22,8 +22,8 @@ const Presentation = ({ langue }) => {
       <img
         src={photo}
         alt="imageSmile"
-        className="photoID"
-        onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
+        className="photoID bounce-in-top"
+        // onMouseEnter={() => hoverPictureChange1to2(photoID, photoSH)}
       />
       <div className="blocText blocSpace presentationTitles">
         <h1 className="TextBlocSpace">{langue["presentation.title-1"]}</h1>
