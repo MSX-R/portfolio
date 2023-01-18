@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.presentationText:hover {
+  color: rgb(236, 240, 255);
+}
+
 .wildLogo {
   width: 11rem;
   opacity: 0.9;
