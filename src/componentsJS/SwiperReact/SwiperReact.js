@@ -11,23 +11,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // React Icons
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaGithub,
-  FaNodeJs,
-  FaUnity,
-  FaFigma,
-  FaTeamspeak,
-} from "react-icons/fa";
-import {
-  SiJavascript,
-  SiMysql,
-  SiVisualstudio,
-  SiAdobephotoshop,
-  SiAdobepremierepro,
-} from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaNodeJs, FaUnity, FaFigma, FaTeamspeak } from "react-icons/fa";
+import { SiJavascript, SiMysql, SiVisualstudio, SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
 //JSON
 
 import { Link } from "react-router-dom";
@@ -81,53 +66,29 @@ const SwiperReact = ({ langue, projectVersion }) => {
         [projectVersion[path]].map((item, i) => (
           <div key={i} className="contenu-swiper">
             <div className="btn-project-changer blocSpace ">
-              <button
-                className="btn-project "
-                id="btn"
-                onClick={() => changePath(0)}
-              >
+              <button className="btn-project " id="btn" onClick={() => changePath(0)}>
                 L'ATELIER D'ADELINE
               </button>
-              <button
-                className="btn-project "
-                id="btn"
-                onClick={() => changePath(1)}
-              >
+              <button className="btn-project " id="btn" onClick={() => changePath(1)}>
                 SOS JEUNES POUSSES
               </button>
-              <button
-                className="btn-project "
-                id="btn"
-                onClick={() => changePath(2)}
-              >
+              <button className="btn-project " id="btn" onClick={() => changePath(2)}>
                 MOODY PLATEFORME VOD
               </button>
-              <button
-                className="btn-project "
-                id="btn"
-                onClick={() => changePath(3)}
-              >
+              <button className="btn-project " id="btn" onClick={() => changePath(3)}>
                 POUDLARD UNIVERSITY
               </button>
-              <button
-                className="btn-project "
-                id="btn"
-                onClick={() => changePath(4)}
-              >
+              <button className="btn-project " id="btn" onClick={() => changePath(4)}>
                 SUPER MULTIVERSE 2D
               </button>
-              <button
-                className="btn-project "
-                id="btn"
-                onClick={() => changePath(5)}
-              >
+              <button className="btn-project " id="btn" onClick={() => changePath(5)}>
                 créations graphiques
               </button>
             </div>
 
             <div className="blocText-projet">
-              {item.lien_Github ? ( // s il exite un lien github dans objet item = creation d'un link externe github
-                <Link to={item.lien_Github}>
+              {item.lienSite ? ( // s il exite un lien github dans objet item = creation d'un link externe github
+                <Link to={item.lien_Site}>
                   <h2>{item.title}</h2>
                 </Link>
               ) : (
@@ -136,27 +97,15 @@ const SwiperReact = ({ langue, projectVersion }) => {
               {/* NE MARCHE PAS LES LIENS POUR ATTACHER GITHUB!!! */}
 
               <div>
-                <h3 className="titre-description-projet">
-                  {langue["projets.description"]}
-                </h3>
+                <h3 className="titre-description-projet">{langue["projets.description"]}</h3>
                 <p className="description-projet">{item.description}</p>
               </div>
               <div className="outils-projets blocSpace">
-                <h3 className="titre-outils-projet">
-                  {langue["projets.stack"]}
-                </h3>
+                <h3 className="titre-outils-projet">{langue["projets.stack"]}</h3>
 
                 {item.outils.map((el, i) => {
                   return (
-                    <p
-                      key={i}
-                      className={
-                        el.iconName === "FaGithub" &&
-                        item.title !== "POUDLARD UNIVERSITY"
-                          ? "iconGitHub"
-                          : ""
-                      }
-                    >
+                    <p key={i} className={el.iconName === "FaGithub" && item.title !== "POUDLARD UNIVERSITY" ? "iconGitHub" : ""}>
                       {/* {item.lien_Github ? (
                         <a href={langue["projets[${i}].description"]} target>
                           {icons(el.iconName)}
@@ -193,15 +142,8 @@ const SwiperReact = ({ langue, projectVersion }) => {
                 return (
                   <SwiperSlide key={i} className="Slide ">
                     <div>
-                      <a
-                        TARGET="_blank"
-                        href={require(`./assets/${el.picture}.png`)}
-                      >
-                        <img
-                          src={require(`./assets/${el.picture}.png`)}
-                          alt={el.name}
-                          title="Cliquez sur l'image pour l'afficher dans un nouvel onglet"
-                        />{" "}
+                      <a TARGET="_blank" href={require(`./assets/${el.picture}.png`)}>
+                        <img src={require(`./assets/${el.picture}.png`)} alt={el.name} title="Cliquez sur l'image pour l'afficher dans un nouvel onglet" />{" "}
                       </a>
                     </div>
 
@@ -210,9 +152,7 @@ const SwiperReact = ({ langue, projectVersion }) => {
                       {/* <button onClick={() => swiper.slidePrevious()}>
                           
                         </button> */}
-                      <div className="legend-project">
-                        {el.name.toUpperCase()}
-                      </div>{" "}
+                      <div className="legend-project">{el.name.toUpperCase()}</div>{" "}
                       {/*                         
                         <button onClick={() => swiper.slideNext()}>
                           
