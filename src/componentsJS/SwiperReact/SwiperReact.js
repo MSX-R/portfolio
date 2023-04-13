@@ -87,15 +87,13 @@ const SwiperReact = ({ langue, projectVersion }) => {
             </div>
 
             <div className="blocText-projet">
-              {item.lienSite ? ( // s il exite un lien github dans objet item = creation d'un link externe github
-                <a href={item.lien_Site}>
+              {item.lienSite ? (
+                <a href={`https://msx-r.github.io/${item.lienSite}`} target="_blank" rel="noreferrer">
                   <h2>{item.title}</h2>
                 </a>
               ) : (
                 <h2>{item.title}</h2>
               )}
-              {/* NE MARCHE PAS LES LIENS POUR ATTACHER GITHUB!!! */}
-
               <div>
                 <h3 className="titre-description-projet">{langue["projets.description"]}</h3>
                 <p className="description-projet">{item.description}</p>
