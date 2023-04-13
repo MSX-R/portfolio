@@ -88,9 +88,9 @@ const SwiperReact = ({ langue, projectVersion }) => {
 
             <div className="blocText-projet">
               {item.lienSite ? ( // s il exite un lien github dans objet item = creation d'un link externe github
-                <Link to={item.lien_Site}>
+                <a href={item.lien_Site}>
                   <h2>{item.title}</h2>
-                </Link>
+                </a>
               ) : (
                 <h2>{item.title}</h2>
               )}
