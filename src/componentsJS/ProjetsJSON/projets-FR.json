@@ -11,7 +11,7 @@
         "iconName": "FaGithub"
       }
     ],
-    "lien_GitHub": "https://github.com/MSX-R/hairdresser-website",
+    "lienGithub": "MSX-R/hairdresser-website",
     "lienSite": "hairdresser-website/",
     "pictures": [
       {
@@ -52,7 +52,7 @@
     "title": "SOS JEUNES POUSSES",
     "description": "Création d'un site internet proposant un accompagnement à la création de projet professionnel. L'association SOS JEUNES POUSSES à pour but de délivrer des informations et d'accompagner tout porteur de projet.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaReact" }, { "iconName": "FaNodeJs" }, { "iconName": "SiMysql" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": "https://github.com/MSX-R/Projet-SOS-JeunesPousses-Front",
+    "lienGithub": "MSX-R/Projet-SOS-JeunesPousses-Front",
     "pictures": [
       {
         "picture": "imgSOSJP1",
@@ -96,7 +96,7 @@
     "title": "MOODY PLATEFORME VOD",
     "description": "Plateforme VOD créé afin de proposer une expérience originale aux visiteurs du site. Choisir une catégorie de films ou séries en fonction de son état émotionnel.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaReact" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": "https://github.com/MSX-R/projet-2-Moody",
+    "lienGithub": "MSX-R/projet-2-Moody",
     "pictures": [
       {
         "picture": "imgMoody1",
@@ -124,7 +124,7 @@
     "title": "POUDLARD UNIVERSITY",
     "description": "Site vitrine créé pour une école fictive afin d'assurer la communication de celle-ci auprès des visiteurs et des membres de l'école.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": null,
+    "lienGithub": null,
     "pictures": [
       {
         "picture": "imgPoudlardUniversity1",
@@ -152,7 +152,7 @@
     "title": "Super Multiverse 2D",
     "description": "Premier prototype de jeu vidéo 2D crée sous Unity mélant plusieurs univers : Jeux-video, Manga & Cinéma. Edition de sprites et création des animations sous Photoshop. Mise en place de 3 niveaux jouables.",
     "outils": [{ "iconName": "FaUnity" }, { "iconName": "SiVisualstudio" }, { "iconName": "SiAdobephotoshop" }],
-    "lien_GitHub": null,
+    "lienGithub": null,
     "pictures": [
       {
         "picture": "imgSuperMultiverse0",
@@ -192,7 +192,7 @@
     "title": "Créations Graphiques",
     "description": "Quelques créations graphiques/numériques réalisées par moi-même pour ma propre entreprise ou pour des professionnels faisant partie de mon réseau.",
     "outils": [{ "iconName": "SiAdobephotoshop" }, { "iconName": "SiAdobepremierepro" }, { "iconName": "FaFigma" }],
-    "lien_GitHub": null,
+    "lienGithub": null,
     "pictures": [
       {
         "picture": "creation6",

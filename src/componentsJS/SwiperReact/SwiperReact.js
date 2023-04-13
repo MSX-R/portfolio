@@ -104,13 +104,13 @@ const SwiperReact = ({ langue, projectVersion }) => {
                 {item.outils.map((el, i) => {
                   return (
                     <p key={i} className={el.iconName === "FaGithub" && item.title !== "POUDLARD UNIVERSITY" ? "iconGitHub" : ""}>
-                      {/* {item.lien_Github ? (
-                        <a href={langue["projets[${i}].description"]} target>
-                          {icons(el.iconName)}
+                      {el.iconName === "FaGithub" ? (
+                        <a href={`https://github.com/${item.lienGithub}`} target="_blank" rel="noreferrer">
+                          {icons("FaGithub")}
                         </a>
-                      ) : ( */}
-                      {icons(el.iconName)}
-                      {/* )} */}
+                      ) : (
+                        icons(el.iconName)
+                      )}
                     </p>
                   );
                 })}

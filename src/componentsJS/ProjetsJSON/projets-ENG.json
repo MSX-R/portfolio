@@ -3,7 +3,7 @@
     "title": "L'atelier d'Adeline",
     "description": "Website created for a hairdressing salon to provide an additional virtual presence outside social networks.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaReact" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": "https://github.com/MSX-R/hairdresser-website",
+    "lienGithub": "MSX-R/hairdresser-website",
     "lienSite": "https://msx-r.github.io/hairdresser-website/",
     "pictures": [
       {
@@ -44,7 +44,7 @@
     "title": "SOS JEUNES POUSSES",
     "description": "Creation of a website offering support for the creation of professional projects. The association SOS JEUNES POUSSES aims to provide information and support to all project leaders.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaReact" }, { "iconName": "FaNodeJs" }, { "iconName": "SiMysql" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": "https://github.com/MSX-R/Projet-SOS-JeunesPousses-Front",
+    "lienGithub": "MSX-R/Projet-SOS-JeunesPousses-Front",
     "pictures": [
       {
         "picture": "imgSOSJP1",
@@ -88,7 +88,7 @@
     "title": "MOODY VOD PLATFORM",
     "description": "VOD platform created to offer an original experience to the visitors of the site. Choose a category of films or series according to your emotional state.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaReact" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": "https://github.com/MSX-R/projet-2-Moody",
+    "lienGithub": "MSX-R/projet-2-Moody",
     "pictures": [
       {
         "picture": "imgMoody1",
@@ -116,7 +116,7 @@
     "title": "POUDLARD UNIVERSITY",
     "description": "Showcase site created for a fictional  school to communicate with visitors and members of the school.",
     "outils": [{ "iconName": "FaHtml5" }, { "iconName": "FaCss3Alt" }, { "iconName": "SiJavascript" }, { "iconName": "FaGithub" }],
-    "lien_GitHub": null,
+    "lienGithub": null,
     "pictures": [
       {
         "picture": "imgPoudlardUniversity1",
@@ -144,7 +144,7 @@
     "title": "Super Multiverse 2D",
     "description": "First 2D video game prototype created with Unity mixing several universes: Video games, Manga & Cinema. Sprite editing and animation creation in Photoshop. Creation of 3 playable levels.",
     "outils": [{ "iconName": "FaUnity" }, { "iconName": "SiVisualstudio" }, { "iconName": "SiAdobephotoshop" }],
-    "lien_GitHub": null,
+    "lienGithub": null,
     "pictures": [
       {
         "picture": "imgSuperMultiverse0",
@@ -184,7 +184,7 @@
     "title": "Graphic Creations",
     "description": "Some graphic/digital creations made by myself for my own company or for professionals belonging to my network",
     "outils": [{ "iconName": "SiAdobephotoshop" }, { "iconName": "SiAdobepremierepro" }, { "iconName": "FaFigma" }],
-    "lien_GitHub": null,
+    "lienGithub": null,
     "pictures": [
       {
         "picture": "creation6",
